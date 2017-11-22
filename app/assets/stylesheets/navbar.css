@@ -1,0 +1,41 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+  padding: 10px 0;
+}
+
+.navbar-ul-left li {
+  display: inline-block;
+  padding-left: 30px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 200;
+  letter-spacing: 0.5px;
+}
+
+.navbar-ul-right li {
+  display: inline-block;
+  padding-right: 30px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 200;
+  letter-spacing: 0.5px;
+}
+
+.fa-search {
+  padding-left: 7px;
+  font-weight: 100;
+}
+
+.ul-link {
+  text-decoration: none;
+}
+
+.main-title {
+  font-family: 'Baloo', cursive;
+  font-weight: bold;
+  color: #234722;
+  font-size: 30px;
+}
