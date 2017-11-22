@@ -1,5 +1,6 @@
 
-export const signup = (user) => (
+/*jshint esversion: 6 */
+export const signup = (user) => ( // if you don't call this user you must not destructure
   $.ajax({
     method: 'POST',
     url: 'api/user',
@@ -7,7 +8,7 @@ export const signup = (user) => (
   })
 );
 
-export const login = (user) => (
+export const login = (user) => ( // if you don't call this user you must not destructure
   $.ajax({
     method: 'POST',
     url: 'api/session',

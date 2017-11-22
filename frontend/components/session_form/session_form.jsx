@@ -9,6 +9,12 @@ class SessionForm extends React.Component {
     // this.renderErrors = this.renderErrors.bind(this);
   }
 
+  handleInput(type) {
+    return(e) => {
+      this.setState({ [type]: e.target.value });
+    }
+  }
+
   handleSubmit(e) {
     e.preventDefault();
     const user = Object.assign({}, this.state); //this merges this.state with an empty object
@@ -35,12 +41,12 @@ class SessionForm extends React.Component {
               <Link to='/signup'>Sign up</Link>
               <label>
                 Email:
-                <input type="text"></input>
+                <input type="text" onChange={this.handleInput('email')}></input>
               </label>
               <br />
               <label>
                 Password:
-                <input type= "password"></input>
+                <input type="password" onChange={this.handleInput('password')}></input>
               </label>
               <br />
               <button onClick={this.handleSubmit}>Log in</button>
@@ -55,16 +61,16 @@ class SessionForm extends React.Component {
               <Link to='/login'>Log in</Link>
               <label>
                 Name:
-                <input type="text"></input>
+                <input type="text" onChange={this.handleInput('username')}></input>
               </label>
               <label>
                 Email:
-                <input type="text"></input>
+                <input type="text" onChange={this.handleInput('email')}></input>
               </label>
               <br />
               <label>
                 Password:
-                <input type= "password"></input>
+                <input type="password" onChange={this.handleInput('password')}></input>
               </label>
               <br />
               <button onClick={this.handleSubmit}>Sign up</button>
