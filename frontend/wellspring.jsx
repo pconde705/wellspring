@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import configureStore from './store/store';
 import Root from './components/root';
-import { login, signup, logout } from './actions/session_actions';
+import { login, signup, logout } from './actions/session_actions'; // its the actions that dispatch login requests
 
 document.addEventListener("DOMContentLoaded", () => {
   const store = configureStore();
@@ -18,3 +18,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   ReactDOM.render(<Root store={store} />, root);
 })
+
+// click on the red error message in console, click on All and scroll down to find the red, or click on XHR to find the issue,
+// click on action in the logger message to see the errors written out. It might be your own or the program's.
