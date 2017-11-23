@@ -1,0 +1,34 @@
+.stats-header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 1px solid black;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+.stats-header > div {
+  border-left: 2px solid #DCDEDD;
+  padding: 25px 0;
+  margin-right: 40px;
+  padding-left: 40px;
+}
+
+.stats-header > div:first-child {
+  border-left: none;
+}
+.stats-header > div:last-child {
+  margin-right: 150px;
+}
+
+.top-text {
+  color: #656969;
+}
+
+.bottom-text {
+  padding-top: 5px;
+  font-weight: 600;
+  color: black;
+  font-family: sans-serif;
+}
