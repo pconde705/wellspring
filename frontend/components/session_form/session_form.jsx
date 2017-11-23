@@ -15,6 +15,7 @@ class SessionForm extends React.Component {
   }
 
   handleInput(type) {
+    // debugger;
     return(e) => {
       this.setState({ [type]: e.target.value });
     }
@@ -23,7 +24,7 @@ class SessionForm extends React.Component {
   handleSubmit(e) {
     e.preventDefault();
     const user = Object.assign({}, this.state); //this merges this.state with an empty object
-    this.props.processForm(user);
+    this.props.processForm(user); // Whenever a function is called outside of the file you are working in you need to bind(this)
   }
 
   renderErrors() {
@@ -40,7 +41,8 @@ class SessionForm extends React.Component {
     )
   }
 
-  demoLogin() {
+  demoLogin(e) {
+    e.preventDefault();
     this.setState = {email: "demoUser@demo.com", password: "123456"}
     const demoSession = Object.assign({}, this.setState);
     this.props.processForm(demoSession)
