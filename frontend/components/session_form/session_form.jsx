@@ -4,7 +4,7 @@ import {Link, withRouter} from 'react-router-dom';
 class SessionForm extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {email: "", password: ""}
+    this.state = {email: "", password: ""} // this does not refer to the store (global) state, this is a component state
     this.handleSubmit = this.handleSubmit.bind(this);
     // this.renderErrors = this.renderErrors.bind(this);
     this.demoLogin = this.demoLogin.bind(this);

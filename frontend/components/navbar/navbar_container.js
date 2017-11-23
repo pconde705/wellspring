@@ -8,7 +8,7 @@ const mapStateToProps = state => {
   // remove the normal parentheses and add the curly braces instead, allowing you
   // to write in debugger; but remember you must manually return in this case!
   return {
-    currentUser: state.sessionReducer.currentUser // sessionReducer comes from your root_reducer
+    currentUser: state.session.currentUser // session comes from your root_reducer
 };};
 // Identical to below:
 // const mapStateToProps = ({ session }) => ({

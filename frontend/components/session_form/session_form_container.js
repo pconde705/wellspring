@@ -6,8 +6,8 @@ import {login, signup, clearErrors} from '../../actions/session_actions';
 const mapStateToProps = (state, ownProps) => {
   // debugger;
   return {
-  loggedIn: Boolean(state.sessionReducer.currentUser),
-  errors: state.errorsReducer.session,
+  loggedIn: Boolean(state.session.currentUser),
+  errors: state.errors.session,
   formType: ownProps.location.pathname.slice(1)
 };};
 

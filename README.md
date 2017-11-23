@@ -31,3 +31,4 @@ Seed the database the minute you're done with user auth.
 Use realistic usernames, no celebrity under joke names.
 
 Each project should have a boolean that shows whether a user has backed this project, this does not need to be stored in the frontend, only the backend. Use the join table to send down the boolean value true or false if the current_user has backed this project or not.
+react spinners: https://github.com/davidhu2000/react-spinners
