@@ -9,6 +9,10 @@ class SessionForm extends React.Component {
     // this.renderErrors = this.renderErrors.bind(this);
   }
 
+  componentWillMount() { // didMount is more gernerally used for ajax requests, which clearErrors does not.
+    this.props.clearErrors();
+  }
+
   handleInput(type) {
     return(e) => {
       this.setState({ [type]: e.target.value });

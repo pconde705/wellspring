@@ -21,7 +21,9 @@ const receiveSessionErrors = (errors) => ({
   errors
 });
 
-const clea
+export const clearErrors = () => ({
+  type: CLEAR_ERRORS
+})
 
 export const logout = () => dispatch => (
   SessionApiUtil.logout().then(

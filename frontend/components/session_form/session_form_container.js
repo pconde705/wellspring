@@ -1,7 +1,7 @@
 /*jshint esversion: 6 */
 import {connect} from 'react-redux';
 import SessionForm from './session_form';
-import {login, signup} from '../../actions/session_actions';
+import {login, signup, clearErrors} from '../../actions/session_actions';
 
 const mapStateToProps = (state, ownProps) => {
   // debugger;
@@ -14,11 +14,13 @@ const mapStateToProps = (state, ownProps) => {
 const mapDispatchToProps = (dispatch, ownProps) => { // curly braces allow if statements
   if (ownProps.location.pathname.slice(1) === 'login') {
     return {
-        processForm: user => dispatch(login(user))
+        processForm: user => dispatch(login(user)),
+        clearErrors: () => dispatch(clearErrors())
       };
     } else {
       return {
-        processForm: user => dispatch(signup(user))
+        processForm: user => dispatch(signup(user)),
+        clearErrors: () => dispatch(clearErrors())
       };
     }
 };
