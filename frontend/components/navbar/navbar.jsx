@@ -9,10 +9,10 @@ const Navbar = ({currentUser, logout}) => {
           <li>Explore</li>
           <li>Start a project</li>
         </ul>
-        <h2 className="main-title">WELLSPRING</h2>
+        <h2><Link className="main-title" to="/">WELLSPRING</Link></h2>
         <ul className="navbar-ul-right">
           <li>Search<i className="fa fa-search" aria-hidden="true"></i></li>
-          <li><button onClick={logout}>Sign out</button></li>
+          <li><Link to="/" className="ul-link" onClick={logout}>Sign out</Link></li>
         </ul>
       </div>
     )
@@ -23,7 +23,7 @@ const Navbar = ({currentUser, logout}) => {
           <li>Explore</li>
           <li>Start a project</li>
         </ul>
-        <h2 className="main-title">WELLSPRING</h2>
+        <h2><Link className="main-title" to="/">WELLSPRING</Link></h2>
         <ul className="navbar-ul-right">
           <li>Search<i className="fa fa-search" aria-hidden="true"></i></li>
           <li><Link to="/login" className="ul-link">Sign in</Link></li>

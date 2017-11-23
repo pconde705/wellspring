@@ -23,59 +23,64 @@ class SessionForm extends React.Component {
 
   renderErrors() {
     return (
-      <ul>
-        {this.props.errors.map((error) => (
-          <li>
-            {error}
-          </li>
-        ))}
-      </ul>
+      <div className="error-messages">
+        <ul>
+          {this.props.errors.map((error) => (
+            <li>
+              {error}
+            </li>
+          ))}
+        </ul>
+      </div>
     )
   }
 
   render() {
     if (this.props.formType === 'login') {
     return (
-          <div>
-            <form>
-              <Link to='/signup'>Sign up</Link>
+          <div className="login-div">
+            <form className="login-form">
+              <h2 className="login-form-title">Log in</h2>
               <label>
-                Email:
-                <input type="text" onChange={this.handleInput('email')}></input>
+                <input className="input-fields" type="text" onChange={this.handleInput('email')} placeholder="Email"></input>
               </label>
               <br />
               <label>
-                Password:
-                <input type="password" onChange={this.handleInput('password')}></input>
+                <input className="input-fields" type="password" onChange={this.handleInput('password')} placeholder="Password"></input>
               </label>
               <br />
-              <button onClick={this.handleSubmit}>Log in</button>
+              <button className="login-button" onClick={this.handleSubmit}>Log me in!</button>
+              <br />
+              {this.renderErrors()}
+              <div className="bottom-div">
+                New to WellSpring? <Link to='/signup'>Sign up!</Link>
+              </div>
             </form>
-            {this.renderErrors()}
           </div>
         )
         } else {
         return (
-          <div>
-            <form>
-              <Link to='/login'>Log in</Link>
+          <div className="login-div">
+            <form className="login-form">
+              <div className="top-div">
+                Have an account? <Link to='/login'>Log in</Link>
+              </div>
+                <h2 className="login-form-title">Sign up</h2>
               <label>
-                Name:
-                <input type="text" onChange={this.handleInput('username')}></input>
-              </label>
-              <label>
-                Email:
-                <input type="text" onChange={this.handleInput('email')}></input>
+                <input className="input-fields" type="text" onChange={this.handleInput('username')} placeholder="Name"></input>
               </label>
               <br />
               <label>
-                Password:
-                <input type="password" onChange={this.handleInput('password')}></input>
+                <input className="input-fields" type="text" onChange={this.handleInput('email')} placeholder="Email"></input>
               </label>
               <br />
-              <button onClick={this.handleSubmit}>Sign up</button>
+              <label>
+                <input className="input-fields" type="password" onChange={this.handleInput('password')} placeholder="Password"></input>
+              </label>
+              <br />
+                <button className="login-button" onClick={this.handleSubmit}>Create Account</button>
+                {this.renderErrors()}
             </form>
-            {this.renderErrors()}
           </div>
         )
         }
