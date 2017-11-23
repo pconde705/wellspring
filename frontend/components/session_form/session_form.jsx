@@ -7,6 +7,7 @@ class SessionForm extends React.Component {
     this.state = {email: "", password: ""}
     this.handleSubmit = this.handleSubmit.bind(this);
     // this.renderErrors = this.renderErrors.bind(this);
+    this.demoLogin = this.demoLogin.bind(this);
   }
 
   componentWillMount() { // didMount is more gernerally used for ajax requests, which clearErrors does not.
@@ -39,6 +40,13 @@ class SessionForm extends React.Component {
     )
   }
 
+  demoLogin() {
+    this.setState = {email: "demoUser@demo.com", password: "123456"}
+    const demoSession = Object.assign({}, this.setState);
+    this.props.processForm(demoSession)
+
+  }
+
   render() {
     if (this.props.formType === 'login') {
     return (
@@ -54,6 +62,8 @@ class SessionForm extends React.Component {
               </label>
               <br />
               <button className="login-button" onClick={this.handleSubmit}>Log me in!</button>
+              <br />
+              <button className="login-button demo" onClick={this.demoLogin}>Demo login!</button>
               <br />
               {this.renderErrors()}
               <div className="bottom-div">

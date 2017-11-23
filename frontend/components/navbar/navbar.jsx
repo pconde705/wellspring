@@ -12,7 +12,7 @@ const Navbar = ({currentUser, logout}) => {
         <h2><Link className="main-title" to="/">WELLSPRING</Link></h2>
         <ul className="navbar-ul-right">
           <li>Search<i className="fa fa-search" aria-hidden="true"></i></li>
-          <li><Link to="/" className="ul-link" onClick={logout}>Sign out</Link></li>
+          <li><Link to="/" className="ul-link" onClick={logout}>Sign out ({currentUser.username})</Link></li>
         </ul>
       </div>
     )
