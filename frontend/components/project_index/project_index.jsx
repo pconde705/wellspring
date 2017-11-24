@@ -22,7 +22,7 @@ class ProjectIndex extends React.Component {
         {
           this.props.projects.map((project, key) => (
             <li key={key}><h2>{project.title}</h2>
-            <img src={project.main_image_url} /></li>
+            <img src={project.main_image_url}/></li>
           ))
         }
         </ul>

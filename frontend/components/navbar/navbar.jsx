@@ -7,7 +7,7 @@ const Navbar = ({currentUser, logout}) => {
       <div className="navbar">
         <ul className="navbar-ul-left">
           <li>Explore</li>
-          <li><Link to="/project/new">Start a project</Link></li>
+          <li><Link className="ul-link" to="/project/new">Start a project</Link></li>
         </ul>
         <h2><Link className="main-title" to="/">WELLSPRING</Link></h2>
         <ul className="navbar-ul-right">
@@ -21,7 +21,7 @@ const Navbar = ({currentUser, logout}) => {
       <div className="navbar">
         <ul className="navbar-ul-left">
           <li>Explore</li>
-          <li><Link to="/project/new">Start a project</Link></li>
+          <li><Link className="ul-link" to="/project/new">Start a project</Link></li>
         </ul>
         <h2><Link className="main-title" to="/">WELLSPRING</Link></h2>
         <ul className="navbar-ul-right">
