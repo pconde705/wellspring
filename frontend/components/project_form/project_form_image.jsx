@@ -19,7 +19,7 @@ class ProjectFormImage extends React.Component {
       <div className="upload-image-div">
         <button
           onClick={this.uploadWidget.bind(this)}
-          className="upload-button">
+          className="project-image-button">
           Add Image
         </button>
       </div>
