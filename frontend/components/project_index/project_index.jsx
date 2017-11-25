@@ -1,5 +1,5 @@
 import React from 'react';
-
+import {Link} from 'react-router-dom'
 // You can make all of your componenets extends React.Component
 // If you use any of the lifecycle methods tou must extends React.Component
 // you would never const extends React.Component, only class extends React.Component
@@ -18,6 +18,18 @@ class ProjectIndex extends React.Component {
   render() {
     return (
       <div>
+        <div className="category-bar-div">
+          <ul>
+            <li><Link to="/">Music</Link></li>
+            <li><Link to="/">Comics & Illustration</Link></li>
+            <li><Link to="/">Film</Link></li>
+            <li><Link to="/">Food & Craft</Link></li>
+            <li><Link to="/">Games</Link></li>
+            <li><Link to="/">Design & Tech</Link></li>
+            <li><Link to="/">Publishing</Link></li>
+            <li><Link to="/">Arts</Link></li>
+          </ul>
+        </div>
         <ul>
         {
           this.props.projects.map((project, key) => (
