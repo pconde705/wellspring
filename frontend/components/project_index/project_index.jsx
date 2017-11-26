@@ -48,10 +48,16 @@ class ProjectIndex extends React.Component {
             <li><button onClick={() => this.renderProjects('arts')}>Arts</button></li>
           </ul>
         </div>
-        {this.state.clicked ? <ProjectIndexDisplay allData={this.allData()} allProps={this.allProps()} /> : <ProjectIndexDisplay allData={this.allData()} allProps={this.allProps()} />}
+         <ProjectIndexDisplay allData={this.allData()} allProps={this.allProps()} />
       </div>
     )
   }
 }
 
 export default ProjectIndex;
+
+// In the buttons above, if you dont pass in a function, the onClick action will execute immediately regards of click or not.
+
+
+// The below was written in case of a click action, but is now pointless because we default our category to "music"
+// {this.state.clicked ? <ProjectIndexDisplay allData={this.allData()} allProps={this.allProps()} /> : <ProjectIndexDisplay allData={this.allData()} allProps={this.allProps()} />}
