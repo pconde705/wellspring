@@ -10,7 +10,7 @@ class ProjectIndex extends React.Component {
   constructor(props) {
     super(props)
     // console.log(props); // this console.log is run before componentDidMount so projects will be empty
-    this.state = {category: "", clicked: false}
+    this.state = {category: "music", clicked: false}
     this.renderProjects = this.renderProjects.bind(this);
   }
 
@@ -48,7 +48,7 @@ class ProjectIndex extends React.Component {
             <li><button onClick={() => this.renderProjects('arts')}>Arts</button></li>
           </ul>
         </div>
-        {this.state.clicked ? <ProjectIndexDisplay allData={this.allData()} allProps={this.allProps()} /> : null}
+        {this.state.clicked ? <ProjectIndexDisplay allData={this.allData()} allProps={this.allProps()} /> : <ProjectIndexDisplay allData={this.allData()} allProps={this.allProps()} />}
       </div>
     )
   }

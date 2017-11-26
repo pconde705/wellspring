@@ -2,12 +2,6 @@ import React from 'react';
 
 
 class ProjectIndexDisplay extends React.Component {
-  constructor(props) {
-    super(props)
-  }
-
-  filter() {
-  }
 
   render() {
     let filteredProjects = [];
@@ -16,7 +10,6 @@ class ProjectIndexDisplay extends React.Component {
         filteredProjects.push(project)
       }
     })
-    console.log(filteredProjects);
     return (
       <div>
         {filteredProjects.map((project, key) => (
