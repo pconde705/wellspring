@@ -1,6 +1,5 @@
 import React from 'react';
 import ProjectFormImage from './project_form_image';
-// import Select from 'react-select'; Secondary dropdown option
 
 class ProjectForm extends React.Component {
   constructor(props) {

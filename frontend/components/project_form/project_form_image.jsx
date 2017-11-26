@@ -1,4 +1,4 @@
-import React from 'React';
+import React from 'react';
 import {Image, CloudinaryContext, Transformation} from 'cloudinary-react';
 
 class ProjectFormImage extends React.Component {
