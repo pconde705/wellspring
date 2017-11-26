@@ -10,12 +10,15 @@ class ProjectIndexDisplay extends React.Component {
         filteredProjects.push(project)
       }
     })
+
     return (
       <div className="all-projects-div">
         {filteredProjects.map((project, key) => (
           <div className="featured-project-div" key={key}>
             <img src={project.main_image_url} />
             <h1>{project.title}</h1>
+            <p>BY </p>
+            <p>{(100 / project.goal) * project.money_raised}% FUNDED</p>
           </div>
         ))}
       </div>

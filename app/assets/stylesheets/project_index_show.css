@@ -5,15 +5,7 @@
   align-items: center;
   flex-wrap: wrap;
 }
-
-/*.all-projects-div ul li {
-  list-style-type: none;
-}*/
-
-.featured-project-div {
-  /*@media or css grid*/
-
-}
+/*The flex wrap allows it to move to hte next line when resizing browser*/
 
 .featured-project-div img {
   width: 600px;
