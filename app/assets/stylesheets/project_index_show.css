@@ -4,10 +4,39 @@
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
+  font-family: 'Roboto', sans-serif;
 }
 /*The flex wrap allows it to move to hte next line when resizing browser*/
+
 
 .featured-project-div img {
   width: 600px;
   height: 600px;
+  position: relative;
+}
+
+.featured-title {
+  position: absolute;
+  top: 790px;
+  margin-left: 25px;
+  background-color: white;
+  padding: 5px 10px;
+}
+
+.featured-by {
+  position: absolute;
+  top: 838px;
+  margin-left: 25px;
+  background-color: white;
+  padding: 5px 10px;
+  font-weight: bolder;
+}
+
+.featured-percent {
+  position: absolute;
+  top: 880px;
+  margin-left: 25px;
+  background-color: white;
+  padding: 5px 10px;
+  font-weight: bolder;
 }
