@@ -11,11 +11,16 @@ class ProjectIndexDisplay extends React.Component {
       }
     })
     return (
-      <div>
+      <div className="all-projects-div">
         {filteredProjects.map((project, key) => (
-          <h1 key={key}>
-            {project.title}
-          </h1>
+          <ul>
+            <li>
+              <div className="featured-project-div" key={key}>
+                <img src={project.main_image_url} />
+                <h1>{project.title}</h1>
+              </div>
+            </li>
+          </ul>
         ))}
       </div>
     )

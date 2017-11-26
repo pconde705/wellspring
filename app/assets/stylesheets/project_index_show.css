@@ -1,0 +1,19 @@
+
+.all-projects-div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.all-projects-div ul li {
+  list-style-type: none;
+}
+
+.featured-project-div {
+
+}
+
+.featured-project-div img {
+  max-width: 150px;
+  max-height: 150px;
+}
