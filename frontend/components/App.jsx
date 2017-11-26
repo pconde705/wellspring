@@ -7,6 +7,7 @@ import Navbar from './navbar/navbar_container';
 import Statistics from './statistics'
 import ProjectIndexContainer from './project_index/project_index_container';
 import ProjectFormContainer from './project_form/project_form_container';
+import ProjectShowContainer from './project_show/project_show_container';
 
 const App = () => (
   <div>
@@ -17,6 +18,7 @@ const App = () => (
     <Route exact path="/" component={ProjectIndexContainer} />
     <AuthRoute path="/login" component={SessionFormContainer} />
     <AuthRoute path="/signup" component={SessionFormContainer} />
+    <Route path="/projects/:id" component={ProjectShowContainer} />
   </div>
 );
 
@@ -28,3 +30,5 @@ export default App;
 // The container imports the jsx file through connect.
 
 // You want exact path or else the ProjectIndexContainer will render on every page
+
+// Ask why we write it like so :id after projects
