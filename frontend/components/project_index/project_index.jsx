@@ -1,5 +1,6 @@
 import React from 'react';
-import {Link} from 'react-router-dom'
+import {Link} from 'react-router-dom';
+import ProjectIndexDisplay from './project_index_display';
 // You can make all of your componenets extends React.Component
 // If you use any of the lifecycle methods tou must extends React.Component
 // you would never const extends React.Component, only class extends React.Component
@@ -9,46 +10,45 @@ class ProjectIndex extends React.Component {
   constructor(props) {
     super(props)
     // console.log(props); // this console.log is run before componentDidMount so projects will be empty
-    this.state = {projects: []}
-    // this.renderProjects = this.renderProjects.bind(this);
+    this.state = {category: "", clicked: false}
+    this.renderProjects = this.renderProjects.bind(this);
   }
 
   componentDidMount(){ // this function is needed or else this.props.projects will render a blank array/object
     this.props.fetchAllProjects(); //this comes from the dispatch action
   }
 
-  renderProjects(e) {
-    e.preventDefault();
-    console.log("Hello");
-    return (
-      <div>
-        <p>Hello</p>
-        <ul>
-          {
-            this.props.projects.map((project, key) => (
-              <li key={key}><h2>{project.title}</h2></li>
-            ))
-          }
-        </ul>
-      </div>
-    )
+  renderProjects(type) {
+    this.setState({ category: type })
+    // this should return a function, in this return you do the filtering
+    this.setState({ clicked: true })
   }
+
+  allData() {
+    return this.state
+  }
+
+  allProps(){
+    return this.props.projects
+  }
+
  // Router
   render() {
     return (
       <div>
         <div className="category-bar-div">
           <ul>
-            <li><button onClick={this.renderProjects}>Music</button></li>
-            <li><Link to="/">Comics & Illustration</Link></li>
-            <li><Link to="/">Film</Link></li>
-            <li><Link to="/">Food & Craft</Link></li>
-            <li><Link to="/">Games</Link></li>
-            <li><Link to="/">Design & Tech</Link></li>
-            <li><Link to="/">Publishing</Link></li>
-            <li><Link to="/">Arts</Link></li>
+            <li><button onClick={() => this.renderProjects('music')}>Music</button></li>
+            <li><button onClick={() => this.renderProjects('comics')}>Comics & Illustration</button></li>
+            <li><button onClick={() => this.renderProjects('film')}>Film</button></li>
+            <li><button onClick={() => this.renderProjects('food')}>Food & Craft</button></li>
+            <li><button onClick={() => this.renderProjects('games')}>Games</button></li>
+            <li><button onClick={() => this.renderProjects('design')}>Design $ Tech</button></li>
+            <li><button onClick={() => this.renderProjects('publishing')}>Publishing</button></li>
+            <li><button onClick={() => this.renderProjects('arts')}>Arts</button></li>
           </ul>
         </div>
+        {this.state.clicked ? <ProjectIndexDisplay allData={this.allData()} allProps={this.allProps()} /> : null}
       </div>
     )
   }

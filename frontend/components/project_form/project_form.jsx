@@ -8,7 +8,7 @@ class ProjectForm extends React.Component {
     this.state = {title: "", category: "art", description: "", goal: 0, main_image_url: "", extra_image_url: "", money_raised: 0, backers: 0}
     this.handleSubmit = this.handleSubmit.bind(this)
     this.setImageUrl = this.setImageUrl.bind(this)
-    this.setExtraImageUrl = this.setExtraImageUrl.bind(this)
+    // this.setExtraImageUrl = this.setExtraImageUrl.bind(this)
   }
 
   handleInput(type) {
@@ -24,9 +24,9 @@ class ProjectForm extends React.Component {
     }
   }
 
-  setExtraImageUrl(url) {
-    this.setState({ extra_image_url: url })
-  }
+  // setExtraImageUrl(url) {
+  //   this.setState({ extra_image_url: url })
+  // }
 
   handleSubmit(e) {
     e.preventDefault();
@@ -38,7 +38,7 @@ class ProjectForm extends React.Component {
 
 
   render() {
-    console.log(this.state);
+    // console.log(this.state);
     return (
       <div className="project-create-div">
         <img className="background-form-image" src="https://res.cloudinary.com/lopopoa2/image/upload/v1511547135/pexels-photo-209678_uxitpp.jpg" ></img>
