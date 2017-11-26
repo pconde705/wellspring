@@ -5,7 +5,7 @@ import ProjectFormImage from './project_form_image';
 class ProjectForm extends React.Component {
   constructor(props) {
     super(props)
-    this.state = {title: "", category: "art", description: "", goal: 0, main_image_url: "", extra_image_url: "", money_raised: 0, backers: 0}
+    this.state = {title: "", category: "arts", description: "", goal: 0, main_image_url: "", extra_image_url: "", money_raised: 0, backers: 0}
     this.handleSubmit = this.handleSubmit.bind(this)
     this.setImageUrl = this.setImageUrl.bind(this)
     // this.setExtraImageUrl = this.setExtraImageUrl.bind(this)
@@ -48,7 +48,7 @@ class ProjectForm extends React.Component {
             <li>
               <h3>Choose a category:</h3>
                 <select className="project-dropdown" value={this.state.category} onChange={this.handleInput('category')}>
-                  <option value="art">Art</option>
+                  <option value="arts">Arts</option>
                   <option value="comics">Comics</option>
                   <option value="crafts">Crafts</option>
                   <option value="dance">Dance</option>
