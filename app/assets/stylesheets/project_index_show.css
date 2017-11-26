@@ -8,35 +8,38 @@
 }
 /*The flex wrap allows it to move to hte next line when resizing browser*/
 
+.featured-project-div {
+  position: relative;
+}
+
+.featured-names {
+  position: absolute;
+  top: 70%;
+  left: 5%;
+}
 
 .featured-project-div img {
   width: 600px;
   height: 600px;
-  position: relative;
+  margin-bottom: 50px;
 }
 
 .featured-title {
-  position: absolute;
-  top: 790px;
-  margin-left: 25px;
   background-color: white;
   padding: 5px 10px;
 }
 
 .featured-by {
-  position: absolute;
-  top: 838px;
-  margin-left: 25px;
   background-color: white;
   padding: 5px 10px;
   font-weight: bolder;
+  width: 100px;
 }
 
 .featured-percent {
-  position: absolute;
-  top: 880px;
-  margin-left: 25px;
   background-color: white;
   padding: 5px 10px;
   font-weight: bolder;
+  margin-top: 10px;
+  width: 110px;
 }
