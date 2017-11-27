@@ -12,5 +12,52 @@
 }
 
 .show-img-and-goals img {
-  width: 600px;
+  width: 650px;
+  height: 400px;
+}
+
+.show-img-and-goals {
+  display: flex;
+  margin-left: 60px;
+  margin-top: 30px;
+
+}
+
+.show-goals-only {
+  margin-left: 30px;
+}
+
+.show-lines {
+  position: relative;
+}
+
+.show-completion-line {
+  width: 100%;
+  border-top: 3px solid #009E74;
+  margin-bottom: 30px;
+  /*border-top: 3px solid #DCDEDD; */
+}
+
+.show-grey-line {
+  position: absolute;
+  width: 100%;
+  border-top: 3px solid #DCDEDD;
+  top: 0px;
+  /*border-top: 3px solid #DCDEDD; */
+}
+
+
+.show-backer-button {
+  background-color: #009E74;
+  color: white;
+  padding: 15px 100px;
+  font-size: 16px;
+  font-weight: lighter;
+  border: none;
+  border-radius: 0px;
+}
+
+.show-description img {
+  width: 650px;
+  height: 400px;
 }
