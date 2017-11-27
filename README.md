@@ -34,3 +34,5 @@ Each project should have a boolean that shows whether a user has backed this pro
 react spinners: https://github.com/davidhu2000/react-spinners
 
 do not delete any messages written in any files, delete no files.
+
+Create a div around the image, with overflow:hidden and specific width and height attributes, that act as a frame. and inside that is your img which you set to usually to height 100% and width: auto.
