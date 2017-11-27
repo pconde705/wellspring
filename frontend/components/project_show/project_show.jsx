@@ -5,12 +5,6 @@ class ProjectShow extends React.Component {
   componentDidMount() {
     this.props.fetchSingleProject(this.props.match.params.id)
   }
-  //
-  // componentWillReceiveProps(nextProps) {
-  //   if (this.props.match.params.id !== nextProps.match.params.id) {
-  //     this.props.fetchSingleProject(nextProps.match.params.id)
-  //   }
-  // }
 
   render () {
     // console.log(this.props.project.undefined);
@@ -20,16 +14,18 @@ class ProjectShow extends React.Component {
       return (
         <div className="show-overall-div">
           <div className="show-top-half">
+            <div className="show-icon-and-title">
             <div className="show-creator-icon">
-
+              <p>Created By {this.props.project.undefined.projects.user}</p>
             </div>
             <div className="show-title">
               <h1>
                 {this.props.project.undefined.projects.title}
               </h1>
             </div>
+          </div>
             <div className="show-img-and-goals">
-              <img src={} />
+              <img src={this.props.project.undefined.projects.main_image_url} />
               <div className="show-goals-only">
                 <div className="show-goals-numbers-only">
 
@@ -41,7 +37,7 @@ class ProjectShow extends React.Component {
           </div>
           <div className="show-bottom-half">
             <div className="show-description">
-
+              <img src={this.props.project.undefined.projects.extra_image_url} />
             </div>
             <div className="show-backer-rewards">
               <ul>

@@ -1,0 +1,16 @@
+.show-icon-and-title {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 60px;
+  margin-top: 60px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.show-title{
+  margin-left: 120px;
+}
+
+.show-img-and-goals img {
+  width: 600px;
+}

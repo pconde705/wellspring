@@ -6,4 +6,5 @@ json.projects do
     :category, :money_raised,
     :main_image_url, :extra_image_url,
     :description, :goal, :backers
+    json.user @project.user.username
 end
