@@ -32,18 +32,16 @@
 }
 
 .show-completion-line {
+  position: absolute;
   width: 100%;
   border-top: 3px solid #009E74;
-  margin-bottom: 30px;
-  /*border-top: 3px solid #DCDEDD; */
+  top: 0px;
 }
 
 .show-grey-line {
-  position: absolute;
-  width: 100%;
+  float: right;
   border-top: 3px solid #DCDEDD;
   top: 0px;
-  /*border-top: 3px solid #DCDEDD; */
 }
 
 

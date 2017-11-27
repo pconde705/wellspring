@@ -5,6 +5,7 @@ class ProjectShow extends React.Component {
     super(props)
 
     this.setLine = this.setLine.bind(this)
+    this.greyLine = this.greyLine.bind(this)
   }
 
   componentDidMount() {
@@ -14,9 +15,19 @@ class ProjectShow extends React.Component {
   setLine() {
     let bar_width = (100 / this.props.project.undefined.projects.goal) * this.props.project.undefined.projects.money_raised
     if (bar_width > 100) {
-      return {width: "100px"}
+      return {width: "100%"}
     } else {
       return {width: `${bar_width}%`}
+    }
+  }
+
+  greyLine() {
+    let bar_width = (100 / this.props.project.undefined.projects.goal) * this.props.project.undefined.projects.money_raised
+    if (bar_width > 100) {
+      return {width: "0px"}
+    } else {
+      const greyWidth = 100 - bar_width
+      return {width: `${greyWidth}%`}
     }
   }
 
@@ -44,7 +55,7 @@ class ProjectShow extends React.Component {
                 <div className="show-goals-numbers-only">
                   <div className="show-lines">
                     <div className="show-completion-line" style={this.setLine()}></div>
-                    <div className="show-grey-line"></div>
+                    <div className="show-grey-line" style={this.greyLine()}></div>
                   </div>
                   <h2>${this.props.project.undefined.projects.money_raised}</h2>
                   <p>pledged of ${this.props.project.undefined.projects.goal} goal</p>
