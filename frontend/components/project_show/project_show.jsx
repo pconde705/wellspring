@@ -18,9 +18,42 @@ class ProjectShow extends React.Component {
       return ("")
     } else {
       return (
-        <h1>
-          {this.props.project.undefined.projects.title}
-        </h1>
+        <div className="show-overall-div">
+          <div className="show-top-half">
+            <div className="show-creator-icon">
+
+            </div>
+            <div className="show-title">
+              <h1>
+                {this.props.project.undefined.projects.title}
+              </h1>
+            </div>
+            <div className="show-img-and-goals">
+              <img src={} />
+              <div className="show-goals-only">
+                <div className="show-goals-numbers-only">
+
+                </div>
+                <button></button>
+                <p>All or nothing.</p>
+              </div>
+            </div>
+          </div>
+          <div className="show-bottom-half">
+            <div className="show-description">
+
+            </div>
+            <div className="show-backer-rewards">
+              <ul>
+                <li>
+                  <div className="show-reward">
+
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       )
 
     }

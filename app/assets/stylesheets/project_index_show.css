@@ -12,6 +12,11 @@
   position: relative;
 }
 
+.featured-link {
+  text-decoration: none;
+  color: black;
+}
+
 .featured-names {
   position: absolute;
   top: 70%;
