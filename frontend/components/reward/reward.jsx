@@ -26,7 +26,7 @@ class Reward extends React.Component {
 
 
   render () {
-    console.log(this.props);
+    // console.log(this.props);
     return (
       <form className="reward-create-form">
         <h1 className="reward-form-header">Create Rewards</h1>

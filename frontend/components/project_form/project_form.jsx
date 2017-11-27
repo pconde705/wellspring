@@ -1,6 +1,6 @@
 import React from 'react';
 import ProjectFormImage from './project_form_image';
-import Reward from '../reward/reward';
+import RewardContainer from '../reward/reward_container';
 
 class ProjectForm extends React.Component {
   constructor(props) {
@@ -34,6 +34,24 @@ class ProjectForm extends React.Component {
     this.props.createProject(project).then( () =>
       this.props.history.push('/')
     );
+  }
+
+  renderErrors() {
+    return (
+      <div className="error-messages">
+        <ul>
+          {this.props.errors.map((error) => (
+            <li>
+              {error}
+            </li>
+          ))}
+        </ul>
+      </div>
+    )
+  }
+
+  componentWillMount() { // didMount is more gernerally used for ajax requests, which clearErrors does not.
+    this.props.clearErrors();
   }
 
 
@@ -88,11 +106,16 @@ class ProjectForm extends React.Component {
             </li>
           </ol>
           <button className="project-submit-button" onClick={this.handleSubmit}>Create Project</button>
+          <br />
+          {this.renderErrors()}
         </form>
-        <Reward />
+        <RewardContainer />
       </div>
     )
   }
 }
 
 export default ProjectForm;
+
+// On Line 92 where RewardContainer is being rendered. You must always render the container, never the JSX file!!!
+// The JSX file is included automatically in the container!!

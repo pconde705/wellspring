@@ -1,10 +1,9 @@
 import {connect} from 'react-redux';
 import Reward from './reward';
 import {createReward} from '../../actions/reward_actions';
-import {selectAllRewards} from '../../reducers.selectors';
+import {selectAllRewards} from '../../reducers/selectors';
 
 const mapStateToProps = (state, {project_id}) => {
-  debugger;
   return {
     rewards: selectAllRewards(state, project_id),
     project_id

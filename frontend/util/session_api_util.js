@@ -3,7 +3,7 @@
 export const signup = (user) => ( // if you don't call this user you must not destructure
   $.ajax({
     method: 'POST',
-    url: 'api/user',
+    url: 'api/users',
     data: {user} // you do not want to destructure this data.
   })
 );

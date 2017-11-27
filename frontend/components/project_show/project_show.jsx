@@ -30,7 +30,7 @@ class ProjectShow extends React.Component {
       return {width: `${greyWidth}%`}
     }
   }
-
+  
   render () {
     // console.log(this.props);
     const {project} = this.props;

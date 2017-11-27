@@ -34,6 +34,10 @@
   color: black;
 }
 
+.ul-link:hover {
+  color: #037362;
+}
+
 .main-title {
   font-family: 'Baloo', cursive;
   font-weight: bold;

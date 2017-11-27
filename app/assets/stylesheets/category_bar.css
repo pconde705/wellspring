@@ -17,10 +17,14 @@
   display: flex;
 }
 
-.category-bar-div ul li button{
+.category-bar-div ul li button {
   cursor: pointer;
   border: none;
   color: #9B9E9E;
   font-size: 16px;
   font-family: 'Roboto', sans-serif;
+}
+
+.category-bar-div ul li button:hover {
+  color: #656969;
 }
