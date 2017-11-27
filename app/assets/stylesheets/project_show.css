@@ -1,10 +1,13 @@
+.show-overall-div {
+  font-family: 'Roboto', sans-serif;
+}
+
 .show-icon-and-title {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   margin-left: 60px;
   margin-top: 60px;
-  font-family: 'Roboto', sans-serif;
 }
 
 .show-title{
@@ -20,7 +23,6 @@
   display: flex;
   margin-left: 60px;
   margin-top: 30px;
-
 }
 
 .show-goals-only {
@@ -29,6 +31,7 @@
 
 .show-lines {
   position: relative;
+  padding-bottom: 30px;
 }
 
 .show-completion-line {
@@ -44,7 +47,6 @@
   top: 0px;
 }
 
-
 .show-backer-button {
   background-color: #009E74;
   color: white;
@@ -53,9 +55,69 @@
   font-weight: lighter;
   border: none;
   border-radius: 0px;
+  margin-top: 20px;
 }
 
 .show-description img {
   width: 650px;
   height: 400px;
 }
+
+.show-goals-numbers-only p {
+  padding-bottom: 15px;
+}
+
+.show-top-half {
+  margin-bottom: 50px;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #DCDEDD;
+}
+
+.show-bottom-half {
+  margin-left: 60px;
+}
+
+.show-bottom-half h2 {
+  margin-bottom: 30px;
+}
+
+.show-description {
+  width: 650px;
+  line-height: 200%;
+  letter-spacing: 0.5px;
+  float: left;
+}
+
+.show-description img {
+  margin-top: 50px;
+}
+
+.show-backer-rewards {
+  display: flex;
+  padding-left: 50px;
+}
+
+.show-backer-rewards h2 {
+
+}
+
+.show-backer-rewards ul li {
+  list-style-type: none;
+}
+
+.show-titles h2:nth-child(2) {
+  margin-right: 185px;
+}
+
+.show-reward{
+  margin-right: 10px;
+  border: 1px solid #DCDEDD;
+  padding: 10px;
+}
+
+
+
+
+
+
+/**/

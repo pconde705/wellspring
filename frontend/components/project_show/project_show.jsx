@@ -69,6 +69,7 @@ class ProjectShow extends React.Component {
             </div>
           </div>
           <div className="show-bottom-half">
+            <h2>About</h2>
             <div className="show-description">
               <p>{this.props.project.undefined.projects.description}</p>
               <img src={this.props.project.undefined.projects.extra_image_url} />
@@ -76,8 +77,20 @@ class ProjectShow extends React.Component {
             <div className="show-backer-rewards">
               <ul>
                 <li>
+                  <h2>Support</h2>
+                </li>
+                <li>
                   <div className="show-reward">
-
+                    <p>Pledge $1 or more</p>
+                    <p>Just want to help out</p>
+                    <p>Not interested in any reward but want to help out. Any amount, small or large, helps us reach our long-term goals.</p>
+                    <p>Includes:</p>
+                    <ul>
+                      <li>Thank you!</li>
+                    </ul>
+                    <p>Estimated Delivery</p>
+                    <p>December 2018</p>
+                    <p>0 backers</p>
                   </div>
                 </li>
               </ul>

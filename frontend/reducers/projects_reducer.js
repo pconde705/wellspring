@@ -22,3 +22,5 @@ const projectsReducer = (oldState = {}, action) => {
 };
 
 export default projectsReducer;
+
+// In RECEIVE_SINGLE_PROJECT you may want to remove oldState or else you are passing along all your projects as well
