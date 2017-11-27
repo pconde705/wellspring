@@ -5,7 +5,7 @@ const rewardsReducer = (oldState = {}, action) => {
   Object.freeze(oldState)
   switch (action.type) {
     case RECEIVE_REWARD:
-      return merge({}, oldState, action.reward)
+      return merge({}, oldState, {[action.reward.id]: action.reward});
     default:
       return oldState;
   }

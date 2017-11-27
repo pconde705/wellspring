@@ -9,6 +9,6 @@ const receiveReward = (reward) => ({
   reward
 });
 
-export const createReward = (reward) => dispatch => (
-  postRewards(reward).then(newReward => dispatch(receiveReward(newReward)))
+export const createReward = (project_id, reward) => dispatch => (
+  postRewards(project_id, reward).then(newReward => dispatch(receiveReward(newReward)))
 );

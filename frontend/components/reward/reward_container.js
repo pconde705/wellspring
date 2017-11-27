@@ -1,13 +1,17 @@
 import {connect} from 'react-redux';
 import Reward from './reward';
 import {createReward} from '../../actions/reward_actions';
+import {selectAllRewards} from '../../reducers.selectors';
 
-const mapStateToProps = state => ({
-
-});
+const mapStateToProps = (state, {project_id}) => {
+  debugger;
+  return {
+    rewards: selectAllRewards(state, project_id),
+    project_id
+}};
 
 const mapDispatchToProps = dispatch => ({
-  createReward: (reward) => dispatch(createReward(reward))
+  createReward: (...reward) => dispatch(createReward(...reward))
 });
 
 export default connect(
