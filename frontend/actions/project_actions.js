@@ -14,9 +14,9 @@ export const fetchAllProjects = () => dispatch => (
   // this is what makes the call to fetch data from your backend
 );
 
-const receiveSingleProject = (project) => ({
+const receiveSingleProject = (payload) => ({
   type: RECEIVE_SINGLE_PROJECT,
-  project
+  payload
 });
 
 export const fetchSingleProject = (id) => dispatch => (

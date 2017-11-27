@@ -10,7 +10,15 @@
 
 .featured-project-div {
   position: relative;
+  overflow: hidden;
+  height: 600px;
+  width: 600px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
 }
+/*The above CSS allows you to square the images*/
+
 
 .featured-link {
   text-decoration: none;
@@ -24,9 +32,7 @@
 }
 
 .featured-project-div img {
-  width: 600px;
-  height: 600px;
-  margin-bottom: 50px;
+  height: 100%;
 }
 
 .featured-title {

@@ -10,7 +10,7 @@ const projectsReducer = (oldState = {}, action) => {
     case RECEIVE_ALL_PROJECTS:
       return action.projects
     case RECEIVE_SINGLE_PROJECT:
-      newState = merge({}, oldState, {[action.project.id]: action.project});
+      newState = merge({}, oldState, {[action.payload.projects.id]: action.payload.projects});
       return newState;
     case REMOVE_PROJECT:
       newState = merge({}, oldState);
@@ -23,4 +23,4 @@ const projectsReducer = (oldState = {}, action) => {
 
 export default projectsReducer;
 
-// In RECEIVE_SINGLE_PROJECT you may want to remove oldState or else you are passing along all your projects as well
+// undefined error came because of action.project.id instead of the plural action.projects.id

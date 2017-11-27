@@ -24,25 +24,25 @@ Project.create(
   main_image_url: "http://res.cloudinary.com/lopopoa2/image/upload/v1511664088/pexels-photo-209948_sziq5i.jpg",
   extra_image_url: "http://res.cloudinary.com/lopopoa2/image/upload/v1511664536/ballet-production-performance-don-quixote-45258_rl9ko2.jpg",
   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel commodo turpis. Vestibulum rutrum porttitor lacus, at interdum arcu feugiat vitae. Duis aliquam tortor dignissim facilisis malesuada. Donec et venenatis ligula, at scelerisque ex. Nulla ligula mauris, tincidunt at tellus in, accumsan pharetra est. Vestibulum placerat sed quam vitae rutrum. Mauris quis viverra libero. Sed rhoncus turpis vitae metus egestas commodo. Sed consectetur at elit ac laoreet. Suspendisse molestie sapien tristique augue sollicitudin, vitae semper enim tincidunt. Quisque accumsan diam tempus lorem egestas, venenatis dapibus neque lobortis. In pulvinar fringilla ex quis gravida. Praesent lacus lectus, consequat et justo non, ultricies ultrices massa. Maecenas venenatis faucibus dui ut mattis.",
-  goal: 50000, money_raised: 0, backers: 0)
+  goal: 50000, money_raised: 13420, backers: 0)
 
 Project.create(
   title: "Park City", creator_id: 2, category: "arts",
   main_image_url: "http://res.cloudinary.com/lopopoa2/image/upload/v1511664090/pexels-photo-417270_pkyh8k.jpg",
   extra_image_url: "http://res.cloudinary.com/lopopoa2/image/upload/v1511664842/pexels-photo-392031_eopxy2.jpg",
   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel commodo turpis. Vestibulum rutrum porttitor lacus, at interdum arcu feugiat vitae. Duis aliquam tortor dignissim facilisis malesuada. Donec et venenatis ligula, at scelerisque ex. Nulla ligula mauris, tincidunt at tellus in, accumsan pharetra est. Vestibulum placerat sed quam vitae rutrum. Mauris quis viverra libero. Sed rhoncus turpis vitae metus egestas commodo. Sed consectetur at elit ac laoreet. Suspendisse molestie sapien tristique augue sollicitudin, vitae semper enim tincidunt. Quisque accumsan diam tempus lorem egestas, venenatis dapibus neque lobortis. In pulvinar fringilla ex quis gravida. Praesent lacus lectus, consequat et justo non, ultricies ultrices massa. Maecenas venenatis faucibus dui ut mattis.",
-  goal: 150000, money_raised: 0, backers: 0)
+  goal: 150000, money_raised: 870000, backers: 0)
 
 Project.create(
   title: "Modern Logo Design", creator_id: 3, category: "arts",
   main_image_url: "http://res.cloudinary.com/lopopoa2/image/upload/v1511665194/pexels-photo-57690_bg9u2l.jpg",
   extra_image_url: "http://res.cloudinary.com/lopopoa2/image/upload/v1511665191/pexels-photo-436775_pm9ika.jpg",
   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel commodo turpis. Vestibulum rutrum porttitor lacus, at interdum arcu feugiat vitae. Duis aliquam tortor dignissim facilisis malesuada. Donec et venenatis ligula, at scelerisque ex. Nulla ligula mauris, tincidunt at tellus in, accumsan pharetra est. Vestibulum placerat sed quam vitae rutrum. Mauris quis viverra libero. Sed rhoncus turpis vitae metus egestas commodo. Sed consectetur at elit ac laoreet. Suspendisse molestie sapien tristique augue sollicitudin, vitae semper enim tincidunt. Quisque accumsan diam tempus lorem egestas, venenatis dapibus neque lobortis. In pulvinar fringilla ex quis gravida. Praesent lacus lectus, consequat et justo non, ultricies ultrices massa. Maecenas venenatis faucibus dui ut mattis.",
-  goal: 25000, money_raised: 0, backers: 0)
+  goal: 25000, money_raised: 11230, backers: 0)
 
 Project.create(
   title: "The Benderneers", creator_id: 1, category: "music",
   main_image_url: "http://res.cloudinary.com/lopopoa2/image/upload/v1511665933/abstract-music-rock-bw_sslkmq.jpg",
   extra_image_url: "http://res.cloudinary.com/lopopoa2/image/upload/v1511665932/pexels-photo-257904_f1zpwi.jpg",
   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel commodo turpis. Vestibulum rutrum porttitor lacus, at interdum arcu feugiat vitae. Duis aliquam tortor dignissim facilisis malesuada. Donec et venenatis ligula, at scelerisque ex. Nulla ligula mauris, tincidunt at tellus in, accumsan pharetra est. Vestibulum placerat sed quam vitae rutrum. Mauris quis viverra libero. Sed rhoncus turpis vitae metus egestas commodo. Sed consectetur at elit ac laoreet. Suspendisse molestie sapien tristique augue sollicitudin, vitae semper enim tincidunt. Quisque accumsan diam tempus lorem egestas, venenatis dapibus neque lobortis. In pulvinar fringilla ex quis gravida. Praesent lacus lectus, consequat et justo non, ultricies ultrices massa. Maecenas venenatis faucibus dui ut mattis.",
-  goal: 10000, money_raised: 0, backers: 0)
+  goal: 10000, money_raised: 490, backers: 0)

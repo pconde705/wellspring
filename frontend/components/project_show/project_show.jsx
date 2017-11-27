@@ -13,7 +13,7 @@ class ProjectShow extends React.Component {
   }
 
   setLine() {
-    let bar_width = (100 / this.props.project.undefined.projects.goal) * this.props.project.undefined.projects.money_raised
+    let bar_width = (100 / this.props.project.goal) * this.props.project.money_raised
     if (bar_width > 100) {
       return {width: "100%"}
     } else {
@@ -22,7 +22,7 @@ class ProjectShow extends React.Component {
   }
 
   greyLine() {
-    let bar_width = (100 / this.props.project.undefined.projects.goal) * this.props.project.undefined.projects.money_raised
+    let bar_width = (100 / this.props.project.goal) * this.props.project.money_raised
     if (bar_width > 100) {
       return {width: "0px"}
     } else {
@@ -32,8 +32,9 @@ class ProjectShow extends React.Component {
   }
 
   render () {
-    // console.log(this.props.project.undefined);
-    if (this.props.project.undefined === undefined) {
+    // console.log(this.props);
+    const {project} = this.props;
+    if (project === undefined) {
       return ("")
     } else {
       return (
@@ -41,25 +42,25 @@ class ProjectShow extends React.Component {
           <div className="show-top-half">
             <div className="show-icon-and-title">
             <div className="show-creator-icon">
-              <p>Created By {this.props.project.undefined.projects.user}</p>
+              <p>Created By {project.user}</p>
             </div>
             <div className="show-title">
               <h1>
-                {this.props.project.undefined.projects.title}
+                {project.title}
               </h1>
             </div>
           </div>
             <div className="show-img-and-goals">
-              <img src={this.props.project.undefined.projects.main_image_url} />
+              <img src={project.main_image_url} />
               <div className="show-goals-only">
                 <div className="show-goals-numbers-only">
                   <div className="show-lines">
                     <div className="show-completion-line" style={this.setLine()}></div>
                     <div className="show-grey-line" style={this.greyLine()}></div>
                   </div>
-                  <h2>${this.props.project.undefined.projects.money_raised}</h2>
-                  <p>pledged of ${this.props.project.undefined.projects.goal} goal</p>
-                  <h2>{this.props.project.undefined.projects.backers}</h2>
+                  <h2>${project.money_raised}</h2>
+                  <p>pledged of ${project.goal} goal</p>
+                  <h2>{project.backers}</h2>
                   <p>backers</p>
                   <h2>29</h2>
                   <p>days to go</p>
@@ -72,8 +73,8 @@ class ProjectShow extends React.Component {
           <div className="show-bottom-half">
             <div className="show-description">
               <h2>About</h2>
-              <p>{this.props.project.undefined.projects.description}</p>
-              <img src={this.props.project.undefined.projects.extra_image_url} />
+              <p>{project.description}</p>
+              <img src={project.extra_image_url} />
             </div>
             <div className="show-backer-rewards">
               <ul>
