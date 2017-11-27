@@ -1,0 +1,30 @@
+.reward-create-form {
+  position: absolute;
+  left: 60%;
+  top: 150px;
+  background-color: white;
+  padding: 50px;
+  border-radius: 100px;
+  box-shadow: 1px 1px 5px #39ff3d;
+}
+
+.reward-form-header {
+  color: #39ff3d;
+  font-size: 60px;
+  font-weight: 500;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.reward-buttton {
+  background-color: #3affe8;
+  color: white;
+  font-family: Helvetica;
+  font-weight: 500;
+  font-size: 17px;
+  margin-left: 120px;
+  padding: 25px 50px;
+  letter-spacing: 0.8px;
+  margin-top: 30px;
+  border-radius: 15px;
+}

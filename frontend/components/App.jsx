@@ -8,6 +8,7 @@ import Statistics from './statistics'
 import ProjectIndexContainer from './project_index/project_index_container';
 import ProjectFormContainer from './project_form/project_form_container';
 import ProjectShowContainer from './project_show/project_show_container';
+// import RewardContainer from './reward/reward_container';
 
 const App = () => (
   <div>
@@ -32,3 +33,5 @@ export default App;
 // You want exact path or else the ProjectIndexContainer will render on every page
 
 // Ask why we write it like so :id after projects
+
+// We'll use the rewards creator in the ProjectShowContainer

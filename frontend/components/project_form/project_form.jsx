@@ -1,5 +1,6 @@
 import React from 'react';
 import ProjectFormImage from './project_form_image';
+import Reward from '../reward/reward';
 
 class ProjectForm extends React.Component {
   constructor(props) {
@@ -70,7 +71,7 @@ class ProjectForm extends React.Component {
             </li>
             <li>
               <h3>How much do you hope to raise:</h3>
-              <input className="form-input-field" type="text" placeholder="Goal" onChange={this.handleInput('goal')} ></input>
+              $<input className="form-input-field" type="number" placeholder="10000" onChange={this.handleInput('goal')} ></input>
             </li>
             <li>
               <h3>Choose an image:</h3>
@@ -88,6 +89,7 @@ class ProjectForm extends React.Component {
           </ol>
           <button className="project-submit-button" onClick={this.handleSubmit}>Create Project</button>
         </form>
+        <Reward />
       </div>
     )
   }

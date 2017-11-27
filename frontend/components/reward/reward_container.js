@@ -7,7 +7,7 @@ const mapStateToProps = state => ({
 });
 
 const mapDispatchToProps = dispatch => ({
-
+  createReward: (reward) => dispatch(createReward(reward))
 });
 
 export default connect(
