@@ -5,7 +5,7 @@ import RewardContainer from '../reward/reward_container';
 class ProjectForm extends React.Component {
   constructor(props) {
     super(props)
-    this.state = {title: "", category: "arts", description: "", goal: 0, main_image_url: "", extra_image_url: "", money_raised: 0, backers: 0}
+    this.state = {title: "", category: "arts", description: "", goal: 1, main_image_url: "", extra_image_url: "", money_raised: 0, backers: 0}
     this.handleSubmit = this.handleSubmit.bind(this)
     this.setImageUrl = this.setImageUrl.bind(this)
     // this.setExtraImageUrl = this.setExtraImageUrl.bind(this)
@@ -31,7 +31,8 @@ class ProjectForm extends React.Component {
   handleSubmit(e) {
     e.preventDefault();
     const project = Object.assign({}, this.state)
-    this.props.createProject(project).then( () =>
+    this.props.createProject(project)
+      .then( () =>
       this.props.history.push('/')
     );
   }
@@ -109,7 +110,6 @@ class ProjectForm extends React.Component {
           <br />
           {this.renderErrors()}
         </form>
-        <RewardContainer />
       </div>
     )
   }
@@ -117,5 +117,5 @@ class ProjectForm extends React.Component {
 
 export default ProjectForm;
 
-// On Line 92 where RewardContainer is being rendered. You must always render the container, never the JSX file!!!
+// On Line 92 where RewardContainer (used to be) is being rendered. You must always render the container, never the JSX file!!!
 // The JSX file is included automatically in the container!!

@@ -26,7 +26,7 @@ class Reward extends React.Component {
 
 
   render () {
-    // console.log(this.props);
+    console.log(this.props);
     return (
       <form className="reward-create-form">
         <h1 className="reward-form-header">Create Rewards</h1>
@@ -57,7 +57,7 @@ class Reward extends React.Component {
               onChange={this.handleInput("reward_date")}></input>
           </li>
         </ol>
-        <button className="reward-buttton" onClick={this.handleSubmit}>Create Reward</button>
+        <button className="reward-button" onClick={this.handleSubmit}>Create Reward</button>
       </form>
     )
   }

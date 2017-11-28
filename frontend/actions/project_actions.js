@@ -43,6 +43,8 @@ export const createProject = (project) => dispatch => (
   ProjectApiUtil.createProject(project).then(project => dispatch(receiveSingleProject(project)),
   error => (dispatch(receiveProjectErrors(error.responseJSON))))
 );
+// The above error handling didn't work at first because their was a third parenthasis after receiveSingleProject(project))
+// which meant that the error function wasn't being called inside the then promise
 
 export const editProject = (id) => dispatch => (
   ProjectApiUtil.editProject(id).then(project => dispatch(receiveSingleProject(project)),
