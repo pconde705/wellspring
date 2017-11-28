@@ -1,4 +1,6 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
+
 
 class ProjectShow extends React.Component {
   constructor(props) {
@@ -30,7 +32,7 @@ class ProjectShow extends React.Component {
       return {width: `${greyWidth}%`}
     }
   }
-  
+
   render () {
     // console.log(this.props);
     const {project} = this.props;
@@ -80,6 +82,7 @@ class ProjectShow extends React.Component {
               <ul>
                 <li>
                   <h2>Support</h2>
+                  <Link to={`/projects/${project.id}/rewards`}>Add a reward</Link>
                 </li>
                 <li>
                   <div className="show-reward">

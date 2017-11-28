@@ -8,7 +8,7 @@ import Statistics from './statistics'
 import ProjectIndexContainer from './project_index/project_index_container';
 import ProjectFormContainer from './project_form/project_form_container';
 import ProjectShowContainer from './project_show/project_show_container';
-// import RewardContainer from './reward/reward_container';
+import RewardContainer from './reward/reward_container';
 
 const App = () => (
   <div>
@@ -16,10 +16,11 @@ const App = () => (
     <Route exact path="/" component={Statistics} />
 
     <ProtectedRoute path="/project/new" component={ProjectFormContainer} />
+    <ProtectedRoute exact path="/projects/:project_id/rewards" component={RewardContainer} />
     <Route exact path="/" component={ProjectIndexContainer} />
     <AuthRoute path="/login" component={SessionFormContainer} />
     <AuthRoute path="/signup" component={SessionFormContainer} />
-    <Route path="/projects/:id" component={ProjectShowContainer} />
+    <Route exact path="/projects/:id" component={ProjectShowContainer} />
   </div>
 );
 
@@ -33,5 +34,3 @@ export default App;
 // You want exact path or else the ProjectIndexContainer will render on every page
 
 // Ask why we write it like so :id after projects
-
-// We'll use the rewards creator in the ProjectShowContainer
