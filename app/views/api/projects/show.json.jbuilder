@@ -7,4 +7,5 @@ json.projects do
     :main_image_url, :extra_image_url,
     :description, :goal, :backers
     json.user @project.user.username
+    json.rewards @project.rewards
 end

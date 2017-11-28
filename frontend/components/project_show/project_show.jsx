@@ -33,10 +33,14 @@ class ProjectShow extends React.Component {
     }
   }
 
+  propsToPassOn() {
+    return this.props.project
+  }
+
   render () {
     // console.log(this.props);
     const {project} = this.props;
-    if (project === undefined) {
+    if (project === undefined || project.rewards === undefined) {
       return ("")
     } else {
       return (
@@ -82,21 +86,25 @@ class ProjectShow extends React.Component {
               <ul>
                 <li>
                   <h2>Support</h2>
-                  <Link to={`/projects/${project.id}/rewards`}>Add a reward</Link>
+                    <Link className="add-reward-link" to={`/projects/${project.id}/rewards`}>
+                      <div className="show-reward">Add a reward</div>
+                    </Link>
                 </li>
                 <li>
-                  <div className="show-reward">
-                    <p className="show-reward-title">Pledge $1 or more</p>
-                    <p className="show-reward-subtitle">Just want to help out</p>
-                    <p className="show-reward-description">Not interested in any reward but want to help out. Any amount, small or large, helps us reach our long-term goals.</p>
-                    <p className="show-reward-p">INCLUDES:</p>
-                    <ul>
-                      <li>Thank you!</li>
-                    </ul>
-                    <p className="show-reward-p">ESTIMATED DELIVERY</p>
-                    <p className="show-reward-date">Dec 2018</p>
-                    <p className="show-reward-backers">0 backers</p>
-                  </div>
+                  {project.rewards.map((reward, key) => (
+                    <div key={key} className="show-reward">
+                      <p className="show-reward-title">Pledge ${reward.amount} or more</p>
+                      <p className="show-reward-subtitle">{reward.reward_subtitle}</p>
+                      <p className="show-reward-description">{reward.reward_description}</p>
+                      <p className="show-reward-p">INCLUDES:</p>
+                      <ul>
+                        <li>{reward.includes}</li>
+                      </ul>
+                      <p className="show-reward-p">ESTIMATED DELIVERY</p>
+                      <p className="show-reward-date">{reward.reward_date}</p>
+                      <p className="show-reward-backers">{reward.reward_backers} backers</p>
+                    </div>
+                  ))}
                 </li>
               </ul>
             </div>

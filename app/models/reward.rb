@@ -16,11 +16,12 @@
 
 class Reward < ApplicationRecord
 
-  validates :project_id, :amount, :reward_subtitle, :reward_description, presence: true
+  validates :project_id, :includes, :reward_date, presence: true
+  validates :amount, :reward_subtitle, :reward_description, presence: true, uniqueness: true
 
   belongs_to :project,
     class_name: :Project,
     foreign_key: :project_id
 
-    
+
 end

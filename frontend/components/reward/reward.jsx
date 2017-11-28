@@ -11,7 +11,7 @@ class Reward extends React.Component {
   handleSubmit(e) {
     e.preventDefault();
     const reward = Object.assign({}, this.state)
-    this.props.createReward(this.props.project_id, reward).then(
+    this.props.createReward(this.props.match.params.project_id, reward).then(
       this.setState({
         amount: 0, reward_subtitle: "", reward_description: "", includes: "", reward_backers: 0, reward_date: "Dec 2018"
       })
@@ -26,7 +26,7 @@ class Reward extends React.Component {
 
 
   render () {
-    console.log(this.props);
+    // console.log(this.props);
     return (
     <div className="project-create-div">
       <img className="background-form-image" src="http://res.cloudinary.com/lopopoa2/image/upload/v1511832600/pexels-photo-317356_dqal7m.jpg" ></img>

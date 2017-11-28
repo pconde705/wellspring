@@ -1,0 +1,75 @@
+.add-reward-link {
+  text-decoration: none;
+  display: flex;
+  color: black;
+}
+
+.add-reward-link:hover {
+  color: #037362;
+}
+
+.show-backer-rewards {
+  margin-top: 50px;
+  display: flex;
+  padding-left: 50px;
+}
+
+.show-backer-rewards ul li {
+  list-style-type: none;
+}
+
+.show-reward{
+  margin-right: 10px;
+  border: 1px solid #DCDEDD;
+  padding: 20px;
+  width: 270px;
+  margin-bottom: 20px;
+}
+
+.show-reward-title {
+  font-size: 18px;
+  font-weight: bolder;
+  margin-bottom: 15px;
+}
+
+.show-reward-subtitle {
+  font-size: 16px;
+  font-weight: bolder;
+  margin-bottom: 15px;
+}
+
+.show-reward-description {
+  color: #656969;
+  font-size: 14px;
+}
+
+.show-reward-p {
+  color: #656969;
+  font-size: 10px;
+  letter-spacing: 1px;
+  margin-top: 20px;
+}
+
+.show-reward ul li {
+  list-style-type: disc;
+  margin-left: 30px;
+  font-weight: bolder;
+  font-size: 13px;
+  letter-spacing: 1px;
+  margin-top: 4px;
+  margin-bottom: 25px;
+}
+
+.show-reward-date {
+  font-size: 14px;
+  margin-top: 2px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+.show-reward-backers {
+  color: #656969;
+  font-size: 12px;
+  letter-spacing: 1px;
+  margin-bottom: 25px;
+}
