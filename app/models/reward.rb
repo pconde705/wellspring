@@ -17,7 +17,8 @@
 class Reward < ApplicationRecord
 
   validates :project_id, :includes, :reward_date, presence: true
-  validates :amount, :reward_subtitle, :reward_description, presence: true, uniqueness: true
+  validates :amount, :reward_subtitle, :reward_description, presence: true
+  # uniqueness: true access all the rewards for every project. How do you just access one instance?
 
   belongs_to :project,
     class_name: :Project,

@@ -1,16 +1,16 @@
 import {connect} from 'react-redux';
 import Reward from './reward';
-import {createReward} from '../../actions/reward_actions';
+import {createReward, clearErrors} from '../../actions/reward_actions';
 import {selectAllRewards} from '../../reducers/selectors';
 
 const mapStateToProps = (state, {project_id}) => {
   return {
-    rewards: selectAllRewards(state, project_id),
-    project_id
+  errors: state.errors.reward
 }};
 
 const mapDispatchToProps = dispatch => ({
-  createReward: (...reward) => dispatch(createReward(...reward))
+  createReward: (...reward) => dispatch(createReward(...reward)),
+  clearErrors: () => dispatch(clearErrors())
 });
 
 export default connect(

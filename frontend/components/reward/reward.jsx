@@ -14,7 +14,7 @@ class Reward extends React.Component {
     this.props.createReward(this.props.match.params.project_id, reward).then(
       this.setState({
         amount: 0, reward_subtitle: "", reward_description: "", includes: "", reward_backers: 0, reward_date: "Dec 2018"
-      }), this.props.history.push(`/projects/${this.props.match.params.project_id}`)
+      })
     );
   }
 
@@ -24,6 +24,23 @@ class Reward extends React.Component {
     }
   }
 
+  renderErrors() {
+    return (
+      <div className="error-messages">
+        <ul>
+          {this.props.errors.map((error) => (
+            <li>
+              {error}
+            </li>
+          ))}
+        </ul>
+      </div>
+    )
+  }
+
+  componentWillMount() { // didMount is more gernerally used for ajax requests, which clearErrors does not.
+    this.props.clearErrors();
+  }
 
   render () {
     // console.log(this.props);
@@ -60,6 +77,7 @@ class Reward extends React.Component {
           </li>
         </ol>
         <button className="reward-button" onClick={this.handleSubmit}>Create Reward</button>
+        {this.renderErrors()}
       </form>
     </div>
     )

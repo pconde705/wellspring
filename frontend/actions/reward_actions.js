@@ -23,5 +23,6 @@ const receiveReward = (reward) => ({
 });
 
 export const createReward = (project_id, reward) => dispatch => (
-  postRewards(project_id, reward).then(newReward => dispatch(receiveReward(newReward)))
+  postRewards(project_id, reward).then(newReward => dispatch(receiveReward(newReward)),
+  error => (dispatch(receiveProjectErrors(error.responseJSON))))
 );
