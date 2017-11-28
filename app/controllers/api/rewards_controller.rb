@@ -12,6 +12,17 @@ class Api::RewardsController < ApplicationController
     end
   end
 
+  def update
+    @reward = Reward.find(params[:id])
+    @reward.project_id = params[:project_id]
+
+    if @reward.update(reward_params)
+      render :show
+    else
+      render json: @reward.errors.full_messages, status: 422
+    end
+  end
+
   private
   def reward_params
     params.require(:reward).permit(:project_id, :amount, :reward_subtitle, :reward_description, :includes, :reward_date, :reward_backers)

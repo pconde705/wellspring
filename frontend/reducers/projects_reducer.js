@@ -24,3 +24,14 @@ const projectsReducer = (oldState = {}, action) => {
 export default projectsReducer;
 
 // undefined error came because of action.project.id instead of the plural action.projects.id
+
+// export const SearchReducer = (state = {}, action) => {
+//   Object.freeze(state)
+//
+//   switch (action.type) {
+//     case RECEIVE_SEARCH_RESULTS:
+//
+//     default:
+//       return state;
+//   }
+// }

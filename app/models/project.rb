@@ -32,4 +32,10 @@ class Project < ApplicationRecord
     foreign_key: :project_id
 
 
+  def self.top_five_results(query_param)
+    param = '%' + query_param.downcase + '%'
+    Project.where('lower(title) LIKE ?', param).limit(5)
+  end
+  
+
 end

@@ -49,6 +49,7 @@ class ProjectShow extends React.Component {
     // the edited event will be received by the store, and be returned, when the reducer receives the action all th ec omponents will automatically
     // re-render.
     // look in to custom routes,
+    // You need a redux cycle
   }
 
   render () {
