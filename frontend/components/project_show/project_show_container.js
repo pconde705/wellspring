@@ -7,7 +7,7 @@ const mapStateToProps = (state, ownProps) => {
   // console.log(ownProps);
   return {
     project: state.projects[ownProps.match.params.id],
-    // currentUser: state.session.currentUser,
+    currentUser: state.session.currentUser,
 }};
 //  Ask about undefined, and why it needs to load twice before getting the data
 

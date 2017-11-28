@@ -38,7 +38,7 @@ class ProjectShow extends React.Component {
   }
 
   render () {
-    // console.log(this.props);
+    console.log(this.props.currentUser);
     const {project} = this.props;
     if (project === undefined || project.rewards === undefined) {
       return ("")
@@ -86,9 +86,11 @@ class ProjectShow extends React.Component {
               <ul>
                 <li>
                   <h2>Support</h2>
+                  {project.creator_id === this.props.currentUser.id ?
                     <Link className="add-reward-link" to={`/projects/${project.id}/rewards`}>
                       <div className="show-reward">Add a reward</div>
                     </Link>
+                  : ""}
                 </li>
                 <li>
                   {project.rewards.map((reward, key) => (
