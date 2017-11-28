@@ -9,7 +9,7 @@ class ProjectShow extends React.Component {
     this.setLine = this.setLine.bind(this);
     this.greyLine = this.greyLine.bind(this);
     this.clickReward = this.clickReward.bind(this);
-    this.state = {reward_backers: 0}
+
   }
 
   componentDidMount() {
@@ -34,18 +34,25 @@ class ProjectShow extends React.Component {
       return {width: `${greyWidth}%`}
     }
   }
-
-  propsToPassOn() {
-    return this.props.project
-  }
+  //
+  // propsToPassOn() {
+  //   return this.props.project
+  // }
 
   clickReward(reward) {
-    return (
-      reward.reward_backers += 1
-    )
+    console.log(this.props.project);
+    console.log(reward);
+    // return (
+    //   this.setState(this.props.project.backers: 1)
+    // )
+    // dispatch to the database, update event, patch request, db sends up the edited event,
+    // the edited event will be received by the store, and be returned, when the reducer receives the action all th ec omponents will automatically
+    // re-render.
+    // look in to custom routes,
   }
 
   render () {
+    // console.log(this.state);
     const {project} = this.props;
     if (project === undefined || project.rewards === undefined) {
       return ("")
