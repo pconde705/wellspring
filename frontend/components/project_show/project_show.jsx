@@ -6,8 +6,10 @@ class ProjectShow extends React.Component {
   constructor(props) {
     super(props)
 
-    this.setLine = this.setLine.bind(this)
-    this.greyLine = this.greyLine.bind(this)
+    this.setLine = this.setLine.bind(this);
+    this.greyLine = this.greyLine.bind(this);
+    this.clickReward = this.clickReward.bind(this);
+    this.state = {reward_backers: 0}
   }
 
   componentDidMount() {
@@ -37,8 +39,13 @@ class ProjectShow extends React.Component {
     return this.props.project
   }
 
+  clickReward(reward) {
+    return (
+      reward.reward_backers += 1
+    )
+  }
+
   render () {
-    console.log(this.props.currentUser);
     const {project} = this.props;
     if (project === undefined || project.rewards === undefined) {
       return ("")
@@ -94,7 +101,7 @@ class ProjectShow extends React.Component {
                 </li>
                 <li>
                   {project.rewards.map((reward, key) => (
-                    <div key={key} className="show-reward">
+                    <div key={key} className="show-reward" onClick={() => this.clickReward(reward)}>
                       <p className="show-reward-title">Pledge ${reward.amount} or more</p>
                       <p className="show-reward-subtitle">{reward.reward_subtitle}</p>
                       <p className="show-reward-description">{reward.reward_description}</p>

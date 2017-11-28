@@ -20,6 +20,14 @@ class User < ApplicationRecord
 
   has_many :projects
 
+  has_many :rewards,
+    through: :projects,
+    source: :rewards
+
+  has_many :backed_projects,
+    class_name: :ProjectBacker,
+    foreign_key: :backer_id
+
   attr_reader :password
 
   after_initialize :ensure_session_token

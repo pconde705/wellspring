@@ -24,6 +24,11 @@
   padding: 20px;
   width: 270px;
   margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.show-reward:hover {
+  background-color: lightgreen;
 }
 
 .show-reward-title {

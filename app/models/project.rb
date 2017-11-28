@@ -27,5 +27,9 @@ class Project < ApplicationRecord
 
   has_many :rewards
 
+  has_many :project_backers,
+    class_name: :ProjectBacker,
+    foreign_key: :project_id
+
 
 end
