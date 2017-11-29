@@ -3,6 +3,7 @@ import {Link} from 'react-router-dom';
 
 const Navbar = ({currentUser, logout}) => {
   if (currentUser) {
+    console.log(currentUser);
     return (
       <div className="navbar">
         <ul className="navbar-ul-left">
