@@ -1,8 +1,9 @@
 class Api::ProjectBackersController < ApplicationController
   def create_backer
     @backer = ProjectBacker.new(project_backer_params)
+    @backer.backer_id = current_user.id
     if @backer.save
-      @project = Project.find_by(id: project_backer_params[:id])
+      @project = Project.find_by(id: project_backer_params[:project_id])
       render 'api/projects/show'
     else
       render @backer.errors.full_messages, status: 422

@@ -14,9 +14,11 @@ class Backer extends React.Component {
   clickProject() {
     // console.log(this.props.project);
     const pro_id = this.props.project.id
-    this.setState({project_id: pro_id, reward_id: null})
-    const newState = Object.assign({}, this.state)
-    this.props.createProjectBackers(this.props.project)
+    const rew_id = this.props.reward.id
+    this.setState({project_id: pro_id, reward_id: rew_id}, () => (
+
+      this.props.createProjectBackers(this.state)
+    ))
   }
 
   clickReward() {

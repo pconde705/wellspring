@@ -25,7 +25,7 @@ class Search extends React.Component {
     // console.log(this.props);
     return (
       <li>
-      <input value={this.state.searchValue} type="text" placeholder="Search for a project"
+      <input className="search-input" value={this.state.searchValue} type="text" placeholder="Search for a project"
         onChange={this.handleInput}>
       </input>
       <i className="fa fa-search" aria-hidden="true"></i>

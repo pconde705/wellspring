@@ -24,6 +24,6 @@ const receiveReward = reward => ({
 // );
 
 
-export const createProjectBackers = (project_id, reward_id, cash_only) => dispatch => (
+export const createProjectBackers = ({project_id, reward_id, cash_only}) => dispatch => (
   postProjectBackers(project_id, reward_id, cash_only).then(project => dispatch(receiveProject(project)))
 );

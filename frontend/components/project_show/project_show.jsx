@@ -47,8 +47,7 @@ class ProjectShow extends React.Component {
   handleSubmit(e) {
     e.preventDefault();
     const pro_id = this.props.project.id
-    const rew_id = this.props.reward.id
-    this.setState({project_id: pro_id, reward_id: rew_id})
+    this.setState({project_id: pro_id, reward_id: null})
     const newState = Object.assign({}, this.state)
     this.props.createProjectBackers(newState)
   }
