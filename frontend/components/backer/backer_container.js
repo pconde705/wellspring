@@ -1,5 +1,5 @@
 import {connect} from 'react-redux';
-import {editProjectBackers, editProjectRewards} from '../../actions/backer_actions';
+import {createProjectBackers} from '../../actions/backer_actions';
 import Backer from './backer';
 
 const mapStateToProps = (state, ownProps) => {
@@ -10,8 +10,8 @@ const mapStateToProps = (state, ownProps) => {
 };
 
 const mapDispatchToProps = dispatch => ({
-  editProjectBackers: (project) => dispatch(editProjectBackers(project)),
-  editProjectRewards: (...reward) => dispatch(editProjectRewards(...reward))
+  createProjectBackers: (project) => dispatch(createProjectBackers(project)),
+  // editProjectRewards: (...reward) => dispatch(editProjectRewards(...reward))
 });
 
 export default connect(

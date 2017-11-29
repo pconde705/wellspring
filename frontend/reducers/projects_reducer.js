@@ -33,7 +33,7 @@ export const searchReducer = (state = {}, action) => {
 
   switch (action.type) {
     case RECEIVE_SEARCH_RESULTS:
-      action.searchResults;
+      return action.searchResults;
     default:
       return state;
   }

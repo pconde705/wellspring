@@ -17,3 +17,7 @@ export const selectAllRewards = ({rewards}, project_id) => {
   });
   return reward_array;
 };
+
+export const searchResults = state => (
+  values(state.search)
+);

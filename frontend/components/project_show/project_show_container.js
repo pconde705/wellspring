@@ -1,7 +1,7 @@
 import {connect} from 'react-redux';
 import ProjectShow from './project_show';
 import {fetchSingleProject} from '../../actions/project_actions';
-import {editProjectBackers} from '../../actions/backer_actions';
+import {createProjectBackers} from '../../actions/backer_actions';
 
 const mapStateToProps = (state, ownProps) => {
   // console.log(state);
@@ -14,7 +14,7 @@ const mapStateToProps = (state, ownProps) => {
 
 const mapDispatchToProps = dispatch => ({
   fetchSingleProject: (id) => dispatch(fetchSingleProject(id)),
-  editProjectBackers: (project) => dispatch(editProjectBackers(project))
+  createProjectBackers: (project) => dispatch(createProjectBackers(project))
 });
 
 export default connect(

@@ -10,7 +10,7 @@ class ProjectShow extends React.Component {
 
     this.setLine = this.setLine.bind(this);
     this.greyLine = this.greyLine.bind(this);
-    this.state = {amount: 0}
+    this.state = {project_id: null, reward_id: null, cash_only: 0}
     this.handleSubmit = this.handleSubmit.bind(this)
 
   }
@@ -46,9 +46,11 @@ class ProjectShow extends React.Component {
 
   handleSubmit(e) {
     e.preventDefault();
+    const pro_id = this.props.project.id
+    const rew_id = this.props.reward.id
+    this.setState({project_id: pro_id, reward_id: rew_id})
     const newState = Object.assign({}, this.state)
-    this.props.project.money_raised = parseInt(this.props.project.money_raised) + parseInt(newState.amount);
-    this.props.editProjectBackers(this.props.project)
+    this.props.createProjectBackers(newState)
   }
 
   render () {
@@ -86,7 +88,7 @@ class ProjectShow extends React.Component {
                   <p>days to go</p>
                 </div>
                 <form className="show-add-money">
-                  <input className="show-add-money-input" onChange={this.addMoney('amount')} type="number" placeholder="Enter amount you wish to donate"></input>
+                  <input className="show-add-money-input" onChange={this.addMoney('cash_only')} type="number" placeholder="Enter amount you wish to donate"></input>
                   <button onClick={this.handleSubmit} className="show-backer-button">Back this project</button>
                 </form>
               </div>
@@ -110,7 +112,7 @@ class ProjectShow extends React.Component {
                     : ""}
                 </li>
                 <li>
-                  {project.rewards.map((reward, key) => (
+                  {project.rewards.sort((a, b) => a.amount > b.amount).map((reward, key) => (
                     <BackerContainer key={key} reward={reward} project={project} />
                   ))}
                 </li>

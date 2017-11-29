@@ -31,11 +31,29 @@ class Project < ApplicationRecord
     class_name: :ProjectBacker,
     foreign_key: :project_id
 
+  has_many :user_backers,
+    through: :project_backers,
+    source: :user
+
+  has_many :reward_backers,
+    through: :project_backers,
+    source: :reward
 
   def self.top_five_results(query_param)
     param = '%' + query_param.downcase + '%'
     Project.where('lower(title) LIKE ?', param).limit(5)
   end
-  
+
+  def total_amount_raised
+    first_value = reward_backers.where('cash_only IS NULL').sum(:amount)
+    second_value = reward_backers.where('cash_only IS NOT NULL').sum(:cash_only)
+    first_value + second_value
+  end
+
+  def total_number_of_backers
+    reward_backers.select(:user).distinct.count
+  end
+
+
 
 end
