@@ -16,7 +16,7 @@ class ProjectShow extends React.Component {
   }
 
   componentDidMount() {
-    this.props.fetchSingleProject(this.props.match.params.id)
+    this.props.fetchSingleProject(this.props.match.params.id);
   }
 
   setLine() {
@@ -37,10 +37,6 @@ class ProjectShow extends React.Component {
       return {width: `${greyWidth}%`}
     }
   }
-  //
-  // propsToPassOn() {
-  //   return this.props.project
-  // }
 
   addMoney(type) {
     return (e) => {
@@ -56,7 +52,7 @@ class ProjectShow extends React.Component {
   }
 
   render () {
-    console.log(this.props);
+    // console.log(this.props);
     const {project} = this.props;
     if (project === undefined || project.rewards === undefined) {
       return ("")
@@ -89,8 +85,8 @@ class ProjectShow extends React.Component {
                   <h2>29</h2>
                   <p>days to go</p>
                 </div>
-                <form>
-                  <input onChange={this.addMoney('amount')} type="number"></input>
+                <form className="show-add-money">
+                  <input className="show-add-money-input" onChange={this.addMoney('amount')} type="number" placeholder="Enter amount you wish to donate"></input>
                   <button onClick={this.handleSubmit} className="show-backer-button">Back this project</button>
                 </form>
               </div>

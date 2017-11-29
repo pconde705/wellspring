@@ -95,3 +95,14 @@
 .show-description img {
   margin-top: 50px;
 }
+
+.show-add-money {
+  display: flex;
+  flex-direction: column;
+}
+
+.show-add-money-input {
+  border: 1px solid #009E74;
+  border-radius: 5px;
+  font-size: 20px;
+}
