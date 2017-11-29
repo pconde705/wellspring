@@ -1,7 +1,7 @@
 // jshint esversion: 6
 
 import {RECEIVE_ALL_PROJECTS, RECEIVE_SINGLE_PROJECT, REMOVE_PROJECT} from '../actions/project_actions';
-import {RECEIVE_SEARCH_RESULTS} from '../actions/search_actions';
+import {RECEIVE_SEARCH_RESULTS, CLEAR_SEARCH_RESULTS} from '../actions/search_actions';
 import merge from 'lodash/merge';
 
 
@@ -34,6 +34,8 @@ export const searchReducer = (state = {}, action) => {
   switch (action.type) {
     case RECEIVE_SEARCH_RESULTS:
       return action.searchResults;
+    case CLEAR_SEARCH_RESULTS:
+      return {}
     default:
       return state;
   }

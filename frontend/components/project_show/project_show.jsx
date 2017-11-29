@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import BackerContainer from '../backer/backer_container';
-//  Where you want to render your JSX file you must render the container!!!!!
+// Where you want to render your JSX file you must render the container!!!!!
 // Hence we import the backer container!!!
 
 class ProjectShow extends React.Component {
@@ -10,7 +10,7 @@ class ProjectShow extends React.Component {
 
     this.setLine = this.setLine.bind(this);
     this.greyLine = this.greyLine.bind(this);
-    this.state = {project_id: null, reward_id: null, cash_only: 0}
+    this.state = {project_id: null, reward_id: null, cash_only: null}
     this.handleSubmit = this.handleSubmit.bind(this)
 
   }
@@ -18,6 +18,13 @@ class ProjectShow extends React.Component {
   componentDidMount() {
     this.props.fetchSingleProject(this.props.match.params.id);
   }
+
+  componentWillReceiveProps(nextProps) {
+    if (this.props.match.params.id !== nextProps.match.params.id) {
+      this.props.fetchSingleProject(nextProps.match.params.id);
+    }
+  }
+  // This is done for search, as otherwise you will stay on the same page
 
   setLine() {
     let bar_width = (100 / this.props.project.goal) * this.props.project.money_raised
@@ -47,9 +54,10 @@ class ProjectShow extends React.Component {
   handleSubmit(e) {
     e.preventDefault();
     const pro_id = this.props.project.id
-    this.setState({project_id: pro_id, reward_id: null})
-    const newState = Object.assign({}, this.state)
-    this.props.createProjectBackers(newState)
+    this.setState({project_id: pro_id}, () => (
+
+      this.props.createProjectBackers(this.state)
+    ))
   }
 
   render () {

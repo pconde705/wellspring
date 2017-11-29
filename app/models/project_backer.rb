@@ -19,7 +19,8 @@ class ProjectBacker < ApplicationRecord
 
   belongs_to :reward,
     class_name: :Reward,
-    foreign_key: :reward_id
+    foreign_key: :reward_id,
+    optional: true
 
   belongs_to :user,
     class_name: :User,

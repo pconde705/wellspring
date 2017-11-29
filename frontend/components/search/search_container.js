@@ -1,6 +1,6 @@
 import {connect} from 'react-redux';
 import Search from './search';
-import {searchDatabase} from '../../actions/search_actions';
+import {searchDatabase, clearSearchResults} from '../../actions/search_actions';
 import {selectAllProjects} from '../../reducers/selectors';
 import {searchResults} from '../../reducers/selectors';
 
@@ -13,7 +13,8 @@ const mapStateToProps = (state) => {
 };};
 
 const mapDispatchToProps = (dispatch) => ({
-  searchDatabase: (query) => dispatch(searchDatabase(query))
+  searchDatabase: (query) => dispatch(searchDatabase(query)),
+  clearSearchResults: () => dispatch(clearSearchResults())
 });
 
 export default connect(

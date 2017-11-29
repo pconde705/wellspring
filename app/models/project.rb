@@ -45,13 +45,13 @@ class Project < ApplicationRecord
   end
 
   def total_amount_raised
-    first_value = reward_backers.where('cash_only IS NULL').sum(:amount)
-    second_value = reward_backers.where('cash_only IS NOT NULL').sum(:cash_only)
+    first_value = project_backers.where('cash_only != 0').sum(:cash_only)
+    second_value = reward_backers.sum(:amount)
     first_value + second_value
   end
 
   def total_number_of_backers
-    reward_backers.select(:user).distinct.count
+    user_backers.uniq.count
   end
 
 

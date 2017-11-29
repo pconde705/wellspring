@@ -19,6 +19,9 @@ class Search extends React.Component {
 
  resetSearch () {
    this.setState({searchValue: ""});
+   setTimeout( () => {
+     this.props.clearSearchResults();
+   }, 400);
  }
 
   render () {
@@ -26,10 +29,10 @@ class Search extends React.Component {
     return (
       <li>
       <input className="search-input" value={this.state.searchValue} type="text" placeholder="Search for a project"
-        onChange={this.handleInput}>
+        onChange={this.handleInput} onBlur={this.resetSearch}>
       </input>
       <i className="fa fa-search" aria-hidden="true"></i>
-      <SearchResults value={this.state.searchValue} reset={this.resetSearch} results={this.props.searchResults}/>
+      <SearchResults value={this.state.searchValue} results={this.props.searchResults}/>
       </li>
     )
   }

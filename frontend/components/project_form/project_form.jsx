@@ -32,8 +32,8 @@ class ProjectForm extends React.Component {
     e.preventDefault();
     const project = Object.assign({}, this.state)
     this.props.createProject(project)
-      .then( () =>
-      this.props.history.push('/')
+      .then( ({payload}) =>
+      this.props.history.push(`/projects/${payload.projects.id}`)
     );
   }
 
