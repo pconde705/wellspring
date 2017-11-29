@@ -20,5 +20,5 @@ const receiveReward = reward => ({
 });
 
 export const editProjectRewards = (project_id, reward) => dispatch => (
-  patchProjectRewards(project_id, reward).then(reward => dispatch(receiveReward(reward)))
+  patchProjectRewards(project_id, reward).then(editReward => dispatch(receiveReward(editReward)))
 );

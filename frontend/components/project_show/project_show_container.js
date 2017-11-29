@@ -1,6 +1,7 @@
 import {connect} from 'react-redux';
 import ProjectShow from './project_show';
 import {fetchSingleProject} from '../../actions/project_actions';
+import {editProjectBackers} from '../../actions/backer_actions';
 
 const mapStateToProps = (state, ownProps) => {
   // console.log(state);

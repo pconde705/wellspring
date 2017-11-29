@@ -1,10 +1,10 @@
 
 
 
-export const searchMusicDatabase = (query) => (
+export const searchTitles = (query) => (
   $.ajax({
     method: 'GET',
     url: 'api/search',
-    data: { search: {query}}
+    data: {query}
   })
-)
+);

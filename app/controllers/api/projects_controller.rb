@@ -1,5 +1,5 @@
 class Api::ProjectsController < ApplicationController
-  before_action :require_logged_in, only: [:create]
+  before_action :require_logged_in, only: [:create, :update]
 
   def index
     @projects = Project.all
@@ -24,7 +24,7 @@ class Api::ProjectsController < ApplicationController
 
   def update
     @project = Project.find(params[:id])
-    @project.creator_id = current_user.id
+
     if @project.update(project_params)
       render :show
     else

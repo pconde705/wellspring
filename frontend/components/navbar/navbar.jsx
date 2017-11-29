@@ -1,5 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+import SearchContainer from '../search/search_container';
 
 const Navbar = ({currentUser, logout}) => {
   if (currentUser) {
@@ -12,7 +13,7 @@ const Navbar = ({currentUser, logout}) => {
         </ul>
         <h2><Link className="main-title" to="/">WELLSPRING</Link></h2>
         <ul className="navbar-ul-right">
-          <li>Search<i className="fa fa-search" aria-hidden="true"></i></li>
+          <SearchContainer />
           <li><Link to="/" className="ul-link" onClick={logout}>Sign out ({currentUser.username})</Link></li>
         </ul>
       </div>
@@ -26,7 +27,7 @@ const Navbar = ({currentUser, logout}) => {
         </ul>
         <h2><Link className="main-title" to="/">WELLSPRING</Link></h2>
         <ul className="navbar-ul-right">
-          <li>Search<i className="fa fa-search" aria-hidden="true"></i></li>
+          <li><SearchContainer /><i className="fa fa-search" aria-hidden="true"></i></li>
           <li><Link to="/login" className="ul-link">Sign in</Link></li>
         </ul>
       </div>
