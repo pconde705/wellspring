@@ -5,6 +5,6 @@
       :id,
       :title,
       :category,
-      :description
+      :main_image_url
   end
 end

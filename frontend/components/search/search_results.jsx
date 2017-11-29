@@ -3,9 +3,6 @@ import {Link} from 'react-router-dom';
 
 class SearchResults extends React.Component {
 
-  componentWillMount() {
-    this.props.reset()
-  }
 
   render () {
     console.log(this.props);
@@ -13,9 +10,12 @@ class SearchResults extends React.Component {
       <div className="search-results-div">
         <ul>
           {this.props.results.map((result, key) => (
-            <Link key={key} to={`/projects/${result.id}`}><li>
-              {result.title}
-            </li></Link>
+            <Link className="search-link" key={key} to={`/projects/${result.id}`}>
+              <li id="search-results-li">
+              <img className="search-img" src={result.main_image_url}/>
+              <p>{result.title}</p>
+              </li>
+            </Link>
           ))}
         </ul>
       </div>

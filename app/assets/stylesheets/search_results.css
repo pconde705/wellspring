@@ -3,18 +3,42 @@
   flex-direction: column;
   position: absolute;
   background-color: white;
+  z-index: 2;
 }
 
-.search-results-div ul li {
+.search-link {
+  text-decoration: none;
+}
+
+#search-results-li {
   padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-decoration: none;
+  border: 1px solid lightgrey;
+}
+
+#search-results-li:hover {
+  background-color: #efeded;
+}
+
+#search-results-li p {
+  font-weight: 700;
+  padding: 15px;
   font-family: 'Roboto', sans-serif;
   color: black;
-  /*border-bottom: 1px solid black;*/
+  text-decoration: none;
+  font-size: 20px;
 }
 
 
 .search-input {
+  font-size: 15px;
   border: 0.5px solid #009E74;
   border-radius: 2px;
-  font-size: 15px;
+}
+
+.search-img {
+  width: 50px;
 }
