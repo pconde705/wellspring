@@ -4,7 +4,7 @@ import SearchContainer from '../search/search_container';
 
 const Navbar = ({currentUser, logout}) => {
   if (currentUser) {
-    console.log(currentUser);
+    // console.log(currentUser);
     return (
       <div className="navbar">
         <ul className="navbar-ul-left">
@@ -27,7 +27,7 @@ const Navbar = ({currentUser, logout}) => {
         </ul>
         <h2><Link className="main-title" to="/">WELLSPRING</Link></h2>
         <ul className="navbar-ul-right">
-          <li><SearchContainer /><i className="fa fa-search" aria-hidden="true"></i></li>
+          <li><SearchContainer /></li>
           <li><Link to="/login" className="ul-link">Sign in</Link></li>
         </ul>
       </div>

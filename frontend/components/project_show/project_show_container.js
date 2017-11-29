@@ -13,7 +13,8 @@ const mapStateToProps = (state, ownProps) => {
 //  Ask about undefined, and why it needs to load twice before getting the data
 
 const mapDispatchToProps = dispatch => ({
-  fetchSingleProject: (id) => dispatch(fetchSingleProject(id))
+  fetchSingleProject: (id) => dispatch(fetchSingleProject(id)),
+  editProjectBackers: (project) => dispatch(editProjectBackers(project))
 });
 
 export default connect(

@@ -10,6 +10,8 @@ class ProjectShow extends React.Component {
 
     this.setLine = this.setLine.bind(this);
     this.greyLine = this.greyLine.bind(this);
+    this.state = {amount: 0}
+    this.handleSubmit = this.handleSubmit.bind(this)
 
   }
 
@@ -40,9 +42,21 @@ class ProjectShow extends React.Component {
   //   return this.props.project
   // }
 
+  addMoney(type) {
+    return (e) => {
+      this.setState({ [type]: e.target.value })
+    }
+  }
+
+  handleSubmit(e) {
+    e.preventDefault();
+    const newState = Object.assign({}, this.state)
+    this.props.project.money_raised = parseInt(this.props.project.money_raised) + parseInt(newState.amount);
+    this.props.editProjectBackers(this.props.project)
+  }
 
   render () {
-    // console.log(this.props);
+    console.log(this.props);
     const {project} = this.props;
     if (project === undefined || project.rewards === undefined) {
       return ("")
@@ -75,7 +89,10 @@ class ProjectShow extends React.Component {
                   <h2>29</h2>
                   <p>days to go</p>
                 </div>
-                <button className="show-backer-button">Back this project</button>
+                <form>
+                  <input onChange={this.addMoney('amount')} type="number"></input>
+                  <button onClick={this.handleSubmit} className="show-backer-button">Back this project</button>
+                </form>
               </div>
             </div>
           </div>

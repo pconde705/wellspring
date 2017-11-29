@@ -11,7 +11,7 @@ class Backer extends React.Component {
   }
 
   clickProject() {
-    console.log(this.props.project);
+    // console.log(this.props.project);
     this.props.project.money_raised += this.props.reward.amount
     this.props.project.backers += 1
 
@@ -34,10 +34,7 @@ class Backer extends React.Component {
 
 
   render () {
-    var divStyle = {
-      background: "blue",
-    };
-    console.log(this.props);
+    // console.log(this.props);
     const {reward} = this.props
     return (
       <span onClick={() => this.clickReward()}>
