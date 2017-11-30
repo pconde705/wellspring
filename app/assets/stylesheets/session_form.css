@@ -27,6 +27,11 @@
   font-size: 14px;
 }
 
+.input-fields:focus {
+  border: 0.5px solid;
+  border-color: #009E74;
+}
+
 .input-fields::placeholder {
   font-size: 14px;
   font-weight: 100;

@@ -34,11 +34,16 @@
 
 
 .search-input {
+  padding: 5px 20px;
   font-size: 15px;
-  border: 0.5px solid #009E74;
   border-radius: 2px;
+  border: none;
 }
 
+.search-input:focus {
+  border-color: #009E74;
+  border: 0.5px solid #009E74;
+}
 .search-img {
   width: 50px;
 }

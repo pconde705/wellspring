@@ -20,11 +20,12 @@ class ProjectShow extends React.Component {
   }
 
   componentWillReceiveProps(nextProps) {
+    console.log("in CWRP");
     if (this.props.match.params.id !== nextProps.match.params.id) {
       this.props.fetchSingleProject(nextProps.match.params.id);
     }
   } // This is done for search, as otherwise you will stay on the same page
-
+  //
   // componentWillReceiveProps(nextProps) {
   //   if (this.props.project === undefined || this.props.project.rewards === undefined) {
   //     return ("")
@@ -62,10 +63,11 @@ class ProjectShow extends React.Component {
   handleSubmit(e) {
     e.preventDefault();
     const pro_id = this.props.project.id
-    this.setState({project_id: pro_id}, () => (
+    this.setState({project_id: pro_id}, () => {
+      console.log("in the setState", this.state)
 
-      this.props.createProjectBackers(this.state)
-    ))
+      return this.props.createProjectBackers(this.state)
+    })
   }
 
   render () {
