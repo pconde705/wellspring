@@ -16,13 +16,11 @@ class ProjectFormImage extends React.Component {
 
   render() {
     return (
-      <div className="upload-image-div">
         <button
           onClick={this.uploadWidget.bind(this)}
           className="project-image-button">
           Add Image
         </button>
-      </div>
     )
   }
 

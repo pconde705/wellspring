@@ -57,7 +57,7 @@ class ProjectForm extends React.Component {
 
 
   render() {
-    // console.log(this.state);
+    console.log(this.state);
     return (
       <div className="project-create-div">
         <img className="background-form-image" src="https://res.cloudinary.com/lopopoa2/image/upload/v1511547135/pexels-photo-209678_uxitpp.jpg" ></img>
@@ -89,7 +89,10 @@ class ProjectForm extends React.Component {
             <li>
               <h3>Choose an image:</h3>
               <p>This is the first thing people will see when they visit your page</p>
+              <div className="upload-image-div">
               <ProjectFormImage setImageUrl={this.setImageUrl('main_image_url')} />
+              <img className="project-image-chosen" src={this.state.main_image_url}></img>
+              </div>
             </li>
             <li>
               <h3>Describe your project:</h3>
@@ -97,7 +100,10 @@ class ProjectForm extends React.Component {
             </li>
             <li>
               <h3>Add an image for your description:</h3>
+              <div className="upload-image-div">
               <ProjectFormImage setImageUrl={this.setImageUrl('extra_image_url')} />
+              <img className="project-image-chosen" src={this.state.extra_image_url}></img>
+              </div>
             </li>
           </ol>
           <button className="project-submit-button" onClick={this.handleSubmit}>Create Project</button>
