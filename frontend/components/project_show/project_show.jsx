@@ -23,8 +23,16 @@ class ProjectShow extends React.Component {
     if (this.props.match.params.id !== nextProps.match.params.id) {
       this.props.fetchSingleProject(nextProps.match.params.id);
     }
-  }
-  // This is done for search, as otherwise you will stay on the same page
+  } // This is done for search, as otherwise you will stay on the same page
+
+  // componentWillReceiveProps(nextProps) {
+  //   if (this.props.project === undefined || this.props.project.rewards === undefined) {
+  //     return ("")
+  //   }
+  //   if (this.props.project.money_raised !== nextProps.project.money_raised) {
+  //     this.props.createProjectBackers(nextProps.project)
+  //   }
+  // }
 
   setLine() {
     let bar_width = (100 / this.props.project.goal) * this.props.project.money_raised
@@ -61,7 +69,7 @@ class ProjectShow extends React.Component {
   }
 
   render () {
-    console.log(this.props);
+    // console.log(this.props);
     const {project} = this.props;
     if (project === undefined || project.rewards === undefined) {
       return ("")
