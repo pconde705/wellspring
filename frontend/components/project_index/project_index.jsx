@@ -36,7 +36,7 @@ class ProjectIndex extends React.Component {
   render() {
     console.log(this.props);
     return (
-      <div>
+      <div className="overall-index">
         <div className="category-bar-div">
           <ul>
             <li><button onClick={() => this.renderProjects('music')}>Music</button></li>
