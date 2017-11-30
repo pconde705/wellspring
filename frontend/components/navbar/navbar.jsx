@@ -13,7 +13,7 @@ const Navbar = ({currentUser, logout}) => {
         </ul>
         <h2><Link className="main-title" to="/">WELLSPRING</Link></h2>
         <ul className="navbar-ul-right">
-          <SearchContainer />
+          <li><SearchContainer /></li>
           <li><Link to="/" className="ul-link" onClick={logout}>Sign out ({currentUser.username})</Link></li>
         </ul>
       </div>

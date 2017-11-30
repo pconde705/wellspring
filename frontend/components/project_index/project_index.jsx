@@ -34,6 +34,7 @@ class ProjectIndex extends React.Component {
 
  // Router
   render() {
+    console.log(this.props);
     return (
       <div>
         <div className="category-bar-div">

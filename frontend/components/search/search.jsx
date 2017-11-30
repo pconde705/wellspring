@@ -27,13 +27,13 @@ class Search extends React.Component {
   render () {
     // console.log(this.props);
     return (
-      <li>
-      <input className="search-input" value={this.state.searchValue} type="text" placeholder="Search for a project"
-        onChange={this.handleInput} onBlur={this.resetSearch}>
-      </input>
-      <i className="fa fa-search" aria-hidden="true"></i>
-      <SearchResults value={this.state.searchValue} results={this.props.searchResults}/>
-      </li>
+      <div>
+        <input className="search-input" value={this.state.searchValue} type="text" placeholder="Search for a project"
+          onChange={this.handleInput} onBlur={this.resetSearch}>
+        </input>
+        <i className="fa fa-search" aria-hidden="true"></i>
+        <SearchResults value={this.state.searchValue} results={this.props.searchResults}/>
+      </div>
     )
   }
 

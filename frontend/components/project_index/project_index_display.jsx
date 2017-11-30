@@ -4,6 +4,7 @@ import {Link} from 'react-router-dom';
 class ProjectIndexDisplay extends React.Component {
 
   render() {
+    // console.log(this.props);
     let filteredProjects = [];
     this.props.allProps.map((project) => {
       if (project.category === this.props.allData.category) {
