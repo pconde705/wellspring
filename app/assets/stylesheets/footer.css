@@ -1,0 +1,31 @@
+.footer-div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 2px solid #9B9E9E;
+  font-size: 50px;
+  height: 320px;
+  font-family: 'Quicksand', sans-serif;
+  background: #fcfffc;
+  color: black;
+}
+
+.footer-inside {
+  display: inline-block;
+}
+
+.footer-inside ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+}
+
+.footer-inside ul li {
+padding-top: 40px;
+font-size: 70px;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: black;
+}
