@@ -108,70 +108,113 @@ Project.create(
   main_image_url: "http://res.cloudinary.com/lopopoa2/image/upload/v1512004549/turntable-top-view-audio-equipment-159376_pik7cy.jpg",
   extra_image_url: "http://res.cloudinary.com/lopopoa2/image/upload/v1512004684/pexels-photo-332688_ozdol7.jpg",
   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel commodo turpis. Vestibulum rutrum porttitor lacus, at interdum arcu feugiat vitae. Duis aliquam tortor dignissim facilisis malesuada. Donec et venenatis ligula, at scelerisque ex. Nulla ligula mauris, tincidunt at tellus in, accumsan pharetra est. Vestibulum placerat sed quam vitae rutrum. Mauris quis viverra libero. Sed rhoncus turpis vitae metus egestas commodo. Sed consectetur at elit ac laoreet. Suspendisse molestie sapien tristique augue sollicitudin, vitae semper enim tincidunt. Quisque accumsan diam tempus lorem egestas, venenatis dapibus neque lobortis. In pulvinar fringilla ex quis gravida. Praesent lacus lectus, consequat et justo non, ultricies ultrices massa. Maecenas venenatis faucibus dui ut mattis.",
-  goal: 390000)
+  goal: 39000)
 
 Project.create(
-  title: "DJ Octopus Head", creator_id: 2, category: "music",
-  main_image_url: "",
-  extra_image_url: "",
+  title: "Jack Johnsson", creator_id: 2, category: "music",
+  main_image_url: "http://res.cloudinary.com/lopopoa2/image/upload/v1512004858/pexels-photo-375893_o6imuj.jpg",
+  extra_image_url: "http://res.cloudinary.com/lopopoa2/image/upload/v1512004982/pexels-photo-92080_rpv6bf.jpg",
   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel commodo turpis. Vestibulum rutrum porttitor lacus, at interdum arcu feugiat vitae. Duis aliquam tortor dignissim facilisis malesuada. Donec et venenatis ligula, at scelerisque ex. Nulla ligula mauris, tincidunt at tellus in, accumsan pharetra est. Vestibulum placerat sed quam vitae rutrum. Mauris quis viverra libero. Sed rhoncus turpis vitae metus egestas commodo. Sed consectetur at elit ac laoreet. Suspendisse molestie sapien tristique augue sollicitudin, vitae semper enim tincidunt. Quisque accumsan diam tempus lorem egestas, venenatis dapibus neque lobortis. In pulvinar fringilla ex quis gravida. Praesent lacus lectus, consequat et justo non, ultricies ultrices massa. Maecenas venenatis faucibus dui ut mattis.",
-  goal: 390000)
+  goal: 20000)
 
+Project.create(
+  title: "Lynda and the no-go terrible boy", creator_id: 2, category: "comics",
+  main_image_url: "http://res.cloudinary.com/lopopoa2/image/upload/v1512005130/pexels-photo-89625_ilevyx.jpg",
+  extra_image_url: "http://res.cloudinary.com/lopopoa2/image/upload/v1512005202/pexels-photo_xc9zkn.jpg",
+  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel commodo turpis. Vestibulum rutrum porttitor lacus, at interdum arcu feugiat vitae. Duis aliquam tortor dignissim facilisis malesuada. Donec et venenatis ligula, at scelerisque ex. Nulla ligula mauris, tincidunt at tellus in, accumsan pharetra est. Vestibulum placerat sed quam vitae rutrum. Mauris quis viverra libero. Sed rhoncus turpis vitae metus egestas commodo. Sed consectetur at elit ac laoreet. Suspendisse molestie sapien tristique augue sollicitudin, vitae semper enim tincidunt. Quisque accumsan diam tempus lorem egestas, venenatis dapibus neque lobortis. In pulvinar fringilla ex quis gravida. Praesent lacus lectus, consequat et justo non, ultricies ultrices massa. Maecenas venenatis faucibus dui ut mattis.",
+  goal: 10000)
 
+Project.create(
+  title: "Baga Comics", creator_id: 2, category: "comics",
+  main_image_url: "http://res.cloudinary.com/lopopoa2/image/upload/v1512005344/pexels-photo-191295_blypll.jpg",
+  extra_image_url: "http://res.cloudinary.com/lopopoa2/image/upload/v1512005441/pexels-photo-290711_zpku2o.jpg",
+  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel commodo turpis. Vestibulum rutrum porttitor lacus, at interdum arcu feugiat vitae. Duis aliquam tortor dignissim facilisis malesuada. Donec et venenatis ligula, at scelerisque ex. Nulla ligula mauris, tincidunt at tellus in, accumsan pharetra est. Vestibulum placerat sed quam vitae rutrum. Mauris quis viverra libero. Sed rhoncus turpis vitae metus egestas commodo. Sed consectetur at elit ac laoreet. Suspendisse molestie sapien tristique augue sollicitudin, vitae semper enim tincidunt. Quisque accumsan diam tempus lorem egestas, venenatis dapibus neque lobortis. In pulvinar fringilla ex quis gravida. Praesent lacus lectus, consequat et justo non, ultricies ultrices massa. Maecenas venenatis faucibus dui ut mattis.",
+  goal: 7000)
 
+Project.create(
+  title: "Joey and the Velvet", creator_id: 2, category: "film",
+  main_image_url: "http://res.cloudinary.com/lopopoa2/image/upload/v1512005513/pexels-photo-66134_porozd.jpg",
+  extra_image_url: "http://res.cloudinary.com/lopopoa2/image/upload/v1512005588/pexels-photo-243747_zdfifm.jpg",
+  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel commodo turpis. Vestibulum rutrum porttitor lacus, at interdum arcu feugiat vitae. Duis aliquam tortor dignissim facilisis malesuada. Donec et venenatis ligula, at scelerisque ex. Nulla ligula mauris, tincidunt at tellus in, accumsan pharetra est. Vestibulum placerat sed quam vitae rutrum. Mauris quis viverra libero. Sed rhoncus turpis vitae metus egestas commodo. Sed consectetur at elit ac laoreet. Suspendisse molestie sapien tristique augue sollicitudin, vitae semper enim tincidunt. Quisque accumsan diam tempus lorem egestas, venenatis dapibus neque lobortis. In pulvinar fringilla ex quis gravida. Praesent lacus lectus, consequat et justo non, ultricies ultrices massa. Maecenas venenatis faucibus dui ut mattis.",
+  goal: 195000)
 
+Project.create(
+  title: "10000 Years Ago", creator_id: 2, category: "film",
+  main_image_url: "http://res.cloudinary.com/lopopoa2/image/upload/v1512005660/pexels-photo-275977_xucuzt.jpg",
+  extra_image_url: "http://res.cloudinary.com/lopopoa2/image/upload/v1512005805/pexels-photo-276015_ngqzkr.jpg",
+  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel commodo turpis. Vestibulum rutrum porttitor lacus, at interdum arcu feugiat vitae. Duis aliquam tortor dignissim facilisis malesuada. Donec et venenatis ligula, at scelerisque ex. Nulla ligula mauris, tincidunt at tellus in, accumsan pharetra est. Vestibulum placerat sed quam vitae rutrum. Mauris quis viverra libero. Sed rhoncus turpis vitae metus egestas commodo. Sed consectetur at elit ac laoreet. Suspendisse molestie sapien tristique augue sollicitudin, vitae semper enim tincidunt. Quisque accumsan diam tempus lorem egestas, venenatis dapibus neque lobortis. In pulvinar fringilla ex quis gravida. Praesent lacus lectus, consequat et justo non, ultricies ultrices massa. Maecenas venenatis faucibus dui ut mattis.",
+  goal: 95000)
 
+Project.create(
+  title: "Garden in the City", creator_id: 2, category: "food",
+  main_image_url: "http://res.cloudinary.com/lopopoa2/image/upload/v1512006145/pexels-photo-533360_vzu9ve.jpg",
+  extra_image_url: "http://res.cloudinary.com/lopopoa2/image/upload/v1512006290/pexels-photo-169523_ypwcls.jpg",
+  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel commodo turpis. Vestibulum rutrum porttitor lacus, at interdum arcu feugiat vitae. Duis aliquam tortor dignissim facilisis malesuada. Donec et venenatis ligula, at scelerisque ex. Nulla ligula mauris, tincidunt at tellus in, accumsan pharetra est. Vestibulum placerat sed quam vitae rutrum. Mauris quis viverra libero. Sed rhoncus turpis vitae metus egestas commodo. Sed consectetur at elit ac laoreet. Suspendisse molestie sapien tristique augue sollicitudin, vitae semper enim tincidunt. Quisque accumsan diam tempus lorem egestas, venenatis dapibus neque lobortis. In pulvinar fringilla ex quis gravida. Praesent lacus lectus, consequat et justo non, ultricies ultrices massa. Maecenas venenatis faucibus dui ut mattis.",
+  goal: 40000)
 
-
-
+Project.create(
+  title: "Bring Quality Back To Beef", creator_id: 2, category: "food",
+  main_image_url: "http://res.cloudinary.com/lopopoa2/image/upload/v1512006522/pexels-photo-65175_lpuiup.jpg",
+  extra_image_url: "http://res.cloudinary.com/lopopoa2/image/upload/v1512006373/cow-pasture-animal-almabtrieb_d5wo20.jpg",
+  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel commodo turpis. Vestibulum rutrum porttitor lacus, at interdum arcu feugiat vitae. Duis aliquam tortor dignissim facilisis malesuada. Donec et venenatis ligula, at scelerisque ex. Nulla ligula mauris, tincidunt at tellus in, accumsan pharetra est. Vestibulum placerat sed quam vitae rutrum. Mauris quis viverra libero. Sed rhoncus turpis vitae metus egestas commodo. Sed consectetur at elit ac laoreet. Suspendisse molestie sapien tristique augue sollicitudin, vitae semper enim tincidunt. Quisque accumsan diam tempus lorem egestas, venenatis dapibus neque lobortis. In pulvinar fringilla ex quis gravida. Praesent lacus lectus, consequat et justo non, ultricies ultrices massa. Maecenas venenatis faucibus dui ut mattis.",
+  goal: 12000)
 
 
 Project.create(
-  title: "DJ Octopus Head", creator_id: 2, category: "music",
-  main_image_url: "",
-  extra_image_url: "",
+  title: "Slow-Mo Photography", creator_id: 2, category: "photography",
+  main_image_url: "http://res.cloudinary.com/lopopoa2/image/upload/v1512006766/pexels-photo-267961_t0qhcl.jpg",
+  extra_image_url: "http://res.cloudinary.com/lopopoa2/image/upload/v1512006604/art-broken-explosion-glass_hkvs4x.jpg",
   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel commodo turpis. Vestibulum rutrum porttitor lacus, at interdum arcu feugiat vitae. Duis aliquam tortor dignissim facilisis malesuada. Donec et venenatis ligula, at scelerisque ex. Nulla ligula mauris, tincidunt at tellus in, accumsan pharetra est. Vestibulum placerat sed quam vitae rutrum. Mauris quis viverra libero. Sed rhoncus turpis vitae metus egestas commodo. Sed consectetur at elit ac laoreet. Suspendisse molestie sapien tristique augue sollicitudin, vitae semper enim tincidunt. Quisque accumsan diam tempus lorem egestas, venenatis dapibus neque lobortis. In pulvinar fringilla ex quis gravida. Praesent lacus lectus, consequat et justo non, ultricies ultrices massa. Maecenas venenatis faucibus dui ut mattis.",
-  goal: 390000)
+  goal: 5000)
 
+Project.create(
+  title: "Pictures from the sky", creator_id: 2, category: "photography",
+  main_image_url: "http://res.cloudinary.com/lopopoa2/image/upload/v1512006896/pexels-photo-336232_kqlu9j.jpg",
+  extra_image_url: "http://res.cloudinary.com/lopopoa2/image/upload/v1512006964/pexels-photo-417101_g7v1cw.jpg",
+  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel commodo turpis. Vestibulum rutrum porttitor lacus, at interdum arcu feugiat vitae. Duis aliquam tortor dignissim facilisis malesuada. Donec et venenatis ligula, at scelerisque ex. Nulla ligula mauris, tincidunt at tellus in, accumsan pharetra est. Vestibulum placerat sed quam vitae rutrum. Mauris quis viverra libero. Sed rhoncus turpis vitae metus egestas commodo. Sed consectetur at elit ac laoreet. Suspendisse molestie sapien tristique augue sollicitudin, vitae semper enim tincidunt. Quisque accumsan diam tempus lorem egestas, venenatis dapibus neque lobortis. In pulvinar fringilla ex quis gravida. Praesent lacus lectus, consequat et justo non, ultricies ultrices massa. Maecenas venenatis faucibus dui ut mattis.",
+  goal: 11000)
 
+Project.create(
+  title: "Everywhere VR", creator_id: 2, category: "games",
+  main_image_url: "http://res.cloudinary.com/lopopoa2/image/upload/v1512007200/pexels-photo-123335_hu6vj4.jpg",
+  extra_image_url: "http://res.cloudinary.com/lopopoa2/image/upload/v1512007147/pexels-photo-276452_w8zfiv.jpg",
+  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel commodo turpis. Vestibulum rutrum porttitor lacus, at interdum arcu feugiat vitae. Duis aliquam tortor dignissim facilisis malesuada. Donec et venenatis ligula, at scelerisque ex. Nulla ligula mauris, tincidunt at tellus in, accumsan pharetra est. Vestibulum placerat sed quam vitae rutrum. Mauris quis viverra libero. Sed rhoncus turpis vitae metus egestas commodo. Sed consectetur at elit ac laoreet. Suspendisse molestie sapien tristique augue sollicitudin, vitae semper enim tincidunt. Quisque accumsan diam tempus lorem egestas, venenatis dapibus neque lobortis. In pulvinar fringilla ex quis gravida. Praesent lacus lectus, consequat et justo non, ultricies ultrices massa. Maecenas venenatis faucibus dui ut mattis.",
+  goal: 665000)
 
+Project.create(
+  title: "Game Bar", creator_id: 2, category: "games",
+  main_image_url: "http://res.cloudinary.com/lopopoa2/image/upload/v1512007287/arcade-ps4-fun-playing-74209_iwczkf.jpg",
+  extra_image_url: "http://res.cloudinary.com/lopopoa2/image/upload/v1512007353/pexels-photo-371924_yfitqa.jpg",
+  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel commodo turpis. Vestibulum rutrum porttitor lacus, at interdum arcu feugiat vitae. Duis aliquam tortor dignissim facilisis malesuada. Donec et venenatis ligula, at scelerisque ex. Nulla ligula mauris, tincidunt at tellus in, accumsan pharetra est. Vestibulum placerat sed quam vitae rutrum. Mauris quis viverra libero. Sed rhoncus turpis vitae metus egestas commodo. Sed consectetur at elit ac laoreet. Suspendisse molestie sapien tristique augue sollicitudin, vitae semper enim tincidunt. Quisque accumsan diam tempus lorem egestas, venenatis dapibus neque lobortis. In pulvinar fringilla ex quis gravida. Praesent lacus lectus, consequat et justo non, ultricies ultrices massa. Maecenas venenatis faucibus dui ut mattis.",
+  goal: 335000)
 
+Project.create(
+  title: "Personal Wall-E's", creator_id: 2, category: "technology",
+  main_image_url: "http://res.cloudinary.com/lopopoa2/image/upload/v1512007457/pexels-photo-247932_jlpqou.jpg",
+  extra_image_url: "http://res.cloudinary.com/lopopoa2/image/upload/v1512007592/mars-mars-rover-space-travel-robot-73910_ziqtan.jpg",
+  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel commodo turpis. Vestibulum rutrum porttitor lacus, at interdum arcu feugiat vitae. Duis aliquam tortor dignissim facilisis malesuada. Donec et venenatis ligula, at scelerisque ex. Nulla ligula mauris, tincidunt at tellus in, accumsan pharetra est. Vestibulum placerat sed quam vitae rutrum. Mauris quis viverra libero. Sed rhoncus turpis vitae metus egestas commodo. Sed consectetur at elit ac laoreet. Suspendisse molestie sapien tristique augue sollicitudin, vitae semper enim tincidunt. Quisque accumsan diam tempus lorem egestas, venenatis dapibus neque lobortis. In pulvinar fringilla ex quis gravida. Praesent lacus lectus, consequat et justo non, ultricies ultrices massa. Maecenas venenatis faucibus dui ut mattis.",
+  goal: 4500000)
 
+Project.create(
+  title: "Ancient Gold Mine", creator_id: 2, category: "technology",
+  main_image_url: "http://res.cloudinary.com/lopopoa2/image/upload/v1512007681/pexels-photo-414936_h1zu61.jpg",
+  extra_image_url: "http://res.cloudinary.com/lopopoa2/image/upload/v1512007798/pexels-photo-532229_vbgfun.jpg",
+  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel commodo turpis. Vestibulum rutrum porttitor lacus, at interdum arcu feugiat vitae. Duis aliquam tortor dignissim facilisis malesuada. Donec et venenatis ligula, at scelerisque ex. Nulla ligula mauris, tincidunt at tellus in, accumsan pharetra est. Vestibulum placerat sed quam vitae rutrum. Mauris quis viverra libero. Sed rhoncus turpis vitae metus egestas commodo. Sed consectetur at elit ac laoreet. Suspendisse molestie sapien tristique augue sollicitudin, vitae semper enim tincidunt. Quisque accumsan diam tempus lorem egestas, venenatis dapibus neque lobortis. In pulvinar fringilla ex quis gravida. Praesent lacus lectus, consequat et justo non, ultricies ultrices massa. Maecenas venenatis faucibus dui ut mattis.",
+  goal: 6600000)
 
+Project.create(
+  title: "Second Novel: 'Lovers in Death'", creator_id: 2, category: "publishing",
+  main_image_url: "http://res.cloudinary.com/lopopoa2/image/upload/v1512007929/pexels-photo-374697_ghwswz.jpg",
+  extra_image_url: "http://res.cloudinary.com/lopopoa2/image/upload/v1512008001/pexels-photo-206434_vezcn0.jpg",
+  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel commodo turpis. Vestibulum rutrum porttitor lacus, at interdum arcu feugiat vitae. Duis aliquam tortor dignissim facilisis malesuada. Donec et venenatis ligula, at scelerisque ex. Nulla ligula mauris, tincidunt at tellus in, accumsan pharetra est. Vestibulum placerat sed quam vitae rutrum. Mauris quis viverra libero. Sed rhoncus turpis vitae metus egestas commodo. Sed consectetur at elit ac laoreet. Suspendisse molestie sapien tristique augue sollicitudin, vitae semper enim tincidunt. Quisque accumsan diam tempus lorem egestas, venenatis dapibus neque lobortis. In pulvinar fringilla ex quis gravida. Praesent lacus lectus, consequat et justo non, ultricies ultrices massa. Maecenas venenatis faucibus dui ut mattis.",
+  goal: 3000)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Project.create(
+  title: "A Clear Mind", creator_id: 2, category: "publishing",
+  main_image_url: "http://res.cloudinary.com/lopopoa2/image/upload/v1512008103/pexels-photo-256472_iacjyz.jpg",
+  extra_image_url: "http://res.cloudinary.com/lopopoa2/image/upload/v1512008159/hands-hand-book-reading_sttjqp.jpg",
+  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel commodo turpis. Vestibulum rutrum porttitor lacus, at interdum arcu feugiat vitae. Duis aliquam tortor dignissim facilisis malesuada. Donec et venenatis ligula, at scelerisque ex. Nulla ligula mauris, tincidunt at tellus in, accumsan pharetra est. Vestibulum placerat sed quam vitae rutrum. Mauris quis viverra libero. Sed rhoncus turpis vitae metus egestas commodo. Sed consectetur at elit ac laoreet. Suspendisse molestie sapien tristique augue sollicitudin, vitae semper enim tincidunt. Quisque accumsan diam tempus lorem egestas, venenatis dapibus neque lobortis. In pulvinar fringilla ex quis gravida. Praesent lacus lectus, consequat et justo non, ultricies ultrices massa. Maecenas venenatis faucibus dui ut mattis.",
+  goal: 2000)
 
 
 
