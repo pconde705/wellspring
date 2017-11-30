@@ -42,8 +42,9 @@ class ProjectIndex extends React.Component {
             <li><button onClick={() => this.renderProjects('comics')}>Comics & Illustration</button></li>
             <li><button onClick={() => this.renderProjects('film')}>Film</button></li>
             <li><button onClick={() => this.renderProjects('food')}>Food & Craft</button></li>
+            <li><button onClick={() => this.renderProjects('photography')}>Photography</button></li>
             <li><button onClick={() => this.renderProjects('games')}>Games</button></li>
-            <li><button onClick={() => this.renderProjects('design')}>Design & Tech</button></li>
+            <li><button onClick={() => this.renderProjects('technology')}>Design & Tech</button></li>
             <li><button onClick={() => this.renderProjects('publishing')}>Publishing</button></li>
             <li><button onClick={() => this.renderProjects('arts')}>Arts</button></li>
           </ul>

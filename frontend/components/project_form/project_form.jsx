@@ -69,19 +69,13 @@ class ProjectForm extends React.Component {
                 <select className="project-dropdown" value={this.state.category} onChange={this.handleInput('category')}>
                   <option value="arts">Arts</option>
                   <option value="comics">Comics</option>
-                  <option value="crafts">Crafts</option>
-                  <option value="dance">Dance</option>
-                  <option value="design">Comics</option>
-                  <option value="fashion">Fashion</option>
                   <option value="film">Film & Video</option>
                   <option value="food">Food</option>
                   <option value="games">Games</option>
-                  <option value="journalism">Journalism</option>
                   <option value="music">Music</option>
                   <option value="photography">Photography</option>
                   <option value="publishing">Publishing</option>
                   <option value="technology">Technology</option>
-                  <option value="theater">Theater</option>
                 </select>
             </li>
             <li>
