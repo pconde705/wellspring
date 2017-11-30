@@ -22,17 +22,12 @@ class Backer extends React.Component {
   }
 
   clickReward() {
-    // this.props.reward.reward_backers += 1
-    //
-    // this.props.editProjectRewards(this.props.project.id, this.props.reward)
+    const pro_id = this.props.project.id
+    const rew_id = this.props.reward.id
+    this.setState({project_id: pro_id, reward_id: rew_id}, () => (
 
-    // It now works, but you must be logged in, hence the require_logged_in in the controller
-
-    // dispatch to the database, update event, patch request, db sends up the edited event,
-    // the edited event will be received by the store, and be returned, when the reducer receives the action all th ec omponents will automatically
-    // re-render.
-    // look in to custom routes,
-    // You need a redux cycle
+      this.props.createRewardBackers(this.state)
+    ))
   }
 
 

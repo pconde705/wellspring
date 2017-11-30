@@ -1,9 +1,9 @@
 // jshint esversion: 6
 
-import {postProjectBackers} from '../util/backers_api_util';
+import {postProjectBackers, postProjectRewards} from '../util/backers_api_util';
 
 export const RECEIVE_PROJECT = "RECEIVE_PROJECT";
-export const RECEIVE_REWARD = "RECEIVE_REWARD";
+export const RECEIVE_BACKER_REWARD = "RECEIVE_BACKER_REWARD";
 
 const receiveProject = (project) => ({
   type: RECEIVE_PROJECT,
@@ -15,7 +15,7 @@ const receiveProject = (project) => ({
 // );
 //
 const receiveReward = reward => ({
-  type: RECEIVE_REWARD,
+  type: RECEIVE_BACKER_REWARD,
   reward
 });
 //
@@ -27,4 +27,9 @@ const receiveReward = reward => ({
 export const createProjectBackers = ({project_id, reward_id, cash_only}) => dispatch => (
   postProjectBackers(project_id, reward_id, cash_only).then(
     project => dispatch(receiveProject(project)))
+);
+
+export const createRewardBackers = ({project_id, reward_id, cash_only}) => dispatch => (
+  postProjectRewards(project_id, reward_id, cash_only).then(
+    reward => dispatch(receiveReward(reward)))
 );

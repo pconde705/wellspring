@@ -10,6 +10,7 @@ Rails.application.routes.draw do
       resources :rewards, only: [:create, :update]
     end
     post '/project_backers', to: 'project_backers#create_backer'
+    post '/project_rewards', to: 'project_backers#create_reward'
     resources :search, only: [:index]
   end
 end

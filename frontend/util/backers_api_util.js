@@ -26,3 +26,11 @@ export const postProjectBackers = (project_id, reward_id, cash_only) => (
     data: {backers: {project_id, reward_id, cash_only}}
   })
 );
+
+export const postProjectRewards = (project_id, reward_id, cash_only) => (
+  $.ajax({
+    method: 'POST',
+    url: '/api/project_rewards',
+    data: {backers: {project_id, reward_id, cash_only}}
+  })
+);

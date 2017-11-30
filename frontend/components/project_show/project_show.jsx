@@ -60,7 +60,7 @@ class ProjectShow extends React.Component {
     })
   }
   //To clear the input field after the button click you must assign value={this.state.cash_only} and then the promise (then) function
-  
+
 
   render () {
     // console.log(this.props);

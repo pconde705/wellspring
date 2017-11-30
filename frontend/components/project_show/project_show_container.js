@@ -1,12 +1,13 @@
 import {connect} from 'react-redux';
 import ProjectShow from './project_show';
 import {fetchSingleProject} from '../../actions/project_actions';
-import {createProjectBackers} from '../../actions/backer_actions';
+import {createProjectBackers, createRewardBackers} from '../../actions/backer_actions';
 
 const mapStateToProps = (state, ownProps) => {
-  // console.log(state);
-  // console.log(ownProps);
+  // console.log("state:", state);
+  // console.log("ownProps:", ownProps);
   return {
+    // rewards: state.projects[ownProps.match.params.id].rewards,
     project: state.projects[ownProps.match.params.id],
     currentUser: state.session.currentUser,
 }};
@@ -14,7 +15,8 @@ const mapStateToProps = (state, ownProps) => {
 
 const mapDispatchToProps = dispatch => ({
   fetchSingleProject: (id) => dispatch(fetchSingleProject(id)),
-  createProjectBackers: (project) => dispatch(createProjectBackers(project))
+  createProjectBackers: (project) => dispatch(createProjectBackers(project)),
+  // createRewardBackers: (reward) => dispatch(createRewardBackers(reward))
 });
 
 export default connect(

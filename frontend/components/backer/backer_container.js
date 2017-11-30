@@ -1,9 +1,10 @@
 import {connect} from 'react-redux';
-import {createProjectBackers} from '../../actions/backer_actions';
+import {createProjectBackers, createRewardBackers} from '../../actions/backer_actions';
 import Backer from './backer';
 
 const mapStateToProps = (state, ownProps) => {
   // debugger;
+  // console.log(state);
   return {
     currentUser: state.session.currentUser
   };
@@ -11,7 +12,7 @@ const mapStateToProps = (state, ownProps) => {
 
 const mapDispatchToProps = dispatch => ({
   createProjectBackers: (project) => dispatch(createProjectBackers(project)),
-  // editProjectRewards: (...reward) => dispatch(editProjectRewards(...reward))
+  createRewardBackers: (reward) => dispatch(createRewardBackers(reward))
 });
 
 export default connect(
