@@ -65,6 +65,7 @@ class SessionForm extends React.Component {
               <br />
               <button className="login-button" onClick={this.handleSubmit}>Log me in!</button>
               <br />
+              <div className="login-div-or"><p className="login-or"><span>or</span></p></div>
               <button className="login-button demo" onClick={this.demoLogin}>Demo login!</button>
               <br />
               {this.renderErrors()}
