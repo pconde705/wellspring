@@ -14,8 +14,8 @@ class Reward extends React.Component {
     this.props.createReward(this.props.match.params.project_id, reward).then( () =>
       this.setState({
         amount: 0, reward_subtitle: "", reward_description: "", includes: "", reward_backers: 0, reward_date: "Dec 2018"
-      }, () => this.props.history.push(`/projects/${this.props.match.params.project_id}`))
-    );
+      })
+    ).then( () => this.props.history.push(`/projects/${this.props.match.params.project_id}`));
   }
 
   handleInput(type) {
