@@ -28,8 +28,12 @@ class Reward < ApplicationRecord
     class_name: :ProjectBacker,
     foreign_key: :reward_id
 
+  has_many :rewards_user,
+    through: :backers_rewards,
+    source: :user
+
   def backer_reward_count
-    backers_rewards.uniq.count
+    rewards_user.uniq.count
   end
 
 end
