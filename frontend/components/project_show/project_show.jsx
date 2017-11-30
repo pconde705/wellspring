@@ -10,7 +10,7 @@ class ProjectShow extends React.Component {
 
     this.setLine = this.setLine.bind(this);
     this.greyLine = this.greyLine.bind(this);
-    this.state = {project_id: null, reward_id: null, cash_only: null}
+    this.state = {project_id: null, reward_id: null, cash_only: ""}
     this.handleSubmit = this.handleSubmit.bind(this)
 
   }
@@ -20,20 +20,11 @@ class ProjectShow extends React.Component {
   }
 
   componentWillReceiveProps(nextProps) {
-    console.log("in CWRP");
     if (this.props.match.params.id !== nextProps.match.params.id) {
       this.props.fetchSingleProject(nextProps.match.params.id);
     }
   } // This is done for search, as otherwise you will stay on the same page
-  //
-  // componentWillReceiveProps(nextProps) {
-  //   if (this.props.project === undefined || this.props.project.rewards === undefined) {
-  //     return ("")
-  //   }
-  //   if (this.props.project.money_raised !== nextProps.project.money_raised) {
-  //     this.props.createProjectBackers(nextProps.project)
-  //   }
-  // }
+
 
   setLine() {
     let bar_width = (100 / this.props.project.goal) * this.props.project.money_raised
@@ -64,11 +55,12 @@ class ProjectShow extends React.Component {
     e.preventDefault();
     const pro_id = this.props.project.id
     this.setState({project_id: pro_id}, () => {
-      console.log("in the setState", this.state)
 
-      return this.props.createProjectBackers(this.state)
+      return this.props.createProjectBackers(this.state).then(() => this.setState({project_id: null, reward_id: null, cash_only: ""}))
     })
   }
+  //To clear the input field after the button click you must assign value={this.state.cash_only} and then the promise (then) function
+  
 
   render () {
     // console.log(this.props);
@@ -105,7 +97,8 @@ class ProjectShow extends React.Component {
                   <p>days to go</p>
                 </div>
                 <form className="show-add-money">
-                  <input className="show-add-money-input" onChange={this.addMoney('cash_only')} type="number" placeholder="Enter amount you wish to donate"></input>
+                  <input value={this.state.cash_only} className="show-add-money-input" onChange={this.addMoney('cash_only')}
+                    type="number" placeholder="Enter amount you wish to donate"></input>
                   <button onClick={this.handleSubmit} className="show-backer-button">Back this project</button>
                 </form>
               </div>

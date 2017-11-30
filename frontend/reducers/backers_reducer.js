@@ -5,8 +5,8 @@ const backersReducer = (oldState = {}, action) => {
   Object.freeze(oldState);
 
   switch (action.type) {
-    case RECEIVE_PROJECT:
-      return merge({}, oldState, {[action.project.id]: action.project})
+    // case RECEIVE_PROJECT:
+    //   return merge({}, oldState, {[action.project.id]: action.project})
     // case RECEIVE_REWARD:
     //   return merge({}, oldState, {[action.reward.id]: action.reward})
     default:

@@ -29,3 +29,8 @@
 .category-bar-div ul li button:hover {
   color: #656969;
 }
+
+.category-bar-div ul li button:focus {
+  color: black;
+  font-weight: 700;
+}

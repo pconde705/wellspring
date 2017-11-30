@@ -11,8 +11,8 @@
 .featured-project-div {
   position: relative;
   overflow: hidden;
-  height: 600px;
-  width: 600px;
+  height: 500px;
+  width: 500px;
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
@@ -38,6 +38,7 @@
 .featured-title {
   background-color: white;
   padding: 5px 10px;
+  font-size: 28px;
 }
 
 .featured-by {
