@@ -57,7 +57,6 @@ class ProjectForm extends React.Component {
 
 
   render() {
-    console.log(this.state);
     return (
       <div className="project-create-div">
         <img className="background-form-image" src="https://res.cloudinary.com/lopopoa2/image/upload/v1511547135/pexels-photo-209678_uxitpp.jpg" ></img>

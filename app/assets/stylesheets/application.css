@@ -28,3 +28,7 @@ input:focus {
 textarea:focus {
   border-color: #009E74;
 }
+
+button {
+  cursor: pointer;
+}

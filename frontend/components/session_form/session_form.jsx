@@ -15,7 +15,6 @@ class SessionForm extends React.Component {
   }
 
   handleInput(type) {
-    // debugger;
     return(e) => {
       this.setState({ [type]: e.target.value });
     }

@@ -9,7 +9,6 @@ import ProjectIndexDisplay from './project_index_display';
 class ProjectIndex extends React.Component {
   constructor(props) {
     super(props)
-    // console.log(props); // this console.log is run before componentDidMount so projects will be empty
     this.state = {category: "music", clicked: false}
     this.renderProjects = this.renderProjects.bind(this);
   }
@@ -34,7 +33,6 @@ class ProjectIndex extends React.Component {
 
  // Router
   render() {
-    console.log(this.props);
     return (
       <div className="overall-index">
         <div className="category-bar-div">

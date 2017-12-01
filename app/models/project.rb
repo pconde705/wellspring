@@ -54,6 +54,12 @@ class Project < ApplicationRecord
     user_backers.uniq.count
   end
 
+  def self.all_projects
+    Project.all.count
+  end
 
-
+  def self.all_funded_projects
+    Project.where("money_raised > goal").count
+  end
+  # You may have to seed the databse with money_raised: 0 rather than null
 end

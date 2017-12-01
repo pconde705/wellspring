@@ -12,7 +12,6 @@ class Backer extends React.Component {
   }
 
   clickProject() {
-    // console.log(this.props.project);
     const pro_id = this.props.project.id
     const rew_id = this.props.reward.id
     this.setState({project_id: pro_id, reward_id: rew_id}, () => (
@@ -32,7 +31,6 @@ class Backer extends React.Component {
 
 
   render () {
-    // console.log(this.props);
     const {reward} = this.props
     return (
       <span onClick={() => this.clickReward()}>

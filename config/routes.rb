@@ -11,6 +11,10 @@ Rails.application.routes.draw do
     end
     post '/project_backers', to: 'project_backers#create_backer'
     post '/project_rewards', to: 'project_backers#create_reward'
+
+    get '/all_projects', to: 'stats#total_project_count'
+    get '/all_funded_projects', to: 'stats#total_funded_projects'
+    get '/all_backers', to: 'stats#total_backing_users'
     resources :search, only: [:index]
   end
 end

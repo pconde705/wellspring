@@ -8,7 +8,6 @@ class ProjectFormImage extends React.Component {
     cloudinary.openUploadWidget(
       window.cloudinary_options, (error, images) => {
           if (error === null) {
-            console.log(images[0].secure_url);
             this.props.setImageUrl(images[0].secure_url) // comes from the ProjectForm
           }
       });

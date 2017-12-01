@@ -25,7 +25,6 @@ class Search extends React.Component {
  }
 
   render () {
-    // console.log(this.props);
     return (
       <div>
         <input className="search-input" value={this.state.searchValue} type="text" placeholder="Search for a project"

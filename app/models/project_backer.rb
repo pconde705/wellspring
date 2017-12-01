@@ -25,4 +25,8 @@ class ProjectBacker < ApplicationRecord
   belongs_to :user,
     class_name: :User,
     foreign_key: :backer_id
+
+  def self.all_backers
+    ProjectBacker.select(:backer_id).distinct.count
+  end
 end

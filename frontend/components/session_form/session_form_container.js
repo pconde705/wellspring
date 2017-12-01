@@ -4,7 +4,6 @@ import SessionForm from './session_form';
 import {login, signup, clearErrors} from '../../actions/session_actions';
 
 const mapStateToProps = (state, ownProps) => {
-  // debugger;
   return {
   loggedIn: Boolean(state.session.currentUser),
   errors: state.errors.session,

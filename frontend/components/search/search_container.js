@@ -5,7 +5,6 @@ import {selectAllProjects} from '../../reducers/selectors';
 import {searchResults} from '../../reducers/selectors';
 
 const mapStateToProps = (state) => {
-  // debugger;
   return {
   currentUser: state.session.currentUser,
   searchResults: searchResults(state),

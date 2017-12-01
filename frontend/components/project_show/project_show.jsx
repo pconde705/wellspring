@@ -63,7 +63,6 @@ class ProjectShow extends React.Component {
 
 
   render () {
-    // console.log(this.props);
     const {project} = this.props;
     if (project === undefined || project.rewards === undefined) {
       return ("")
