@@ -42,7 +42,7 @@
 
 .search-input:focus {
   border-color: #009E74;
-  border: 0.5px solid #009E74;
+  border: 1px solid #009E74;
   border-radius: 5px;
 }
 
