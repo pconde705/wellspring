@@ -47,7 +47,7 @@ To create a project simply click on the button in the navbar that will always be
 ## Project Rewards
 
 <p align="center">
-  <img src="https://res.cloudinary.com/lopopoa2/image/upload/v1512165214/Screen_Shot_2017-12-01_at_1.53.01_PM_mjk9pf.png" width="850">
+  <img src="http://res.cloudinary.com/lopopoa2/image/upload/v1512165214/Screen_Shot_2017-12-01_at_1.53.01_PM_mjk9pf.png">
 </p>
 
 Rewards are not necessary to create a project. They are meant to grow a community of passionate followers that would love to see your app come to fruition. The design was similar so as to not scare away users, but with a slightly different color scheme to showcase difference.
