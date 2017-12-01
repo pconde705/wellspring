@@ -66,14 +66,53 @@ In the display page, you can read a detailed description the project creator has
   <img src="https://res.cloudinary.com/lopopoa2/image/upload/v1512168345/Screen_Shot_2017-12-01_at_2.45.15_PM_nxaj06.png" >
 </p>
 
+A simple search feature on the navbar provides ease of access and simplicity in use.
+
 ## Categories
 
 <p align="center">
   <img src="http://res.cloudinary.com/lopopoa2/image/upload/v1512168440/Screen_Shot_2017-12-01_at_2.46.59_PM_zrjixj.png" >
 </p>
 
+The category bar provides an immediate non-browser refreshing filter functionality that displays the projects of the category that you click on.
+
 ## Stats
 
 <p align="center">
   <img src="https://res.cloudinary.com/lopopoa2/image/upload/v1512168500/Screen_Shot_2017-12-01_at_2.47.50_PM_cc1qr5.png" >
 </p>
+
+Live statistics outline the current date, how many ongoing projects currently exist, how many backers WellSpring has, and how many projects have been successfully funded.
+
+```ruby
+  def total_amount_raised
+    first_value = project_backers.where('cash_only != 0').sum(:cash_only)
+    second_value = reward_backers.sum(:amount)
+    first_value + second_value
+  end
+
+  def total_number_of_backers
+    user_backers.uniq.count
+  end
+
+  def self.all_projects
+    Project.all.count
+  end
+
+  def self.all_funded_projects
+    result = ActiveRecord::Base.connection.execute(<<-SQL)
+      SELECT
+        projects.id
+      FROM
+        projects
+      FULL OUTER JOIN project_backers AS reward_backers ON reward_backers.project_id = projects.id
+      FULL OUTER JOIN rewards ON reward_backers.reward_id = rewards.id
+      FULL OUTER JOIN project_backers AS cash_backers ON cash_backers.project_id = projects.id
+      GROUP BY
+        projects.id
+      HAVING
+        sum(cash_backers.cash_only + rewards.amount) > projects.goal
+    SQL
+    result.count
+  end
+```
