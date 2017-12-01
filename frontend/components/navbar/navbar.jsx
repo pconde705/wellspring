@@ -4,7 +4,6 @@ import SearchContainer from '../search/search_container';
 
 const Navbar = ({currentUser, logout}) => {
   if (currentUser) {
-    // console.log(currentUser);
     return (
       <div className="navbar">
         <ul className="navbar-ul-left">

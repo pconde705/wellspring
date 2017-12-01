@@ -55,7 +55,6 @@ class ProjectShow extends React.Component {
     e.preventDefault();
     const pro_id = this.props.project.id
     this.setState({project_id: pro_id}, () => {
-
       return this.props.createProjectBackers(this.state).then(() => this.setState({project_id: null, reward_id: null, cash_only: ""}))
     })
   }
@@ -63,7 +62,6 @@ class ProjectShow extends React.Component {
 
 
   render () {
-    // console.log(this.props);
     const {project} = this.props;
     if (project === undefined || project.rewards === undefined) {
       return ("")

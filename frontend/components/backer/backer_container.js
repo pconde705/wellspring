@@ -3,8 +3,6 @@ import {createProjectBackers, createRewardBackers} from '../../actions/backer_ac
 import Backer from './backer';
 
 const mapStateToProps = (state, ownProps) => {
-  // debugger;
-  // console.log(state);
   return {
     currentUser: state.session.currentUser
   };

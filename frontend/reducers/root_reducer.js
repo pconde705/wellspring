@@ -4,6 +4,7 @@ import errorsReducer from './errors_reducer';
 import {projectsReducer, searchReducer} from './projects_reducer';
 import rewardsReducer from './rewards_reducer';
 import backersReducer from './backers_reducer';
+import statsReducer from './stats_reducer';
 
 const rootReducer = combineReducers ({
   session: sessionReducer,
@@ -11,7 +12,8 @@ const rootReducer = combineReducers ({
   projects: projectsReducer,
   rewards: rewardsReducer,
   backers: backersReducer,
-  search: searchReducer
+  search: searchReducer,
+  stats: statsReducer
 });
 
 export default rootReducer;
