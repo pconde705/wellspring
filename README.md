@@ -47,7 +47,7 @@ To create a project simply click on the button in the navbar that will always be
 ## Project Rewards
 
 <p align="center">
-  <img src="https://res.cloudinary.com/lopopoa2/image/upload/v1512165214/Screen_Shot_2017-12-01_at_1.53.01_PM_mjk9pf.png">
+  <img src="https://res.cloudinary.com/lopopoa2/image/upload/v1512168276/Screen_Shot_2017-12-01_at_2.44.04_PM_ijossg.png">
 </p>
 
 Rewards are not necessary to create a project. They are meant to grow a community of passionate followers that would love to see your app come to fruition. The design was similar so as to not scare away users, but with a slightly different color scheme to showcase difference.
@@ -58,4 +58,22 @@ Rewards are not necessary to create a project. They are meant to grow a communit
   <img src="https://res.cloudinary.com/lopopoa2/image/upload/v1512166342/Screen_Shot_2017-12-01_at_2.11.32_PM_mzhjnm.png" >
 </p>
 
-In the display page, you can read a detailed description the project creator has written about the project. Here you will find live stats about the project that chronicles the number of backers this projects has, the number of backers each reward has, and how close the project is to reach its goal.
+In the display page, you can read a detailed description the project creator has written about the project, and what kind of rewards he/she has provided for that specific pledge amount. Here you will also discover live stats that chronicles the number of backers this projects has, the number of backers each reward has, and how close the project is to reach its goal.
+
+## Search
+
+<p align="center">
+  <img src="https://res.cloudinary.com/lopopoa2/image/upload/v1512168345/Screen_Shot_2017-12-01_at_2.45.15_PM_nxaj06.png" >
+</p>
+
+## Categories
+
+<p align="center">
+  <img src="http://res.cloudinary.com/lopopoa2/image/upload/v1512168440/Screen_Shot_2017-12-01_at_2.46.59_PM_zrjixj.png" >
+</p>
+
+## Stats
+
+<p align="center">
+  <img src="https://res.cloudinary.com/lopopoa2/image/upload/v1512168500/Screen_Shot_2017-12-01_at_2.47.50_PM_cc1qr5.png" >
+</p>
