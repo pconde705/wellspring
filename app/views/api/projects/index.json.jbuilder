@@ -3,9 +3,9 @@
   json.set! project.id do
     json.extract! project,
       :id, :title, :creator_id,
-      :category, :money_raised,
+      :category,
       :main_image_url, :extra_image_url,
-      :description, :goal, :backers
+      :description, :goal
       json.user project.user.username
       json.rewards project.rewards
       json.money_raised project.total_amount_raised

@@ -206,7 +206,7 @@ Project.create(
 
 Project.create(
   backers: 0, money_raised: 0,
-  title: "Personal Wall-E's", creator_id: 1, category: "technology",
+  title: "Personal Wall-E's", creator_id: 9, category: "technology",
   main_image_url: "https://res.cloudinary.com/lopopoa2/image/upload/v1512007457/pexels-photo-247932_jlpqou.jpg",
   extra_image_url: "https://res.cloudinary.com/lopopoa2/image/upload/v1512007592/mars-mars-rover-space-travel-robot-73910_ziqtan.jpg",
   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel commodo turpis. Vestibulum rutrum porttitor lacus, at interdum arcu feugiat vitae. Duis aliquam tortor dignissim facilisis malesuada. Donec et venenatis ligula, at scelerisque ex. Nulla ligula mauris, tincidunt at tellus in, accumsan pharetra est. Vestibulum placerat sed quam vitae rutrum. Mauris quis viverra libero. Sed rhoncus turpis vitae metus egestas commodo. Sed consectetur at elit ac laoreet. Suspendisse molestie sapien tristique augue sollicitudin, vitae semper enim tincidunt. Quisque accumsan diam tempus lorem egestas, venenatis dapibus neque lobortis. In pulvinar fringilla ex quis gravida. Praesent lacus lectus, consequat et justo non, ultricies ultrices massa. Maecenas venenatis faucibus dui ut mattis.",
