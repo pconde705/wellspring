@@ -181,61 +181,115 @@ Project.create(
       includes: "Books + appearance", reward_date: '2018-04-11')
 
 Project.create(
-  backers: 0, money_raised: 0,
+  backers: 11, money_raised: 6114,
   title: "Baga Comics", creator_id: 6, category: "comics",
   main_image_url: "https://res.cloudinary.com/lopopoa2/image/upload/v1512005344/pexels-photo-191295_blypll.jpg",
   extra_image_url: "https://res.cloudinary.com/lopopoa2/image/upload/v1512005441/pexels-photo-290711_zpku2o.jpg",
-  description: "",
+  description: "Baga Comics wants to show you how Indian drawings and art has changed throughout the years. Our studio is based heavily on nostalgia because most of our staff grew up reading the comics based on old Indian fairytales. Now with finding and support
+  from you guys we are bringing this ancient Indian tradition of storytelling alive through the power of comics. We are a small staff working around the clock so anything you give us will help support our vision. This will also be your chance to get immersed
+  in a differenct culture. We love western comics, Spider-Man, Watchmen are some of our favorites. We think comics is a great medium to get across cultural understandings and teaching of religious myth. Of course our story is meant for you to have fun, so
+  don't worry if you're afraid you might not understand some of the references, we provide all the backstory you need for every tale we release. With your support we can make this an ongoing series.",
   goal: 7000)
 
+  Reward.create(reward_backers: 4, project_id: 8, amount: 100, reward_subtitle: "The first 3 books", reward_description: "The first 3 books in the series will be yours",
+      includes: "3 books", reward_date: '2018-04-11')
+  Reward.create(reward_backers: 11, project_id: 8, amount: 300, reward_subtitle: "Win a Trip", reward_description: "Enter into a chance to win a trup to India, all expenses paid.",
+      includes: "A plane ticket", reward_date: '2018-04-11')
+
 Project.create(
-  backers: 0, money_raised: 0,
+  backers: 1120, money_raised: 141124,
   title: "Joey and the Velvet", creator_id: 7, category: "film",
   main_image_url: "https://res.cloudinary.com/lopopoa2/image/upload/v1512005513/pexels-photo-66134_porozd.jpg",
   extra_image_url: "https://res.cloudinary.com/lopopoa2/image/upload/v1512005588/pexels-photo-243747_zdfifm.jpg",
-  description: "",
+  description: "Become an executive producer, and be part of our crew as we film the sequel to the highly praised film Purple Nightmares. Now we have officially cast and rented our locations, but if we've learnt one thing from that project is that accidents
+  happen and budgets are easily broken. We turn to WellSpring because we need to supply for that emergency, but that's just the beginning as we hope to shoot in real locations rather than studio shots. This puts more pressure on the crew and if we know we have a working
+  budget then reshoots won't become this huge fear. Our headquarters are in LA, but we plan to film in San Diego, Germany, Turkey, and Japan. We hold ourselves to be as ambitious as possible, never fearing the outcome until its happened. We hope you can become part of our crew,
+   including visiting the premiere. ",
   goal: 195000)
 
+  Reward.create(reward_backers: 2, project_id: 9, amount: 25000, reward_subtitle: "EP Credit", reward_description: "Get an official credidation and receive tickets to the premiere",
+      includes: "Producer title + tickets", reward_date: '2019-04-11')
+  Reward.create(reward_backers: 3, project_id: 9, amount: 50000, reward_subtitle: "Be a star", reward_description: "Get a chance to be in the movie",
+      includes: "A supporting role", reward_date: '2019-04-11')
+
 Project.create(
-  backers: 0, money_raised: 0,
+  backers: 21, money_raised: 5333,
   title: "10000 Years Ago", creator_id: 8, category: "film",
   main_image_url: "https://res.cloudinary.com/lopopoa2/image/upload/v1512005660/pexels-photo-275977_xucuzt.jpg",
   extra_image_url: "https://res.cloudinary.com/lopopoa2/image/upload/v1512005805/pexels-photo-276015_ngqzkr.jpg",
-  description: "",
+  description: "We're shooting a documentary/feature of how humans used to live, you guessed it, 10000 years ago. Filming primarily outdoors and in unique landscapes that correctly fit the vegetation at the time we combine elements ofa feature film and documentary in order to
+  bring you this project. Shooting onsite is not only a tremendous challenge but can be incredibly costly, but we are passionate about this project because for us what features lack when protraying a historical time period is a sense of realism. And what documentaries lack is
+  a sense of drama. We combine the two in this mockumentary style two parter that will tell a story, that although may be fiction, is based on what relationships were back then. We can't offer you any starring roles but we would love to interact with you, talk about ideas and
+  what makes you so passionate about history, filmmaking and whatever else you want to talk about.",
   goal: 95000)
 
+  Reward.create(reward_backers: 1, project_id: 10, amount: 5000, reward_subtitle: "EP Credit", reward_description: "You made our movie come true, you deserve a mention",
+      includes: "Executive Producer title", reward_date: '2019-04-11')
+  Reward.create(reward_backers: 0, project_id: 10, amount: 10000, reward_subtitle: "Choose Next Project", reward_description: "Talk to the director, come onboard with us and choose our next project.",
+      includes: "Producer Management Rights", reward_date: '2019-04-11')
+
 Project.create(
-  backers: 0, money_raised: 0,
+  backers: 13, money_raised: 5151,
   title: "Garden in the City", creator_id: 7, category: "food",
   main_image_url: "https://res.cloudinary.com/lopopoa2/image/upload/v1512006145/pexels-photo-533360_vzu9ve.jpg",
   extra_image_url: "https://res.cloudinary.com/lopopoa2/image/upload/v1512006290/pexels-photo-169523_ypwcls.jpg",
-  description: "",
+  description: "Love fresh food? Check! Love natural food free from any artificial products? Check! Love to have a farm that operates within walking distance from your city apartment? Check and Check! Welcome to Garden in the city! We are exactly as we sound, a movement to
+  make groceries healthy again. We grow, and serve our garden fresh food straight from the earth. What earth you may ask, we're in the midlle of a city? Simple, we import our earth from the countryside just outside. If that sounds tupidly simple its because it is. We are passionate
+  about food but often find ourselves at the mercy of grocery stores and there artifical preservatives. Really any product should have no more then 3 ingredients in them as foundation. The very essence of a grocery store requires items to be froez and preserved for days in case customers don't the products.
+    We work different, we store nothing to be sold that didn't already sell that day. We maintain fresh where the only ingredient you buy when you shop our produce is the name of the produce itself.",
   goal: 40000)
 
+  Reward.create(reward_backers: 3, project_id: 11, amount: 750, reward_subtitle: "Reserve an item once a week", reward_description: "Choose a produce that we put aside for you, so your freshness is guaranteed",
+      includes: "One produce", reward_date: '2019-04-11')
+  Reward.create(reward_backers: 1, project_id: 11, amount: 1350, reward_subtitle: "First pick every day", reward_description: "Every day you get to reserve what you want",
+      includes: "A produce a day", reward_date: '2019-04-11')
+
 Project.create(
-  backers: 0, money_raised: 0,
+  backers: 1234, money_raised: 11141,
   title: "Bring Quality Back To Beef", creator_id: 6, category: "food",
   main_image_url: "https://res.cloudinary.com/lopopoa2/image/upload/v1512006522/pexels-photo-65175_lpuiup.jpg",
   extra_image_url: "https://res.cloudinary.com/lopopoa2/image/upload/v1512006373/cow-pasture-animal-almabtrieb_d5wo20.jpg",
-  description: "",
+  description: "Although we love the push to veganism and vegetarianism we always have had a love for beef that just wouldn't go away. Beef comes in many forms and shapes, the grass and the area the cow is from matters greatly when it comes to the taste. Wagyu, Angus, Kobe, did you know that if cows drink
+  beer it makes them more tender?! So we hate preservatives, and the meat industry is a leading contributor to climate change, so what can be done? Better care for the animals to start with. After that they need proper food and nourishment as well. Then after living a long anhealthy life we provide 100% pain
+  free injection and these cows are then served as some of the finest meat you will ever eat. We love our cows, they are not just a product to us, they are our friends who at the end of their journey sacrifice themselves for us. All animals look at other animals and see food or relationship. We see both,
+  and we hope that you'll join us in viewing it as non-binary as we do.",
   goal: 12000)
 
+  Reward.create(reward_backers: 1, project_id: 12, amount: 750, reward_subtitle: "Angus for a week", reward_description: "Angus beef for a week",
+      includes: "Angus Beef", reward_date: '2019-04-12')
+  Reward.create(reward_backers: 3, project_id: 12, amount: 2000, reward_subtitle: "Kobe for a week", reward_description: "Kobe beef for a week",
+      includes: "Kobe beef", reward_date: '2019-04-12')
 
 Project.create(
   backers: 0, money_raised: 0,
   title: "Slow-Mo Photography", creator_id: 5, category: "photography",
   main_image_url: "https://res.cloudinary.com/lopopoa2/image/upload/v1512006766/pexels-photo-267961_t0qhcl.jpg",
   extra_image_url: "https://res.cloudinary.com/lopopoa2/image/upload/v1512006604/art-broken-explosion-glass_hkvs4x.jpg",
-  description: "",
+  description: "The pictures speak for themselves, all I can say is we need more of this great and glorious art. Check out my profile for more, and decide if this is for you. The more we raise the more bold situations I will try to deliver with slow motion photography. Right now the bucketlist is: a crashing tidal wave, volcanic eruption,
+  gunshots, bomb explosions, and more.",
   goal: 5000)
 
+  Reward.create(reward_backers: 0, project_id: 13, amount: 50, reward_subtitle: "10 pictures", reward_description: "10 pictures of your choice blown up to original size",
+      includes: "10 pics", reward_date: '2019-04-13')
+  Reward.create(reward_backers: 0, project_id: 13, amount: 200, reward_subtitle: "50 pictures", reward_description: "50 pictures of your choice blwon up to original size.",
+      includes: "50 pics", reward_date: '2019-04-13')
+
 Project.create(
-  backers: 0, money_raised: 0,
+  backers: 10, money_raised: 4414,
   title: "Pictures from the sky", creator_id: 4, category: "photography",
   main_image_url: "https://res.cloudinary.com/lopopoa2/image/upload/v1512006896/pexels-photo-336232_kqlu9j.jpg",
   extra_image_url: "https://res.cloudinary.com/lopopoa2/image/upload/v1512006964/pexels-photo-417101_g7v1cw.jpg",
-  description: "",
+  description: "One category thats forgotten slightly is the aerial photograph. At first it was brushed off as a momentary merketing gimmick but now with the advent of drones reaching impossibly specific places that make overhead photography not only a brand new field to work in, but a brand new creative
+  output. Our first trip is to areas that human beings cannot even enter: Chernobyl! We send a drone into Chernobyl where humans would die were they to enter, but because of this we can get previously unwitnessed areas that have been geographical secrets till now. We can also lower our drones into caves,
+  crevaces, and between mountain clifs. A whole new world of nature phtogoraphy awaits. Imagine how easy it will be to get closeups of dangerous animals now that they no longer can eat you, or places often infested with bugs are now merely models rather than pests. The list continues on and on. With your help
+  we want to make this avation dream a reality.",
   goal: 11000)
+
+
+    Reward.create(reward_backers: 14, project_id: 14, amount: 150, reward_subtitle: "20 pictures", reward_description: "20 pictures of the world",
+        includes: "20 pics", reward_date: '2019-04-14')
+    Reward.create(reward_backers: 3, project_id: 14, amount: 600, reward_subtitle: "50 pictures", reward_description: "50 pictures of the world",
+        includes: "50 pics", reward_date: '2019-04-14')
 
 Project.create(
   backers: 0, money_raised: 0,
