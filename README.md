@@ -1,38 +1,32 @@
-# README
+<h1 align="center"> WellSpring </h1> <br>
+<p align="center">
+  <a href="https://wellspring-pconde705.herokuapp.com">
+    <img alt="WellSpring" title="WellSpring" src="https://res.cloudinary.com/lopopoa2/image/upload/v1512163320/Screen_Shot_2017-12-01_at_1.20.09_PM_rdmyl1.png" width="450">
+  </a>
+</p>
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+<p align="center">
+  Welcome to WellSpring, a Kickstarter inspired single-page application with a React/Redux frontend and Ruby on Rails backend.
+</p>
 
-Things you may want to cover:
+## Table of Contents
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- [Introduction](#introduction)
+- [Project Creation](#project-creation)
+- [Feedback](#feedback)
+- [Contributors](#contributors)
+- [Build Process](#build-process)
+- [Backers](#backers-)
+- [Sponsors](#sponsors-)
+- [Acknowledgments](#acknowledgments)
 
 
-Cloudinary and figaro for image uploads for users. In Curriculum under fullstack you can find readings on how to navigate them both. https://www.pexels.com/
-https://pixabay.com/
+## Introduction
 
-Seed the database the minute you're done with user auth.
-Use realistic usernames, no celebrity under joke names.
+Users can sign up for an account, which allows them to create and back any project of their choice. To back a project they can either type in an amount of their choice or they can choose a fixed amount pledge that come with a reward that the project creator has specified.
 
-Each project should have a boolean that shows whether a user has backed this project, this does not need to be stored in the frontend, only the backend. Use the join table to send down the boolean value true or false if the current_user has backed this project or not.
-react spinners: https://github.com/davidhu2000/react-spinners
+## Project Creation
 
-do not delete any messages written in any files, delete no files.
-
-Create a div around the image, with overflow:hidden and specific width and height attributes, that act as a frame. and inside that is your img which you set to usually to height 100% and width: auto.
+<p align="center">
+  <img src = "https://res.cloudinary.com/lopopoa2/image/upload/v1512164907/Screen_Shot_2017-12-01_at_1.47.43_PM_wcccae.png" width=350>
+</p>
