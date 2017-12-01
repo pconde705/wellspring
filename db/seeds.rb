@@ -89,6 +89,8 @@ Reward.create(reward_backers: 0, project_id: 2, amount: 20000, reward_subtitle: 
 Reward.create(reward_backers: 0, project_id: 2, amount: 50000, reward_subtitle: "Architect credit", reward_description: "You will be credited as an architect of this passion project + previous rewards",
     includes: "A building!", reward_date: '2018-01-31')
 
+    ProjectBacker.create(reward_id: 8, project_id: 2)
+
 Project.create(
   backers: 33, money_raised: 7654,
   title: "Modern Logo Design", creator_id: 6, category: "arts",
@@ -104,6 +106,9 @@ Project.create(
       includes: "Art Canvas", reward_date: '2018-07-21')
   Reward.create(reward_backers: 0, project_id: 3, amount: 5000, reward_subtitle: "Be a Model", reward_description: "I will use your face to create a masterpiece",
       includes: "100 Business Cards (my design)", reward_date: '2018-07-21')
+
+      ProjectBacker.create(reward_id: 10, project_id: 3)
+
 
 Project.create(
   backers: 65, money_raised: 2340,
@@ -132,6 +137,7 @@ Project.create(
   Reward.create(reward_backers: 0, project_id: 4, amount: 10000, reward_subtitle: "Tour with us", reward_description: "All previous rewards + Travel with us on our tour of the US. Hang with us backstage at every gig",
     includes: "Be one of The Benderneers", reward_date: '2018-10-21')
 
+    ProjectBacker.create(reward_id: 12, project_id: 4)
 
 
 Project.create(
@@ -150,6 +156,8 @@ Project.create(
   Reward.create(reward_backers: 0, project_id: 5, amount: 5000, reward_subtitle: "Be a Model", reward_description: "You can pose for the Octopus",
       includes: "Your everything", reward_date: '2018-07-21')
 
+      ProjectBacker.create(reward_id: 19, project_id: 5)
+
 Project.create(
   backers: 387, money_raised: 13900,
   title: "Jack Johnsson", creator_id: 4, category: "music",
@@ -166,6 +174,7 @@ Project.create(
   Reward.create(reward_backers: 65, project_id: 6, amount: 500, reward_subtitle: "Concert tickets", reward_description: "10 tickets for use in any show",
       includes: "Tickets", reward_date: '2018-07-11')
 
+ProjectBacker.create(reward_id: 21, project_id: 6)
 
 Project.create(
   backers: 24, money_raised: 3000,
@@ -183,6 +192,8 @@ Project.create(
   Reward.create(reward_backers: 75, project_id: 7, amount: 1500, reward_subtitle: "Be a character", reward_description: "I'll make you a character in the story, I'll give you some lines as well",
       includes: "Books + appearance", reward_date: '2018-04-11')
 
+      ProjectBacker.create(reward_id: 23, project_id: 7)
+
 Project.create(
   backers: 11, money_raised: 6114,
   title: "Baga Comics", creator_id: 6, category: "comics",
@@ -198,6 +209,8 @@ Project.create(
       includes: "3 books", reward_date: '2018-04-11')
   Reward.create(reward_backers: 11, project_id: 8, amount: 300, reward_subtitle: "Win a Trip", reward_description: "Enter into a chance to win a trup to India, all expenses paid.",
       includes: "A plane ticket", reward_date: '2018-04-11')
+
+      ProjectBacker.create(reward_id: 25, project_id: 8)
 
 Project.create(
   backers: 1120, money_raised: 141124,
@@ -215,6 +228,9 @@ Project.create(
   Reward.create(reward_backers: 3, project_id: 9, amount: 50000, reward_subtitle: "Be a star", reward_description: "Get a chance to be in the movie",
       includes: "A supporting role", reward_date: '2019-04-11')
 
+      ProjectBacker.create(reward_id: 27, project_id: 9)
+
+
 Project.create(
   backers: 21, money_raised: 5333,
   title: "10000 Years Ago", creator_id: 8, category: "film",
@@ -230,6 +246,9 @@ Project.create(
       includes: "Executive Producer title", reward_date: '2019-04-11')
   Reward.create(reward_backers: 0, project_id: 10, amount: 10000, reward_subtitle: "Choose Next Project", reward_description: "Talk to the director, come onboard with us and choose our next project.",
       includes: "Producer Management Rights", reward_date: '2019-04-11')
+
+      ProjectBacker.create(reward_id: 29, project_id: 10)
+
 
 Project.create(
   backers: 13, money_raised: 5151,
@@ -247,6 +266,8 @@ Project.create(
   Reward.create(reward_backers: 1, project_id: 11, amount: 1350, reward_subtitle: "First pick every day", reward_description: "Every day you get to reserve what you want",
       includes: "A produce a day", reward_date: '2019-04-11')
 
+      ProjectBacker.create(reward_id: 31, project_id: 11)
+
 Project.create(
   backers: 1234, money_raised: 11141,
   title: "Bring Quality Back To Beef", creator_id: 6, category: "food",
@@ -263,6 +284,8 @@ Project.create(
   Reward.create(reward_backers: 3, project_id: 12, amount: 2000, reward_subtitle: "Kobe for a week", reward_description: "Kobe beef for a week",
       includes: "Kobe beef", reward_date: '2019-04-12')
 
+      ProjectBacker.create(reward_id: 33, project_id: 12)
+
 Project.create(
   backers: 0, money_raised: 0,
   title: "Slow-Mo Photography", creator_id: 5, category: "photography",
@@ -276,6 +299,8 @@ Project.create(
       includes: "10 pics", reward_date: '2019-04-13')
   Reward.create(reward_backers: 0, project_id: 13, amount: 200, reward_subtitle: "50 pictures", reward_description: "50 pictures of your choice blwon up to original size.",
       includes: "50 pics", reward_date: '2019-04-13')
+
+      ProjectBacker.create(reward_id: 35, project_id: 13)
 
 Project.create(
   backers: 10, money_raised: 4414,
@@ -294,6 +319,8 @@ Project.create(
     Reward.create(reward_backers: 3, project_id: 14, amount: 600, reward_subtitle: "50 pictures", reward_description: "50 pictures of the world",
         includes: "50 pics", reward_date: '2019-04-14')
 
+        ProjectBacker.create(reward_id: 37, project_id: 14)
+
 Project.create(
   backers: 5321, money_raised: 431433,
   title: "Everywhere VR", creator_id: 3, category: "games",
@@ -309,6 +336,8 @@ Project.create(
       includes: "VR Headset + Games", reward_date: '2019-11-15')
   Reward.create(reward_backers: 10, project_id: 15, amount: 3000, reward_subtitle: "Decide on a setting", reward_description: "We have many settings planned out, your official vote will narrow down what we begin with",
       includes: "Everything Above + Veto Power", reward_date: '2019-11-15')
+
+      ProjectBacker.create(reward_id: 39, project_id: 15)
 
 Project.create(
   backers: 129, money_raised: 7343,
@@ -326,6 +355,8 @@ Project.create(
   Reward.create(reward_backers: 2, project_id: 16, amount: 2000, reward_subtitle: "Reserve a seat", reward_description: "Reserve a seat at a table so you can exclusively game without having to stress",
       includes: "Free drink + reservation", reward_date: '2019-10-16')
 
+      ProjectBacker.create(reward_id: 41, project_id: 16)
+
 Project.create(
   backers: 6343, money_raised: 2342222,
   title: "Personal Wall-E's", creator_id: 9, category: "technology",
@@ -342,6 +373,8 @@ Project.create(
     Reward.create(reward_backers: 2, project_id: 17, amount: 100000, reward_subtitle: "You bought a robot", reward_description: "This reward officially includes one wall-e purchase.",
         includes: "1 Wall-E", reward_date: '2019-10-16')
 
+        ProjectBacker.create(reward_id: 43, project_id: 17)
+
 Project.create(
   backers: 0, money_raised: 0,
   title: "Ancient Gold Mine", creator_id: 2, category: "technology",
@@ -356,6 +389,8 @@ Project.create(
       includes: "24K Nugget", reward_date: '2019-10-16')
   Reward.create(reward_backers: 2, project_id: 18, amount: 2000000, reward_subtitle: "Melted 24K Nugget", reward_description: "We will melt the gold and mold it in the shape you want, necklace, armor, you name it",
       includes: "24K Nugget gold shape", reward_date: '2019-10-16')
+
+      ProjectBacker.create(reward_id: 45, project_id: 18)
 
 Project.create(
   backers: 0, money_raised: 0,
@@ -372,6 +407,7 @@ Project.create(
   Reward.create(reward_backers: 2, project_id: 19, amount: 50, reward_subtitle: "Dedication", reward_description: "I'll add your name in the dedication page",
       includes: "Your name's in the book", reward_date: '2019-10-21')
 
+ProjectBacker.create(reward_id: 47, project_id: 19)
 
 Project.create(
   backers: 0, money_raised: 0,
@@ -380,14 +416,16 @@ Project.create(
   extra_image_url: "https://res.cloudinary.com/lopopoa2/image/upload/v1512008159/hands-hand-book-reading_sttjqp.jpg",
   description: "With Yoga and going to the gym we practice a sense of physical peace, but what we forget is that our mental relaxation process also needs a workout every now and then. My is Guru Saj, I am a practitioner of mental peace, etheral workouts, and thought cleansing. I am writing my teaching from 30 years of experience into one complete book.
   This book will be my magnum opus. A complete collection of practices to at home and on the road will not only keep your brain functioning but your cognitive perception will reach new levels of understanding. You will see things and notice things with a perception far above that of the average human. In fact at first it may suprise you, you'll feel
-  similar to spider-man from the movies in where you are alerted to a presence without necessarily having to physically look at them.",
+  similar to spider-man from the movies in where you are alerted to a presence without necessarily having to physically look at them. No drugs or weird substances are involved, just pure mental training. Once you have unlocked your mental abilities you will never wabt to go back to living the life of the dullard. Imagine yourself with Plato's allegory of the cave,
+  once you have seen the light you can never go back, but the bigger question you will ask yourself is why would I ever want to?",
   goal: 2000)
 
-    Reward.create(reward_backers: 1, project_id: 20, amount: 10, reward_subtitle: "Thank you!", reward_description: "Small becomes big",
-        includes: "Lora's eternal thanks", reward_date: '2020-10-21')
-    Reward.create(reward_backers: 2, project_id: 20, amount: 50, reward_subtitle: "Dedication", reward_description: "I'll add your name in the dedication page",
-        includes: "Your name's in the book", reward_date: '2020-10-21')
+    Reward.create(reward_backers: 1, project_id: 20, amount: 100, reward_subtitle: "Training manual", reward_description: "You'll receive the training manual for beginners, that will take you to Step 2 in the book.",
+        includes: "Training manual", reward_date: '2020-10-21')
+    Reward.create(reward_backers: 2, project_id: 20, amount: 600, reward_subtitle: "Full book", reward_description: "For 600 you will receive the full book",
+        includes: "Book", reward_date: '2020-10-21')
 
+        ProjectBacker.create(reward_id: 49, project_id: 20)
 
 
 
