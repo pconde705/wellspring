@@ -69,7 +69,7 @@ Reward.create(reward_backers: 0, project_id: 1, amount: 5000, reward_subtitle: "
 Reward.create(reward_backers: 0, project_id: 1, amount: 10000, reward_subtitle: "Be in the show", reward_description: "Previous rewards plus you get to appear on stage with us",
   includes: "Be a cast member", reward_date: '2018-12-31')
 
-ProjectBacker.create(reward_id: 1, project_id: 1)
+ProjectBacker.create(backer_id: 1, reward_id: 1, project_id: 1)
 
 
 Project.create(
@@ -89,7 +89,7 @@ Reward.create(reward_backers: 0, project_id: 2, amount: 20000, reward_subtitle: 
 Reward.create(reward_backers: 0, project_id: 2, amount: 50000, reward_subtitle: "Architect credit", reward_description: "You will be credited as an architect of this passion project + previous rewards",
     includes: "A building!", reward_date: '2018-01-31')
 
-    ProjectBacker.create(reward_id: 8, project_id: 2)
+    ProjectBacker.create(backer_id: 3, reward_id: 8, project_id: 2)
 
 Project.create(
   backers: 33, money_raised: 7654,
@@ -107,7 +107,7 @@ Project.create(
   Reward.create(reward_backers: 0, project_id: 3, amount: 5000, reward_subtitle: "Be a Model", reward_description: "I will use your face to create a masterpiece",
       includes: "100 Business Cards (my design)", reward_date: '2018-07-21')
 
-      ProjectBacker.create(reward_id: 10, project_id: 3)
+      ProjectBacker.create(backer_id: 4, reward_id: 10, project_id: 3)
 
 
 Project.create(
@@ -137,7 +137,7 @@ Project.create(
   Reward.create(reward_backers: 0, project_id: 4, amount: 10000, reward_subtitle: "Tour with us", reward_description: "All previous rewards + Travel with us on our tour of the US. Hang with us backstage at every gig",
     includes: "Be one of The Benderneers", reward_date: '2018-10-21')
 
-    ProjectBacker.create(reward_id: 12, project_id: 4)
+    ProjectBacker.create(backer_id: 2, reward_id: 12, project_id: 4)
 
 
 Project.create(
@@ -156,7 +156,7 @@ Project.create(
   Reward.create(reward_backers: 0, project_id: 5, amount: 5000, reward_subtitle: "Be a Model", reward_description: "You can pose for the Octopus",
       includes: "Your everything", reward_date: '2018-07-21')
 
-      ProjectBacker.create(reward_id: 19, project_id: 5)
+      ProjectBacker.create(backer_id: 8, reward_id: 19, project_id: 5)
 
 Project.create(
   backers: 387, money_raised: 13900,
@@ -174,7 +174,7 @@ Project.create(
   Reward.create(reward_backers: 65, project_id: 6, amount: 500, reward_subtitle: "Concert tickets", reward_description: "10 tickets for use in any show",
       includes: "Tickets", reward_date: '2018-07-11')
 
-ProjectBacker.create(reward_id: 21, project_id: 6)
+ProjectBacker.create(backer_id: 4, reward_id: 21, project_id: 6)
 
 Project.create(
   backers: 24, money_raised: 3000,
@@ -192,7 +192,7 @@ Project.create(
   Reward.create(reward_backers: 75, project_id: 7, amount: 1500, reward_subtitle: "Be a character", reward_description: "I'll make you a character in the story, I'll give you some lines as well",
       includes: "Books + appearance", reward_date: '2018-04-11')
 
-      ProjectBacker.create(reward_id: 23, project_id: 7)
+      ProjectBacker.create(backer_id: 1, reward_id: 23, project_id: 7)
 
 Project.create(
   backers: 11, money_raised: 6114,
@@ -210,7 +210,7 @@ Project.create(
   Reward.create(reward_backers: 11, project_id: 8, amount: 300, reward_subtitle: "Win a Trip", reward_description: "Enter into a chance to win a trup to India, all expenses paid.",
       includes: "A plane ticket", reward_date: '2018-04-11')
 
-      ProjectBacker.create(reward_id: 25, project_id: 8)
+      ProjectBacker.create(backer_id: 1, reward_id: 25, project_id: 8)
 
 Project.create(
   backers: 1120, money_raised: 141124,
@@ -228,7 +228,7 @@ Project.create(
   Reward.create(reward_backers: 3, project_id: 9, amount: 50000, reward_subtitle: "Be a star", reward_description: "Get a chance to be in the movie",
       includes: "A supporting role", reward_date: '2019-04-11')
 
-      ProjectBacker.create(reward_id: 27, project_id: 9)
+      ProjectBacker.create(backer_id: 7, reward_id: 27, project_id: 9)
 
 
 Project.create(
@@ -247,7 +247,7 @@ Project.create(
   Reward.create(reward_backers: 0, project_id: 10, amount: 10000, reward_subtitle: "Choose Next Project", reward_description: "Talk to the director, come onboard with us and choose our next project.",
       includes: "Producer Management Rights", reward_date: '2019-04-11')
 
-      ProjectBacker.create(reward_id: 29, project_id: 10)
+      ProjectBacker.create(backer_id: 1, reward_id: 29, project_id: 10)
 
 
 Project.create(
@@ -266,7 +266,7 @@ Project.create(
   Reward.create(reward_backers: 1, project_id: 11, amount: 1350, reward_subtitle: "First pick every day", reward_description: "Every day you get to reserve what you want",
       includes: "A produce a day", reward_date: '2019-04-11')
 
-      ProjectBacker.create(reward_id: 31, project_id: 11)
+      ProjectBacker.create(backer_id: 2, reward_id: 31, project_id: 11)
 
 Project.create(
   backers: 1234, money_raised: 11141,
@@ -284,7 +284,7 @@ Project.create(
   Reward.create(reward_backers: 3, project_id: 12, amount: 2000, reward_subtitle: "Kobe for a week", reward_description: "Kobe beef for a week",
       includes: "Kobe beef", reward_date: '2019-04-12')
 
-      ProjectBacker.create(reward_id: 33, project_id: 12)
+      ProjectBacker.create(backer_id: 1, reward_id: 33, project_id: 12)
 
 Project.create(
   backers: 0, money_raised: 0,
@@ -300,7 +300,7 @@ Project.create(
   Reward.create(reward_backers: 0, project_id: 13, amount: 200, reward_subtitle: "50 pictures", reward_description: "50 pictures of your choice blwon up to original size.",
       includes: "50 pics", reward_date: '2019-04-13')
 
-      ProjectBacker.create(reward_id: 35, project_id: 13)
+      ProjectBacker.create(backer_id: 9, reward_id: 35, project_id: 13)
 
 Project.create(
   backers: 10, money_raised: 4414,
@@ -319,7 +319,7 @@ Project.create(
     Reward.create(reward_backers: 3, project_id: 14, amount: 600, reward_subtitle: "50 pictures", reward_description: "50 pictures of the world",
         includes: "50 pics", reward_date: '2019-04-14')
 
-        ProjectBacker.create(reward_id: 37, project_id: 14)
+        ProjectBacker.create(backer_id: 1, reward_id: 37, project_id: 14)
 
 Project.create(
   backers: 5321, money_raised: 431433,
@@ -337,7 +337,7 @@ Project.create(
   Reward.create(reward_backers: 10, project_id: 15, amount: 3000, reward_subtitle: "Decide on a setting", reward_description: "We have many settings planned out, your official vote will narrow down what we begin with",
       includes: "Everything Above + Veto Power", reward_date: '2019-11-15')
 
-      ProjectBacker.create(reward_id: 39, project_id: 15)
+      ProjectBacker.create(backer_id: 1, reward_id: 39, project_id: 15)
 
 Project.create(
   backers: 129, money_raised: 7343,
@@ -355,7 +355,7 @@ Project.create(
   Reward.create(reward_backers: 2, project_id: 16, amount: 2000, reward_subtitle: "Reserve a seat", reward_description: "Reserve a seat at a table so you can exclusively game without having to stress",
       includes: "Free drink + reservation", reward_date: '2019-10-16')
 
-      ProjectBacker.create(reward_id: 41, project_id: 16)
+      ProjectBacker.create(backer_id: 1, reward_id: 41, project_id: 16)
 
 Project.create(
   backers: 6343, money_raised: 2342222,
@@ -373,7 +373,7 @@ Project.create(
     Reward.create(reward_backers: 2, project_id: 17, amount: 100000, reward_subtitle: "You bought a robot", reward_description: "This reward officially includes one wall-e purchase.",
         includes: "1 Wall-E", reward_date: '2019-10-16')
 
-        ProjectBacker.create(reward_id: 43, project_id: 17)
+        ProjectBacker.create(backer_id: 1, reward_id: 43, project_id: 17)
 
 Project.create(
   backers: 0, money_raised: 0,
@@ -390,7 +390,7 @@ Project.create(
   Reward.create(reward_backers: 2, project_id: 18, amount: 2000000, reward_subtitle: "Melted 24K Nugget", reward_description: "We will melt the gold and mold it in the shape you want, necklace, armor, you name it",
       includes: "24K Nugget gold shape", reward_date: '2019-10-16')
 
-      ProjectBacker.create(reward_id: 45, project_id: 18)
+      ProjectBacker.create(backer_id: 1, reward_id: 45, project_id: 18)
 
 Project.create(
   backers: 0, money_raised: 0,
@@ -407,7 +407,7 @@ Project.create(
   Reward.create(reward_backers: 2, project_id: 19, amount: 50, reward_subtitle: "Dedication", reward_description: "I'll add your name in the dedication page",
       includes: "Your name's in the book", reward_date: '2019-10-21')
 
-ProjectBacker.create(reward_id: 47, project_id: 19)
+ProjectBacker.create(backer_id: 1, reward_id: 47, project_id: 19)
 
 Project.create(
   backers: 0, money_raised: 0,
@@ -425,7 +425,7 @@ Project.create(
     Reward.create(reward_backers: 2, project_id: 20, amount: 600, reward_subtitle: "Full book", reward_description: "For 600 you will receive the full book",
         includes: "Book", reward_date: '2020-10-21')
 
-        ProjectBacker.create(reward_id: 49, project_id: 20)
+        ProjectBacker.create(backer_id: 1, reward_id: 49, project_id: 20)
 
 
 

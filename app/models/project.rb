@@ -74,4 +74,6 @@ class Project < ApplicationRecord
     SQL
     result.count
   end
+  # Thanks to the above SQL query the funded projects on the statistics page will reflect all funded projects. But they have to click a reward at least once.
+  # Even if someone gives them the total amount right away, click on the reward and it will updated as funded.
 end
