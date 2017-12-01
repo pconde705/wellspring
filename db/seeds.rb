@@ -69,6 +69,9 @@ Reward.create(reward_backers: 0, project_id: 1, amount: 5000, reward_subtitle: "
 Reward.create(reward_backers: 0, project_id: 1, amount: 10000, reward_subtitle: "Be in the show", reward_description: "Previous rewards plus you get to appear on stage with us",
   includes: "Be a cast member", reward_date: '2018-12-31')
 
+ProjectBacker.create(reward_id: 1, project_id: 1)
+
+
 Project.create(
   backers: 110, money_raised: 65440,
   title: "Park City", creator_id: 10, category: "arts",
@@ -307,8 +310,6 @@ Project.create(
   Reward.create(reward_backers: 10, project_id: 15, amount: 3000, reward_subtitle: "Decide on a setting", reward_description: "We have many settings planned out, your official vote will narrow down what we begin with",
       includes: "Everything Above + Veto Power", reward_date: '2019-11-15')
 
-ProjectBacker.create(cash_only: 431433, project_id: 15)
-
 Project.create(
   backers: 129, money_raised: 7343,
   title: "Game Bar", creator_id: 2, category: "games",
@@ -330,35 +331,62 @@ Project.create(
   title: "Personal Wall-E's", creator_id: 9, category: "technology",
   main_image_url: "https://res.cloudinary.com/lopopoa2/image/upload/v1512007457/pexels-photo-247932_jlpqou.jpg",
   extra_image_url: "https://res.cloudinary.com/lopopoa2/image/upload/v1512007592/mars-mars-rover-space-travel-robot-73910_ziqtan.jpg",
-  description: "Yes you read our WellSpring title correctly. We are building Wall-Es for individual homes. Imagine an AI as cute and awesome as WALL-E",
+  description: "Yes you read our WellSpring title correctly. We are building Wall-Es for individual homes. Imagine an AI as cute and awesome as WALL-E in your home tailoring to your every need. Not as servant but companion. For those of you who haven't seen the movie wall-e stands for Waste Allocation Load Lifter, Earth-Class).
+  We haven't yet mastered interdimensional travel so this last E is a bit redundant. But think of Wall-E as carrying your garbage from one area to another. You tell it where to go and what to carry and WALL-E's AI is smart enough to figure out where to go and how to get there. You may think this all sounds impossible, but
+  robotics has come very far, further than you think. Its just that we don't hear much about it because its not something we interact with on a daily basis. We are sitting at the cusp of the revolutionary age of robotics and our project will begin what we hopefully will see as the future of households, and living standards. Together
+   we will begin the age of robotics much sooner than expected. Embrace the future, join us!",
   goal: 4500000)
+
+    Reward.create(reward_backers: 1, project_id: 17, amount: 50000, reward_subtitle: "Test the prototypes", reward_description: "You will be among the first to prototype the machines",
+        includes: "Test Robot", reward_date: '2019-10-16')
+    Reward.create(reward_backers: 2, project_id: 17, amount: 100000, reward_subtitle: "You bought a robot", reward_description: "This reward officially includes one wall-e purchase.",
+        includes: "1 Wall-E", reward_date: '2019-10-16')
 
 Project.create(
   backers: 0, money_raised: 0,
   title: "Ancient Gold Mine", creator_id: 2, category: "technology",
   main_image_url: "https://res.cloudinary.com/lopopoa2/image/upload/v1512007681/pexels-photo-414936_h1zu61.jpg",
   extra_image_url: "https://res.cloudinary.com/lopopoa2/image/upload/v1512007798/pexels-photo-532229_vbgfun.jpg",
-  description: "",
+  description: "We've struck gold! And we don't mean oil, we mean literal goal. We have bought digging and land rights. We beat the competition and are literally crowdfunding gold to the public. Yes no corporation will come between us and bathing like Scrooge McDuck. But as you can imagine digging is not so easy. We have got most of the equipment,
+  but paying workers and supporting us with food will guarantee results quicker and more efficient. And rewards literally include gold, yes gold. This is a find unlike any other. Our main aim is to sell this gold at resonable prices to everyday individuals, not to artifically inflate the price and sell them in jewelrey stores. So come on down,
+  supprt us, become a gold man and help us dig.",
   goal: 6600000)
+
+  Reward.create(reward_backers: 1, project_id: 18, amount: 1000000, reward_subtitle: "1 24K Nugget", reward_description: "One 24K nugget unpolished and raw",
+      includes: "24K Nugget", reward_date: '2019-10-16')
+  Reward.create(reward_backers: 2, project_id: 18, amount: 2000000, reward_subtitle: "Melted 24K Nugget", reward_description: "We will melt the gold and mold it in the shape you want, necklace, armor, you name it",
+      includes: "24K Nugget gold shape", reward_date: '2019-10-16')
 
 Project.create(
   backers: 0, money_raised: 0,
   title: "Second Novel: 'Lovers in Death'", creator_id: 4, category: "publishing",
   main_image_url: "https://res.cloudinary.com/lopopoa2/image/upload/v1512007929/pexels-photo-374697_ghwswz.jpg",
   extra_image_url: "https://res.cloudinary.com/lopopoa2/image/upload/v1512008001/pexels-photo-206434_vezcn0.jpg",
-  description: "",
+  description: "Hello everyone, I'm Zara, but most of you might know me by my pain name Leslie Zee, the number one author of romantic death fiction. Last time I wrote a novel I was tired by all the constant pushback I got from my publisher. It felt like I was compromising the whol experience for soemthing that I didn't want to do. The book released
+  and I'm happy it did, but this time I'm writing it on my terms. I'm reaching out to WellSpring so I don't have to pay publisher costs. Nothing goes to me, the more money this page gets the further the book will reach away from my hometown. Obviously I will have an e-reader and kindle support, this is how most of you read my first title anyway.
+  That's why I am not afraid of crowdfunding and going solo. I'm not alone in this, you are with me. And you are with Lovers In Death. Find out what happens when Lora escapes from Dan, and how Hades thinks of it all.",
   goal: 3000)
+
+  Reward.create(reward_backers: 1, project_id: 19, amount: 10, reward_subtitle: "Thank you!", reward_description: "Small becomes big",
+      includes: "Lora's eternal thanks", reward_date: '2019-10-21')
+  Reward.create(reward_backers: 2, project_id: 19, amount: 50, reward_subtitle: "Dedication", reward_description: "I'll add your name in the dedication page",
+      includes: "Your name's in the book", reward_date: '2019-10-21')
+
 
 Project.create(
   backers: 0, money_raised: 0,
   title: "A Clear Mind", creator_id: 9, category: "publishing",
   main_image_url: "https://res.cloudinary.com/lopopoa2/image/upload/v1512008103/pexels-photo-256472_iacjyz.jpg",
   extra_image_url: "https://res.cloudinary.com/lopopoa2/image/upload/v1512008159/hands-hand-book-reading_sttjqp.jpg",
-  description: "",
+  description: "With Yoga and going to the gym we practice a sense of physical peace, but what we forget is that our mental relaxation process also needs a workout every now and then. My is Guru Saj, I am a practitioner of mental peace, etheral workouts, and thought cleansing. I am writing my teaching from 30 years of experience into one complete book.
+  This book will be my magnum opus. A complete collection of practices to at home and on the road will not only keep your brain functioning but your cognitive perception will reach new levels of understanding. You will see things and notice things with a perception far above that of the average human. In fact at first it may suprise you, you'll feel
+  similar to spider-man from the movies in where you are alerted to a presence without necessarily having to physically look at them.",
   goal: 2000)
 
-
-
+    Reward.create(reward_backers: 1, project_id: 20, amount: 10, reward_subtitle: "Thank you!", reward_description: "Small becomes big",
+        includes: "Lora's eternal thanks", reward_date: '2020-10-21')
+    Reward.create(reward_backers: 2, project_id: 20, amount: 50, reward_subtitle: "Dedication", reward_description: "I'll add your name in the dedication page",
+        includes: "Your name's in the book", reward_date: '2020-10-21')
 
 
 
