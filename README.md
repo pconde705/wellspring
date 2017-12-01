@@ -83,7 +83,8 @@ The category bar provides an immediate non-browser refreshing filter functionali
 </p>
 
 Live statistics outline the current date, how many ongoing projects currently exist, how many backers WellSpring has, and how many projects have been successfully funded.
-The stats page was the final thing added to the app that took the most time and effort. Not all aspects were challenging, but when it came to calculating the projects that had been funded, it required a triple Full Outer Join written as a SQL query in Active Record.
+
+The stats page was the final thing added to the app that took the most time and effort. Not all aspects were challenging, but when it came to calculating the projects that had been funded, using the columns created in my table required ruby methods performing calculations on the backend and a triple Full Outer Join written as a SQL query in Active Record.
 
 ```ruby
   def total_amount_raised
