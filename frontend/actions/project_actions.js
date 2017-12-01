@@ -22,7 +22,7 @@ const receiveProjectErrors = (errors) => ({
 
 const receiveAllProjects = (projects) => ({
   type: RECEIVE_ALL_PROJECTS, // this is the action.type in the reducer
-  projects // this is whate you are returning in the reducer: action.projects
+  projects // this is what you are returning in the reducer: action.projects
 });
 
 export const fetchAllProjects = () => dispatch => (

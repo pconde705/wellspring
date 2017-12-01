@@ -4,7 +4,7 @@ import SessionFormContainer from './session_form/session_form_container';
 import {Route} from 'react-router-dom';
 import {AuthRoute, ProtectedRoute} from '../util/route_util';
 import Navbar from './navbar/navbar_container';
-import Statistics from './statistics'
+import StatisticsContainer from './statistics/statistics_container';
 import ProjectIndexContainer from './project_index/project_index_container';
 import ProjectFormContainer from './project_form/project_form_container';
 import ProjectShowContainer from './project_show/project_show_container';
@@ -15,7 +15,7 @@ import Footer from './footer';
 const App = () => (
   <div>
     <Navbar />
-    <Route exact path="/" component={Statistics} />
+    <Route exact path="/" component={StatisticsContainer} />
 
     <ProtectedRoute path="/project/new" component={ProjectFormContainer} />
     <ProtectedRoute exact path="/projects/:project_id/rewards" component={RewardContainer} />
