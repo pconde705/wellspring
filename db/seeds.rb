@@ -292,27 +292,45 @@ Project.create(
         includes: "50 pics", reward_date: '2019-04-14')
 
 Project.create(
-  backers: 0, money_raised: 0,
+  backers: 5321, money_raised: 431433,
   title: "Everywhere VR", creator_id: 3, category: "games",
   main_image_url: "https://res.cloudinary.com/lopopoa2/image/upload/v1512007200/pexels-photo-123335_hu6vj4.jpg",
   extra_image_url: "https://res.cloudinary.com/lopopoa2/image/upload/v1512007147/pexels-photo-276452_w8zfiv.jpg",
-  description: "",
+  description: "VR is a brand new technology ripe for experimentation and we are taking it to the next level. We are building a portable VR headset to literally work anywhere. Games are pluged in via cartridges and worlds are loaded before your very eyes. Only current VR that are linked to consoles, our
+  technology are driven by high powered batteries getting rid of all cables and limited area dragging you down. But wait you say? What worlds, what games are going to be available?! I'm glad you ask, we are working with some of the biggest developers in VR right now to create not only fictional worlds,
+  but actual historical settings in the past. Imagine walking among ancient Egypt or Mesopotamia seeing what life was like back then in stunning virtual reality. Not only that but people in the world will acknowledge your presence, making it all the more immersive. You might think this all sounds cool but is slightly impractical because you might walk onto
+  a road or building. Have no fear a simple button click will take you back to the real world, and that same button click takes you back to VR. Welcome to the future!",
   goal: 665000)
 
+  Reward.create(reward_backers: 14, project_id: 15, amount: 1250, reward_subtitle: "Exclusive Beta Testing", reward_description: "We will send you a device for you to keep, and test for us",
+      includes: "VR Headset + Games", reward_date: '2019-11-15')
+  Reward.create(reward_backers: 10, project_id: 15, amount: 3000, reward_subtitle: "Decide on a setting", reward_description: "We have many settings planned out, your official vote will narrow down what we begin with",
+      includes: "Everything Above + Veto Power", reward_date: '2019-11-15')
+
+ProjectBacker.create(cash_only: 431433, project_id: 15)
+
 Project.create(
-  backers: 0, money_raised: 0,
+  backers: 129, money_raised: 7343,
   title: "Game Bar", creator_id: 2, category: "games",
   main_image_url: "https://res.cloudinary.com/lopopoa2/image/upload/v1512007287/arcade-ps4-fun-playing-74209_iwczkf.jpg",
   extra_image_url: "https://res.cloudinary.com/lopopoa2/image/upload/v1512007353/pexels-photo-371924_yfitqa.jpg",
-  description: "",
+  description: "There are dive bars, vodka bars, and strip bars, but why is there are no game bar? A place for people to drink if they want, wat if they want, but most importantly game if they want, and who doesn't? We will have TVs setup all over the bar with both last gen and current gem consoles, because we don't judge!
+  We are talking about games all the way back from NES days, and we are including the Sega consoles of course. The gaming community is one of the biggest, fastest growing communities we can think of and we need a local hub. Gamers are all around us, every age group, every gender, we need a hub. A place to chill from work,
+  from boring natual life. We need the Game Bar. We are five gamers with varying degrees coming together to make this a reality, but with any formal business start with need as much starting capital as possible. We enough we can setup more than on hub as well, and who knows eventually we might become as big as an evil
+  corporation in a COD game. We will aim to become our biggest enemy, but not like EA of course ;) ",
   goal: 335000)
 
+  Reward.create(reward_backers: 1, project_id: 16, amount: 1000, reward_subtitle: "Free Drink ticket", reward_description: "A free drink ticket a day",
+      includes: "Free drink every day", reward_date: '2019-10-16')
+  Reward.create(reward_backers: 2, project_id: 16, amount: 2000, reward_subtitle: "Reserve a seat", reward_description: "Reserve a seat at a table so you can exclusively game without having to stress",
+      includes: "Free drink + reservation", reward_date: '2019-10-16')
+
 Project.create(
-  backers: 0, money_raised: 0,
+  backers: 6343, money_raised: 2342222,
   title: "Personal Wall-E's", creator_id: 9, category: "technology",
   main_image_url: "https://res.cloudinary.com/lopopoa2/image/upload/v1512007457/pexels-photo-247932_jlpqou.jpg",
   extra_image_url: "https://res.cloudinary.com/lopopoa2/image/upload/v1512007592/mars-mars-rover-space-travel-robot-73910_ziqtan.jpg",
-  description: "",
+  description: "Yes you read our WellSpring title correctly. We are building Wall-Es for individual homes. Imagine an AI as cute and awesome as WALL-E",
   goal: 4500000)
 
 Project.create(

@@ -59,7 +59,19 @@ class Project < ApplicationRecord
   end
 
   def self.all_funded_projects
-    Project.where("money_raised > goal").count
+    result = ActiveRecord::Base.connection.execute(<<-SQL)
+      SELECT
+        projects.id
+      FROM
+        projects
+      FULL OUTER JOIN project_backers AS reward_backers ON reward_backers.project_id = projects.id
+      FULL OUTER JOIN rewards ON reward_backers.reward_id = rewards.id
+      FULL OUTER JOIN project_backers AS cash_backers ON cash_backers.project_id = projects.id
+      GROUP BY
+        projects.id
+      HAVING
+        sum(cash_backers.cash_only + rewards.amount) > projects.goal
+    SQL
+    result.count
   end
-  # You may have to seed the databse with money_raised: 0 rather than null
 end
