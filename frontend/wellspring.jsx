@@ -3,15 +3,10 @@ import ReactDOM from 'react-dom';
 import configureStore from './store/store';
 import Root from './components/root';
 // import { login, signup, logout } from './actions/session_actions'; // its the actions that dispatch login requests
+// import {getProject} from './util/projects_api_util';
 
 document.addEventListener("DOMContentLoaded", () => {
 
-  // window.getState = store.getState;
-  // window.dispatch = store.dispatch;
-  //
-  // window.login = login;
-  // window.signup = signup;
-  // window.logout = logout;
   let store;
 
   if (window.currentUser) {
@@ -21,6 +16,14 @@ document.addEventListener("DOMContentLoaded", () => {
   } else {
     store = configureStore();
   }
+  // window.getState = store.getState;
+  // window.dispatch = store.dispatch;
+  // //
+  // // window.login = login;
+  // // window.signup = signup;
+  // // window.logout = logout;
+  //
+  // window.getProject = getProject;
 
   const root = document.getElementById('root');
 

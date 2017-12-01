@@ -55,7 +55,6 @@ class ProjectShow extends React.Component {
     e.preventDefault();
     const pro_id = this.props.project.id
     this.setState({project_id: pro_id}, () => {
-
       return this.props.createProjectBackers(this.state).then(() => this.setState({project_id: null, reward_id: null, cash_only: ""}))
     })
   }
