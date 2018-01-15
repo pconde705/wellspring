@@ -1,3 +1,8 @@
+.all-projects-show {
+  margin-top: 50px;
+}
+/*This is from all_projects, not project_index*/
+
 
 .all-projects-div {
   display: flex;
