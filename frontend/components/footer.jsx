@@ -8,7 +8,7 @@ class Footer extends React.Component {
     return (
       <div className="footer-div">
         <div className="footer-inside">
-          <p>WellSpring, a Kickstarter Clone</p>
+          <p>WellSpring, a crowdfunding app</p>
           <ul>
             <li>
               <a className="footer-link" href="https://github.com/pconde705"><i className="fa fa-github" aria-hidden="true"></i></a>

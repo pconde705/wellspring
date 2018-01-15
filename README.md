@@ -22,7 +22,7 @@
 
 ## Introduction
 
-In [WellSpring](https://wellspring-pconde705.herokuapp.com) users can sign up for an account, which allows them to create and back any project of their choice. To back a project they can either type in an amount of their choice or they can choose a fixed amount pledge that comes with a reward that the project creator has specified.
+In [WellSpring](https://wellspring-pconde705.herokuapp.com) users can sign up for an account, fill out their profile based on a number of questions in order to gage personality and preference. 
 
 Features:
 

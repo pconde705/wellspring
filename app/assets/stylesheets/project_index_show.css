@@ -18,12 +18,17 @@
   margin-bottom: 50px;
 }
 /*The above CSS allows you to square the images*/
-/*Create a div around the image, with overflow:hidden and specific width and height attributes, 
+/*Create a div around the image, with overflow:hidden and specific width and height attributes,
 that act as a frame. and inside that is your img which you set to usually to height 100% and width: auto.*/
+
 
 .featured-link {
   text-decoration: none;
   color: black;
+}
+
+.featured-link:hover {
+  opacity: 0.8;
 }
 
 .featured-names {
