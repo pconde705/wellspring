@@ -11,6 +11,7 @@ import ProjectShowContainer from './project_show/project_show_container';
 import RewardContainer from './reward/reward_container';
 // import BackerContainer from './backer/backer_container';
 import Footer from './footer';
+import AllProjectsContainer from './all_projects/all_projects_container';
 
 const App = () => (
   <div>
@@ -23,6 +24,7 @@ const App = () => (
     <AuthRoute path="/login" component={SessionFormContainer} />
     <AuthRoute path="/signup" component={SessionFormContainer} />
     <Route exact path="/projects/:id" component={ProjectShowContainer} />
+    <Route exact path="/projects" component={AllProjectsContainer} />
     <Footer />
   </div>
 );

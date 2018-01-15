@@ -8,6 +8,7 @@ const Navbar = ({currentUser, logout}) => {
       <div className="navbar">
         <ul className="navbar-ul-left">
           <li><SearchContainer /></li>
+          <li><Link className="ul-link" to="/projects">All Projects</Link></li>
         </ul>
         <h2><Link className="main-title" to="/">WELLSPRING</Link></h2>
         <ul className="navbar-ul-right">
@@ -21,6 +22,7 @@ const Navbar = ({currentUser, logout}) => {
       <div className="navbar">
         <ul className="navbar-ul-left">
           <li><SearchContainer /></li>
+          <li><Link className="ul-link" to="/projects">All Projects</Link></li>
         </ul>
         <h2><Link className="main-title" to="/">WELLSPRING</Link></h2>
         <ul className="navbar-ul-right">
