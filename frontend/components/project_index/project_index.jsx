@@ -9,7 +9,7 @@ import ProjectIndexDisplay from './project_index_display';
 class ProjectIndex extends React.Component {
   constructor(props) {
     super(props)
-    this.state = {category: "music", clicked: false}
+    this.state = {category: "photography", clicked: false}
     this.renderProjects = this.renderProjects.bind(this);
   }
 
