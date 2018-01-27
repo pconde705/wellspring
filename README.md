@@ -22,7 +22,7 @@
 
 ## Introduction
 
-In [WellSpring](https://wellspring-pconde705.herokuapp.com) users can sign up for an account, fill out their profile based on a number of questions in order to gage personality and preference. 
+In [WellSpring](https://wellspring-pconde705.herokuapp.com) users can sign up for an account, which allows them to fund specific projects via direct donations, or choosing a specific backing reward. 
 
 Features:
 
