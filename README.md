@@ -3,7 +3,7 @@
   <a href="https://wellspring-pconde705.herokuapp.com">
     <img alt="WellSpring" title="WellSpring" src="https://res.cloudinary.com/lopopoa2/image/upload/v1512163320/Screen_Shot_2017-12-01_at_1.20.09_PM_rdmyl1.png" >
   </a>
-</p>
+</p> 
 
 <p align="center">
   Welcome to WellSpring, a Kickstarter inspired single-page application with a React/Redux frontend and Ruby on Rails backend.
