@@ -11,7 +11,7 @@
 
 ## Table of Contents
 
-- [Introduction](#introduction)
+- [Introduction](#introduction) 
 - [Project Creation](#project-creation)
 - [Project Rewards](#project-rewards)
 - [Project Show](#project-show)
