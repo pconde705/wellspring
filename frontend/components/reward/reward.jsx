@@ -38,7 +38,7 @@ class Reward extends React.Component {
     )
   }
 
-  componentWillMount() { // didMount is more gernerally used for ajax requests, which clearErrors does not.
+  componentWillMount() { // didMount is more gernerally used for ajax requests, which clearErrors is not.
     this.props.clearErrors();
   }
 
